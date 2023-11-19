@@ -366,3 +366,9 @@ function detA = Determinante(A)
     end
 end
 %%%%%%%%%%%punto6%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%punto7%%%%%%%%%%%%%%%%%%
+%Diseñar una función B = Inversa(A,n) que tenga como entrada la matriz cuadrada A de orden n y 
+%que calcule, si existe, la inversa de esta matriz.
+
+%%%%%%%%%%%punto7%%%%%%%%%%%%%%%%%%
