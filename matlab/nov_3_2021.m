@@ -109,3 +109,4 @@ end
 
 % hacer un procediemiento para contar el # de filas linealmnete
 % independientes 
+
