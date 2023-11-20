@@ -1,8 +1,11 @@
 clc; clear all; close all;
+
 %%%%%%%%%%%punto1%%%%%%%%%%%%%%%%%%
+
 %En primer lugar, su programa debe dar la opción de leer o generar de manera aleatoria una matriz de 
 %orden nxm o bien nxn, mostrarla y permitir que se pueda modificar o eliminar algún elemento, 
 %fila o columna.
+
 % Opción para leer o generar aleatoriamente las matrices
 opcion = input('Seleccione una opción:\n 1. Leer matrices\n 2. Generar aleatoriamente matrices\n');
 
@@ -26,9 +29,9 @@ if opcion == 1 % si selecciono insertar matriz
 
     B = zeros(r, h);
 
-    for i = 1:1:n % número de filas
+    for i = 1:1:r % número de filas
         fprintf('> Fila # %2i : \n',i)
-        for j=1:1:m
+        for j=1:1:h
         fprintf(" a(%2d ,%2d) " ,i,j);
         B(i,j)=input("");
         end
@@ -57,6 +60,7 @@ disp(A);
 
 disp('Matriz B:');
 disp(B);
+
 %%%%%%%%%%%punto1%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%% ejemplo de la función escalonar 
@@ -139,39 +143,39 @@ end
 %B donde se ha hecho el proceso de escalonar hasta la columna col.
 
 function B = Escalonar(A, n, m, col)
-    % Asegurarse de que col no exceda las dimensiones de la matriz
-    col = min(col, m - 1);
+    col = min(col, m);
 
-    % Realizar el escalonamiento de la matriz
-    for k = col:-1:1
-        % Buscar la última fila no cero en la columna actual
-        for fila = n:-1:1
+    for k = 1:col
+        % Buscar el primer elemento no cero desde arriba hacia abajo en la columna k
+        fila_pivote = 0;
+        for fila = k:n
             if A(fila, k) ~= 0
+                fila_pivote = fila;
                 break;
             end
         end
 
-        % Si se encuentra una fila no cero, realizar operaciones de fila
-        if A(fila, k) ~= 0
-            % Convertir en ceros los elementos por encima del elemento no cero
-            for i = fila - 1:-1:1
-                factor = -A(i, k) / A(fila, k);
-                for j = 1:m
-                    A(i, j) = A(i, j) + factor * A(fila, j);
-                end
+        % Continuar solo si se encontró un pivote
+        if fila_pivote > 0
+            % Intercambiar filas si el pivote no está en la fila k
+            if fila_pivote ~= k
+                temp = A(k, :);
+                A(k, :) = A(fila_pivote, :);
+                A(fila_pivote, :) = temp;
             end
 
-            % Normalizar la fila con el elemento no cero
-            factor = 1 / A(fila, k);
-            for j = 1:m
-                A(fila, j) = A(fila, j) * factor;
+            % Realizar operaciones de fila para hacer ceros debajo del pivote
+            for i = k+1:n
+                factor = -A(i, k) / A(k, k);
+                A(i, :) = A(i, :) + factor * A(k, :);
             end
         end
     end
 
-    % Devolver la matriz escalonada
     B = A;
 end
+
+
 %%%%%%%%%%%punto2%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
@@ -182,6 +186,7 @@ end
 
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
 % Función para reducir la matriz hasta la columna col
+
 function C = Reducir(A, n, m, col)
     % Llamar a la función Escalonar para realizar el escalonamiento
     A_escalonada = Escalonar(A, n, m, col);
@@ -189,22 +194,35 @@ function C = Reducir(A, n, m, col)
     % Reducir la matriz escalonada
     for k = 1:col
         % Buscar la primera fila no cero en la columna actual
+        fila_pivote = 0;
         for fila = 1:n
             if A_escalonada(fila, k) ~= 0
+                fila_pivote = fila;
                 break;
             end
         end
 
-        % Convertir en ceros los elementos por debajo del elemento no cero
-        for i = fila + 1:n
-            factor = -A_escalonada(i, k) / A_escalonada(fila, k);
-            A_escalonada(i, :) = A_escalonada(i, :) + factor * A_escalonada(fila, :);
+        % Continuar solo si se encontró un pivote
+        if fila_pivote > 0
+            % Normalizar la fila del pivote
+            factor = 1 / A_escalonada(fila_pivote, k);
+            A_escalonada(fila_pivote, :) = A_escalonada(fila_pivote, :) * factor;
+
+            % Hacer ceros los elementos por encima y debajo del pivote
+            for i = 1:n
+                if i ~= fila_pivote
+                    factor = -A_escalonada(i, k);
+                    A_escalonada(i, :) = A_escalonada(i, :) + factor * A_escalonada(fila_pivote, :);
+                end
+            end
         end
     end
 
     % Asignar el resultado a la salida
     C = A_escalonada;
 end
+
+
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%punto4%%%%%%%%%%%%%%%%%%
@@ -366,9 +384,3 @@ function detA = Determinante(A)
     end
 end
 %%%%%%%%%%%punto6%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%punto7%%%%%%%%%%%%%%%%%%
-%Diseñar una función B = Inversa(A,n) que tenga como entrada la matriz cuadrada A de orden n y 
-%que calcule, si existe, la inversa de esta matriz.
-
-%%%%%%%%%%%punto7%%%%%%%%%%%%%%%%%%
