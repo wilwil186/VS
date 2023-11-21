@@ -32,7 +32,7 @@ if opcion == 1 % si selecciono insertar matriz
     for i = 1:1:r % número de filas
         fprintf('> Fila # %2i : \n',i)
         for j=1:1:h
-        fprintf(" a(%2d ,%2d) " ,i,j);
+        fprintf(" b(%2d ,%2d) " ,i,j);
         B(i,j)=input("");
         end
     end
@@ -99,40 +99,21 @@ disp(B_reducida);
 %%%%%%%%%%%%%%%%%%% Ejemplo de la función AnalizarSistema
 % Llamar a la función AnalizarSistema
 [B, tiene_solucion, tiene_infinitas_soluciones] = AnalizarSistema(A, n, m);
-
-% Mostrar la matriz equivalente B
-disp('Matriz B:');
-disp(B);
-
-% Verificar si el sistema tiene solución
-if tiene_solucion
-    disp('El sistema tiene solución.');
-
-    % Verificar si el sistema tiene infinitas soluciones
-    if tiene_infinitas_soluciones
-        disp('El sistema tiene infinitas soluciones.');
-
-        % Llamar a la función encontrarBasesEspacioSolucion
-        bases = encontrarBasesEspacioSolucion(A);
-
-        % Mostrar las bases del espacio de soluciones
-        disp('Bases del espacio de soluciones:');
-        disp(bases);
-    else
-        disp('El sistema no tiene infinitas soluciones.');
-    end
-else
-    disp('El sistema no tiene solución.');
-end
 %%%%%%%%%%%%%%%%%%% Ejemplo de la función AnalizarSistema
+%%%%%%%%%%%%%%%%%%% Ejemplo a la función encontrarBasesEspacioSolu
+if tiene_infinitas_soluciones == true
+    disp('El sistema tiene infinitas soluciones.');
 
-%%%%%%%%%%%%%%%%%%% Ejemplo de la función Determinante
-detA = Determinante(A);
+    % Llamar a la función encontrarBasesEspacioSolucion
+    bases = encontrarBasesEspacioSolucion(A);
 
-if ~isempty(detA)
-    disp("El determinante de A es:");
-    disp(detA);
+    % Mostrar las bases del espacio de soluciones
+    disp('Bases del espacio de soluciones:\n');
+    disp(bases);
+else
+    disp('El sistema no tiene infinitas soluciones.\n');
 end
+%%%%%%%%%%%%%%%%%%% Ejemplo a la función encontrarBasesEspacioSolu
 %%%%%%%%%%%%%%%%%%% Ejemplo de la función Determinante
 
 %%%%%%%%%%%%%%%%%%%%%%%%%funciones%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -186,16 +167,15 @@ end
 
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
 % Función para reducir la matriz hasta la columna col
-
 function C = Reducir(A, n, m, col)
     % Llamar a la función Escalonar para realizar el escalonamiento
     A_escalonada = Escalonar(A, n, m, col);
 
     % Reducir la matriz escalonada
-    for k = 1:col
+    for k = col:-1:1
         % Buscar la primera fila no cero en la columna actual
         fila_pivote = 0;
-        for fila = 1:n
+        for fila = n:-1:1
             if A_escalonada(fila, k) ~= 0
                 fila_pivote = fila;
                 break;
@@ -205,8 +185,7 @@ function C = Reducir(A, n, m, col)
         % Continuar solo si se encontró un pivote
         if fila_pivote > 0
             % Normalizar la fila del pivote
-            factor = 1 / A_escalonada(fila_pivote, k);
-            A_escalonada(fila_pivote, :) = A_escalonada(fila_pivote, :) * factor;
+            A_escalonada(fila_pivote, :) = A_escalonada(fila_pivote, :) / A_escalonada(fila_pivote, k);
 
             % Hacer ceros los elementos por encima y debajo del pivote
             for i = 1:n
@@ -218,29 +197,33 @@ function C = Reducir(A, n, m, col)
         end
     end
 
+    % Hacer que cada elemento de la diagonal principal sea 1
+    for i = 1:n
+        factor = 1 / A_escalonada(i, i);
+        A_escalonada(i, :) = factor * A_escalonada(i, :);
+    end
+
     % Asignar el resultado a la salida
     C = A_escalonada;
 end
-
-
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%punto4%%%%%%%%%%%%%%%%%%
 %Diseñar una función [B,solucion]=AnalizarSistema(A,b,n,m) que tenga como entrada un sistema de n 
 %ecuaciones con m incógnitas con matriz de coeficientes A y términos independientes el vector "b", 
 %realice las operaciones por filas necesarias e indique si el sistema tiene solución (solucion = true) 
-%y guarde el sistema equivalente en la matriz B.
-
+%y guarde el sistema equivalente en la matriz B. AnalizarSistema(A, n, m)
 function [B, solucion, tiene_infinitas_soluciones] = AnalizarSistema(A, n, m)
     % Separar la última columna de la matriz A como el vector b
     b = A(:, end);
     A = A(:, 1:end-1);
-
+    m = m-1;
     % Combinar matriz de coeficientes A y términos independientes b
     B = [A, b];
-
-    solucion = true;  % Supongamos inicialmente que hay solución
-    tiene_infinitas_soluciones = false;  % Supongamos inicialmente que no hay infinitas soluciones
+    
+    % Inicializar las variables antes del bucle
+    solucion = false;
+    tiene_infinitas_soluciones = true;
 
     for col = 1:m
         % Buscar el primer elemento no nulo en la columna
@@ -276,9 +259,51 @@ function [B, solucion, tiene_infinitas_soluciones] = AnalizarSistema(A, n, m)
 
     % Verificar si el sistema tiene infinitas soluciones
     if num_variables_libres == num_variables
-        tiene_infinitas_soluciones = true;
+        tiene_infinitas_soluciones = false;
+        disp('El sistema no tiene infinitas soluciones')
+    end
+
+    % Buscar fila con lado izquierdo cero, y lado derecho número
+    encontro = false;
+    fila = 1;
+
+    while ~encontro && (fila <= n)
+        if B(fila, m) == 0
+            fila = fila + 1;
+        else
+            norma = 0;
+            for j = 1:m-1
+                norma = norma + abs(B(fila, j));
+            end
+            if norma == 0
+                encontro = true;
+            else
+                fila = fila + 1;
+            end 
+        end
+    end
+
+    % si no es cero
+    if encontro 
+        fprintf('El sistema no tiene solución\n');
+    else
+        fprintf('El sistema tiene solución\n');
+        if num_variables_libres == m-1 % solución única, m-1 número de incógnitas
+            x(m-1) = B(m-1, m) / B(m-1, m-1);
+            for i = m-2:-1:1
+                suma = 0;
+                for j = i+1:m-1
+                    suma = suma + B(i, j) * x(j);
+                end
+                x(i) = (B(i, m) - suma) / B(i, i);
+            end
+            disp(x);
+        else 
+            % Lógica para manejar el caso de infinitas soluciones (cositas)
+        end
     end
 end
+
 
 %%%%%%%%%%%punto4%%%%%%%%%%%%%%%%%%
 
