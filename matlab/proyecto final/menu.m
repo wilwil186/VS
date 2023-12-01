@@ -1,14 +1,11 @@
 % Wilson Eduardo Jerez Hernández cod: 20181167034
 % Laura Daniela Ardila Ortiz cod: 20201167072
-
 clc;
 clear all;
 close all;
-
 % Crear una figura y un menú
-f = figure('Name', 'Ejemplo de Menú');
+f = figure('Name', 'Menú Proyecto final');
 m = uimenu(f, 'Text', 'Tareas');
-
 % Definir las funciones para cada opción del menú
 m0 = uimenu(m, 'Text', 'crear matrices', 'MenuSelectedFcn', @crearMostrarMatrices);
 m1 = uimenu(m, 'Text', 'Encontrar Forma Escalonada', 'MenuSelectedFcn', @Escalonar);
@@ -19,21 +16,15 @@ m5 = uimenu(m, 'Text', 'Encontrar Determinantes', 'MenuSelectedFcn', @determinan
 m6 = uimenu(m, 'Text', 'Encontrar Inversas', 'MenuSelectedFcn', @Inversa);
 m7 = uimenu(m, 'Text', 'Polinomio Característico', 'MenuSelectedFcn', @PolCar);
 m8 = uimenu(m, 'Text', 'Encontrar Autovalores', 'MenuSelectedFcn', @mullerMethodHolder);
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%FUNCIONES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 function A = crearMostrarMatricesA(~,~)
     % Opción para leer o generar aleatoriamente las matrices
     opcion = input('Seleccione una opción:\n 1. Leer la matriz\n 2. Generar aleatoriamente la matriz\n');
-
     if opcion == 1 % si selecciona insertar matriz
         % Leer matrices desde el usuario
         n = input('Ingrese el número de filas de la matriz A: ');
         m = input('Ingrese el número de columnas de la matriz A: ');
-
         A = zeros(n, m);
-
         for i = 1:1:n % número de filas
             fprintf('> Fila # %2i : \n', i)
             for j = 1:1:m
@@ -50,23 +41,18 @@ function A = crearMostrarMatricesA(~,~)
         fprintf('Opción no válida\n');
         return;
     end
-
     % Mostrar matrices
     disp('Matriz A:');
     disp(A);
 end
-
 function [A, B] = crearMostrarMatrices(~,~)
     % Opción para leer o generar aleatoriamente las matrices
     opcion = input('Seleccione una opción:\n 1. Leer matrices\n 2. Generar aleatoriamente matrices\n');
-
     if opcion == 1 % si selecciona insertar matriz
         % Leer matrices desde el usuario
         n = input('Ingrese el número de filas de la matriz A: ');
         m = input('Ingrese el número de columnas de la matriz A: ');
-
         A = zeros(n, m);
-
         for i = 1:1:n % número de filas
             fprintf('> Fila # %2i : \n', i)
             for j = 1:1:m
@@ -74,12 +60,9 @@ function [A, B] = crearMostrarMatrices(~,~)
                 A(i, j) = input("");
             end
         end
-
         r = input('Ingrese el número de filas de la matriz B: ');
         h = input('Ingrese el número de columnas de la matriz B: ');
-
         B = zeros(r, h);
-
         for i = 1:1:r % número de filas
             fprintf('> Fila # %2i : \n', i)
             for j = 1:1:h
@@ -87,32 +70,24 @@ function [A, B] = crearMostrarMatrices(~,~)
                 B(i, j) = input("");
             end
         end
-
     elseif opcion == 2
         % Generar matrices aleatorias
         n = input('Ingrese el número de filas de la matriz A: ');
         m = input('Ingrese el número de columnas de la matriz A: ');
-
         A = randi([1, 10], n, m); % Genera números aleatorios entre 1 y 10
-
         r = input('Ingrese el número de filas de la matriz B: ');
         h = input('Ingrese el número de columnas de la matriz B: ');
-
         B = randi([1, 10], r, h); % Genera números aleatorios entre 1 y 10
-
     else
         fprintf('Opción no válida\n');
         return;
     end
-
     % Mostrar matrices
     disp('Matriz A:');
     disp(A);
-
     disp('Matriz B:');
     disp(B);
 end
-
 %%%%%%%%%%% comienzo punto 2 %%%%%%%%%%%%%%%%%%
 %Realizar una fución B = Escalonar(A,n,m,col) que tenga como entrada la matriz A de orden nxm 
 %y realice el proceso de "escalonar" esta matriz hasta la columna col. La salida es la matriz 
@@ -123,7 +98,6 @@ function A = Escalonar(~,~)
     [n, m] = size(A);
     col = input('Ingrese la columna hasta la cual desea escalonar: ');
     col = min(col, m);
-
     for k = 1:col
         % Buscar el primer elemento no cero desde arriba hacia abajo en la columna k
         fila_pivote = 0;
@@ -133,7 +107,6 @@ function A = Escalonar(~,~)
                 break;
             end
         end
-
         % Continuar solo si se encontró un pivote
         if fila_pivote > 0
             % Intercambiar filas si el pivote no está en la fila k
@@ -142,7 +115,6 @@ function A = Escalonar(~,~)
                 A(k, :) = A(fila_pivote, :);
                 A(fila_pivote, :) = temp;
             end
-
             % Realizar operaciones de fila para hacer ceros debajo del pivote
             for i = k+1:n
                 factor = -A(i, k) / A(k, k);
@@ -154,19 +126,14 @@ function A = Escalonar(~,~)
     disp('Matriz A escalonada:');
     disp(A);
 end
-
-
 %%%%%%%%%%% Fin punto 2 %%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 3 %%%%%%%%%%%%%%%%%%
 %Diseñar una función C = Reducir(A,n,m,col) que tenga como entrada la matriz A de orden nxm y 
 %realice las operaciones por filas necesarias hasta la columna col de tal forma que la salida 
 %C sea la matriz escalonada reducida hasta la columna col. En esta subrutina se debe utilizar la 
 %función Escalonar(A,n,m,col).
-
 %%%%%%%%%%%punto3%%%%%%%%%%%%%%%%%%
 % Función para reducir la matriz hasta la columna col
-
     function C = Reducir(~,~)
     % Llamar a la función Escalonar para realizar el escalonamiento
     A_escalonada= Escalonar();
@@ -182,12 +149,10 @@ end
                 break;
             end
         end
-
         % Continuar solo si se encontró un pivote
         if fila_pivote > 0
             % Normalizar la fila del pivote
             A_escalonada(fila_pivote, :) = A_escalonada(fila_pivote, :) / A_escalonada(fila_pivote, k);
-
             % Hacer ceros los elementos por encima y debajo del pivote
             for i = 1:n
                 if i ~= fila_pivote
@@ -197,40 +162,35 @@ end
             end
         end
     end
-
     % Hacer que cada elemento de la diagonal principal sea 1
     for i = 1:n
         factor = 1 / A_escalonada(i, i);
         A_escalonada(i, :) = factor * A_escalonada(i, :);
     end
-
     % Asignar el resultado a la salida
     C = A_escalonada;
     disp('Matriz A reducida:');
     disp(C);
 end
 %%%%%%%%%%% Fin punto 3 %%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 4%%%%%%%%%%%%%%%%%%
 %Diseñar una función [B,solucion]=AnalizarSistema(A,b,n,m) que tenga como entrada un sistema de n 
 %ecuaciones con m incógnitas con matriz de coeficientes A y términos independientes el vector "b", 
 %realice las operaciones por filas necesarias e indique si el sistema tiene solución (solucion = true) 
 %y guarde el sistema equivalente en la matriz B.
-
-    function [B, solucion, tiene_infinitas_soluciones] = AnalizarSistema(~,~)
+function [B, solucion, tiene_infinitas_soluciones] = AnalizarSistema(~,~)
     A = Reducir();
     [n, m] = size(A);
     % Separar la última columna de la matriz A como el vector b
     b = A(:, end);
     A = A(:, 1:end-1);
-    m = m-1;
+    m = m - 1;
     % Combinar matriz de coeficientes A y términos independientes b
     B = [A, b];
     
     % Inicializar las variables antes del bucle
     solucion = true;
     tiene_infinitas_soluciones = false;
-
     for col = 1:m
         % Buscar el primer elemento no nulo en la columna
         fila_no_cero = 0;
@@ -240,45 +200,39 @@ end
                 break;
             end
         end
-
         % Si no hay elementos no nulos en la columna, el sistema no tiene solución
         if fila_no_cero == 0
             solucion = false;
             break;
         end
-
         % Intercambiar filas si es necesario
         if fila_no_cero ~= col
             B([col, fila_no_cero], :) = B([fila_no_cero, col], :);
         end
-
         % Hacer ceros por debajo del pivote
         for fila = col+1:n
             factor = -B(fila, col) / B(col, col);
             B(fila, :) = B(fila, :) + factor * B(col, :);
         end
     end
-
-    % Contar el número de variables libres
-    num_variables = m - 1; % Restar 1 para excluir la columna de términos independientes
-    num_variables_libres = sum(all(B(:, 1:num_variables) == 0, 2));
-
+    % Contar el número de pivotes (variables dependientes)
+    num_pivotes = sum(any(B(:, 1:m) ~= 0, 1));
+    % Calcular el número de variables libres
+    num_variables_libres = m - num_pivotes;
     % Verificar si el sistema tiene infinitas soluciones
-    if num_variables_libres == num_variables
+    if num_variables_libres > 0
         tiene_infinitas_soluciones = true;
         disp('El sistema tiene infinitas soluciones\n')
     end
-
     % Buscar fila con lado izquierdo cero, y lado derecho número
     encontro = false;
     fila = 1;
-
     while ~encontro && (fila <= n)
-        if B(fila, m) == 0
+        if B(fila, m+1) == 0
             fila = fila + 1;
         else
             norma = 0;
-            for j = 1:m-1
+            for j = 1:m
                 norma = norma + abs(B(fila, j));
             end
             if norma == 0
@@ -288,20 +242,20 @@ end
             end 
         end
     end
-
-    % si no es cero
+    % Si se encontró una fila inconsistente
     if encontro 
+        solucion = false;
         fprintf('El sistema no tiene solución\n');
     else
         fprintf('El sistema tiene solución\n');
-        if num_variables_libres == m-1 % solución única, m-1 número de incógnitas
-            x(m-1) = B(m-1, m) / B(m-1, m-1);
-            for i = m-2:-1:1
-                suma = 0;
-                for j = i+1:m-1
-                    suma = suma + B(i, j) * x(j);
+        if num_variables_libres == 0 % solución única
+            x = zeros(1, m);
+            for i = m:-1:1
+                suma = B(i, end);
+                for j = i+1:m
+                    suma = suma - B(i, j) * x(j);
                 end
-                x(i) = (B(i, m) - suma) / B(i, i);
+                x(i) = suma / B(i, i);
             end
             disp(x);
         else 
@@ -310,47 +264,33 @@ end
     end
 end
 %%%%%%%%%%% Fin punto 4 %%%%%%%%%%%%%%%%%%
-
 %Diseñar una función x = HallarSolucion(A,b,n,m) que se utilice en el caso
 %que el sistema de la parte anterior tenga solución única.
-
 %%%%%%%%%%% Comienzo punto 5 %%%%%%%%%%%%%%%%%%
 %Diseñar una función x = HallarBase(A,b,n,m) que se utilice en el caso que el sistema de la parte
 %4 tenga infinita soluciones y halle como generar todas las soluciones del sistema.
-
-
-
 %%%%%%%%%%% Fin punto 5 %%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 6 %%%%%%%%%%%%%%%%%%
-
 function bases = encontrarBasesEspacioSolucion(~,~)
     [A, solution, tiene_infinitas_soluciones] = AnalizarSistema();
     % Extraer la última columna de la matriz A como el vector de términos constantes b
     b = A(:, end);
     A = A(:, 1:end-1);
-
     % Combinar la matriz de coeficientes A y el vector de términos constantes b
     matriz_ampliada = [A, b];
-
     % Aplicar eliminación gaussiana para obtener la forma escalonada reducida
     [R, pivote] = rref(matriz_ampliada);
-
     % Determinar el número de variables y restricciones
     num_variables = size(A, 2);
     num_restricciones = size(A, 1);
-
     % Calcular el número de variables libres
     num_variables_libres = num_variables - num_restricciones;
-
     % Inicializar bases con las variables libres
     bases = zeros(num_variables_libres, num_variables);
-
     % Generar combinaciones lineales para las variables libres
     for i = 1:num_variables_libres
         % Establecer la variable libre actual a 1
         bases(i, pivote(num_restricciones + i)) = 1;
-
         % Resolver el sistema de ecuaciones
         solution = R(:, end);
         for j = num_variables_libres:-1:1
@@ -361,10 +301,8 @@ function bases = encontrarBasesEspacioSolucion(~,~)
     end
     if tiene_infinitas_soluciones 
         disp('El sistema tiene infinitas soluciones.');
-
         % Llamar a la función encontrarBasesEspacioSolucion
         bases = encontrarBasesEspacioSolucion(A);
-
         % Mostrar las bases del espacio de soluciones
         disp('Bases del espacio de soluciones:');
         disp(bases);
@@ -373,9 +311,7 @@ function bases = encontrarBasesEspacioSolucion(~,~)
     end
 end
 %%%%%%%%%%% Fin punto 6 %%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 7 %%%%%%%%%%%%%
-
 % Función determinante
 % Calcula el determinante de una matriz cuadrada A de tamaño n
 function det = determinante(~,~)
@@ -400,7 +336,6 @@ function det = determinante(~,~)
     disp('El determinante de A es:')
     disp(det);
 end
-
 function det = determinantef(A, n)
     if n == 1
         % Caso base: si la matriz es 1x1, el determinante es el elemento mismo
@@ -419,8 +354,6 @@ function det = determinantef(A, n)
         end
     end
 end
-
-
 % Función eliminarij
 % Elimina la fila i y la columna j de la matriz A de tamaño n
 function B = eliminarij(A, n, i, j)
@@ -435,11 +368,8 @@ function B = eliminarij(A, n, i, j)
     % La matriz resultante se asigna a B
     B = A;
 end
-
 %%%%%%%%%%% Fin punto 7 %%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 8 %%%%%%%%%%%%%
-
 % Definición de la función Inversa
 function B = Inversa(~,~)
     A = crearMostrarMatricesA();
@@ -448,20 +378,16 @@ function B = Inversa(~,~)
     if size(A, 1) ~= n || size(A, 2) ~= n
         error('La matriz A debe ser cuadrada de orden n');
     end
-
     % Verifica si la matriz A es invertible (determinante no cero)
     if determinantef(A, n) == 0
         error('La matriz A no es invertible (determinante cero)');
     end
-
     % Concatena la matriz A con la matriz identidad de tamaño n
     AI = [A eye(n)];
-
     % Proceso de eliminación de Gauss-Jordan
     for i = 1:n
         % Normaliza la fila i para que el elemento diagonal sea 1
         AI(i,:) = AI(i,:) / AI(i,i);
-
         % Elimina los elementos en la columna i de las otras filas
         for j = 1:n
             if i ~= j
@@ -469,17 +395,13 @@ function B = Inversa(~,~)
             end
         end
     end
-
     % Extrae la matriz inversa de la parte derecha de AI
     B = AI(:,n+1:end);
     disp('Inversa de la matriz A')
     disp(B)
 end
-
 %%%%%%%%%%% Fin punto 8 %%%%%%%%%%%%%
-
 %%%%%%%%%%% Comienzo punto 9 %%%%%%%%%%%%%
-
 function [f, p] = PolCar(~,~)
    A = crearMostrarMatricesA();
    % Verificar si A es una matriz cuadrada
@@ -488,20 +410,15 @@ function [f, p] = PolCar(~,~)
        error('La matriz A debe ser cuadrada');
    end
    syms lambda
-
    % Calcular el polinomio característico como det(A - lambda*I)
    I = eye(n); % Crear matriz identidad de tamaño n
    polinomio = determinantef(A - lambda*I,n);
-
     % Simplificar el polinomio característico
     f = simplify(polinomio);
-
     % Expandir el polinomio característico
     f = expand(f);
-
     % Extraer los coeficientes del polinomio
     coeficientes = sym2poly(f);
-
     % Invertir el orden de los coeficientes usando un bucle for
     p = zeros(size(coeficientes));
     for i = 1:length(coeficientes)
@@ -510,7 +427,6 @@ function [f, p] = PolCar(~,~)
     disp('polinomio característico')
     disp(p)
 end
-
 %%%%%%%%%%% Fin punto 9 %%%%%%%%%%%%%
 
 %%%%%%%%%%% Comienzo punto 10 %%%%%%%%%%%%%

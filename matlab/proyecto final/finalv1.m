@@ -15,7 +15,7 @@ if opcion == 1 % si selecciono insertar matriz
     n = input('Ingrese el número de filas de la matriz A: ');
     m = input('Ingrese el número de columnas de la matriz A: ');
 
-    A = zeros(n, m);
+    A = zeros(n, m); % genera matriz de ceros tamaño n por m para luego rellenar 
 
     for i = 1:1:n % número de filas
         fprintf('> Fila # %2i : \n',i)
@@ -310,7 +310,7 @@ function [B, solucion, tiene_infinitas_soluciones] = AnalizarSistema(A, n, m)
 
     % Contar el número de variables libres
     num_variables = m - 1; % Restar 1 para excluir la columna de términos independientes
-    num_variables_libres = sum(all(B(:, 1:num_variables) == 0, 2));
+    num_variables_libres = sum(all(B(:, 1:num_variables) == 0));
 
     % Verificar si el sistema tiene infinitas soluciones
     if num_variables_libres == num_variables
