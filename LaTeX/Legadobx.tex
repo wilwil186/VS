@@ -96,7 +96,7 @@
 
 \begin{frame}
 	\frametitle{Etapas Preliminares del Análisis}
-	\begin{block}
+	\begin{block}{Etapas Preliminares del Análisis}
 		Antes de iniciar el análisis de una serie de tiempo, es esencial llevar a cabo una serie de etapas preliminares que establecen las bases para un estudio efectivo:
 		\begin{itemize}
 			\item \textbf{Experticia en el Ámbito de Aplicación.} 
@@ -105,6 +105,46 @@
 			\item \textbf{Análisis Exploratorio.} 
 			\item \textbf{Representación de Componentes.}
 		\end{itemize}
+	\end{block}
+  \end{frame}
+
+  \begin{frame}
+	\frametitle{Etapas Preliminares del Análisis}
+	\begin{block}{Definición de Objetivos}
+	Es crucial definir claramente los objetivos del análisis. Esto incluye preguntas como:
+    \begin{itemize}
+        \item ¿Qué aspectos específicos de la serie se van a analizar?
+        \item ¿Cuáles son los objetivos de dicho análisis? (por ejemplo, entender patrones, predecir tendencias, identificar causas)
+        \item ¿Se enfocará en una parte particular de la serie o en su totalidad?
+        \item ¿Se busca analizar picos, valles u otros patrones específicos?
+    \end{itemize}
+    Establecer los objetivos de manera clara ayudará a definir el alcance del análisis.
+	\end{block}
+  \end{frame}
+
+  \begin{frame}
+	\frametitle{Etapas Preliminares del Análisis}
+	\begin{block}{Recolección de Datos}
+		Una vez definidos los objetivos, es necesario determinar la frecuencia temporal y la granularidad de los datos que se deben recopilar. Esto incluye decidir la periodicidad de adquisición de datos (por ejemplo, diaria, mensual, anual) y el nivel de cobertura geográfica o temática. Estos aspectos dependen directamente de los objetivos del análisis.
+	\end{block}
+  \end{frame}
+
+  \begin{frame}
+	\frametitle{Etapas Preliminares del Análisis}
+	\begin{block}{Análisis Exploratorio.}
+		El análisis exploratorio es una fase clave que involucra la comprensión inicial de la serie de tiempo. Las herramientas comunes incluyen:
+    \begin{itemize}
+        \item Visualización de la serie a través de gráficas de tiempo para identificar patrones, periodicidades y problemas potenciales.
+        \item Determinación de componentes sistemáticos y no sistemáticos de la serie, como la tendencia, la estacionalidad y el ruido.
+    \end{itemize}
+    Este análisis ayuda a familiarizarse con los datos antes de aplicar métodos más avanzados.
+	\end{block}
+  \end{frame}
+
+  \begin{frame}
+	\frametitle{Etapas Preliminares del Análisis}
+	\begin{block}{Representación de Componentes}
+		Dependiendo de los objetivos del análisis, los componentes sistemáticos de la serie de tiempo pueden representarse de manera aditiva o multiplicativa. Esto implica considerar si la serie se descompone en la suma o la multiplicación de dichos componentes, lo cual puede afectar el enfoque del análisis.
 	\end{block}
   \end{frame}
   
@@ -417,16 +457,25 @@ El dataframe anterior contiene datos sobre carreras que una aplicación podría 
 \begin{block}{Árboles de Decisión}
       Los árboles de decisión son algoritmos versátiles utilizados en tareas de clasificación y regresión. Son especialmente útiles para capturar relaciones no lineales en los datos y son una excelente opción para principiantes en el campo del Machine Learning.
 \end{block}
-  
-
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Random Forest}
   \begin{block}{Bootstrap Aggregation (Bagging)}
       El algoritmo Bagging se utiliza para mejorar la estabilidad y precisión de los modelos, incluyendo árboles de decisión. A través de la combinación de múltiples modelos entrenados con muestras de datos seleccionadas con reemplazo, Bagging reduce la varianza y aumenta la precisión.
   \end{block} 
-  
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Random Forest}
+	\begin{block}{Bootstrap Aggregation (Bagging)}
+		\begin{figure}
+			\includegraphics[scale=0.25]{bagging.png}
+			\caption{https://towardsdatascience.com/ensemble-learning-bagging-boosting-3098079e5422}
+		\end{figure}
+	\end{block}
 \end{frame}
 
 \begin{frame}
@@ -435,7 +484,15 @@ El dataframe anterior contiene datos sobre carreras que una aplicación podría 
   \begin{block}{Bosques Aleatorios (Random Forest)}
         Bosques Aleatorios son una extensión de Bagging que combina múltiples árboles de decisión mediante la aleatorización de características. Esto produce un modelo robusto y de alto rendimiento que es eficaz en la clasificación y la regresión de series de tiempo.
   \end{block}
+\end{frame}
 
+\begin{frame}
+	\begin{block}{Random Forest}
+		\begin{figure}
+			\includegraphics[scale=0.2]{RandomForest.png}
+			\caption{https://www.themachinelearners.com/}
+		\end{figure}
+	\end{block}
 \end{frame}
 
 
