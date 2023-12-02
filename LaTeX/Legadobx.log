@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.12.1)  1 DEC 2023 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.12.1)  1 DEC 2023 20:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -837,4 +837,1450 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
 File: Box_imagen.jpg Graphic file (type jpg)
 <use Box_imagen.jpg>
 Package pdftex.def Info: Box_imagen.jpg  used on input line 193.
-(pdftex.def)             Requested size: 239.60567pt x 1
+(pdftex.def)             Requested size: 239.60567pt x 134.77809pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[18
+
+ <./Box_imagen.jpg>]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/b/it' instead on input line 204.
+
+LaTeX Font Info:    Font shape `OT1/cmss/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 204.
+<Von_Newman_imagen.png, id=659, 869.2475pt x 482.80376pt>
+File: Von_Newman_imagen.png Graphic file (type png)
+<use Von_Newman_imagen.png>
+Package pdftex.def Info: Von_Newman_imagen.png  used on input line 204.
+(pdftex.def)             Requested size: 239.60567pt x 133.08453pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+ <./Von_Newman_imagen.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
+
+]
+<modelo-algoritmo_1.png, id=714, 874.26625pt x 491.8375pt>
+File: modelo-algoritmo_1.png Graphic file (type png)
+<use modelo-algoritmo_1.png>
+Package pdftex.def Info: modelo-algoritmo_1.png  used on input line 227.
+(pdftex.def)             Requested size: 239.60567pt x 134.79417pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
+
+ <./modelo-algoritmo_1.png>]
+<modelo-algoritmo_2.png, id=755, 875.27pt x 491.8375pt>
+File: modelo-algoritmo_2.png Graphic file (type png)
+<use modelo-algoritmo_2.png>
+Package pdftex.def Info: modelo-algoritmo_2.png  used on input line 238.
+(pdftex.def)             Requested size: 239.60567pt x 134.63658pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
+
+ <./modelo-algoritmo_2.png>]
+<modelo-algoritmo_3.png, id=795, 873.2625pt x 490.83376pt>
+File: modelo-algoritmo_3.png Graphic file (type png)
+<use modelo-algoritmo_3.png>
+Package pdftex.def Info: modelo-algoritmo_3.png  used on input line 249.
+(pdftex.def)             Requested size: 239.60567pt x 134.67636pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+ <./modelo-algoritmo_3.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[24
+
+]
+<labels_features.png, id=876, 935.495pt x 291.0875pt>
+File: labels_features.png Graphic file (type png)
+<use labels_features.png>
+Package pdftex.def Info: labels_features.png  used on input line 285.
+(pdftex.def)             Requested size: 308.06367pt x 95.85484pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+ <./labels_features.png (PNG copy)>]
+<Titanic.png, id=916, 976.64874pt x 655.44875pt>
+File: Titanic.png Graphic file (type png)
+<use Titanic.png>
+Package pdftex.def Info: Titanic.png  used on input line 296.
+(pdftex.def)             Requested size: 239.60567pt x 160.80138pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
+
+ <./Titanic.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[27
+
+]
+<supervisado_nosupervisado.png, id=994, 1097.60063pt x 654.94687pt>
+File: supervisado_nosupervisado.png Graphic file (type png)
+<use supervisado_nosupervisado.png>
+Package pdftex.def Info: supervisado_nosupervisado.png  used on input line 330.
+(pdftex.def)             Requested size: 308.06367pt x 183.8236pt.
+
+Overfull \vbox (16.54964pt too high) detected at line 330
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[28
+
+ <./supervisado_nosupervisado.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[29
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+]
+<entrenamiento_prueba.png, id=1110, 1140.26pt x 373.395pt>
+File: entrenamiento_prueba.png Graphic file (type png)
+<use entrenamiento_prueba.png>
+Package pdftex.def Info: entrenamiento_prueba.png  used on input line 371.
+(pdftex.def)             Requested size: 239.60567pt x 78.46083pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[31
+
+ <./entrenamiento_prueba.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[32
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[33
+
+]
+<funcion_coste.png, id=1228, 1439.3775pt x 626.34pt>
+File: funcion_coste.png Graphic file (type png)
+<use funcion_coste.png>
+Package pdftex.def Info: funcion_coste.png  used on input line 405.
+(pdftex.def)             Requested size: 308.06367pt x 134.04881pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[34
+
+ <./funcion_coste.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[35
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[36
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[37
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[39
+
+]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[40
+
+]
+<bagging.png, id=1497, 494.84875pt x 468.75125pt>
+File: bagging.png Graphic file (type png)
+<use bagging.png>
+Package pdftex.def Info: bagging.png  used on input line 479.
+(pdftex.def)             Requested size: 123.71188pt x 117.18752pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+ <./bagging.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+<RandomForest.png, id=1571, 1437.37pt x 807.015pt>
+File: RandomForest.png Graphic file (type png)
+<use RandomForest.png>
+Package pdftex.def Info: RandomForest.png  used on input line 496.
+(pdftex.def)             Requested size: 287.4689pt x 161.40013pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+ <./RandomForest.png>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+]
+<PCA/IMG_3525.jpg, id=1650, 1674.255pt x 942.52126pt>
+File: PCA/IMG_3525.jpg Graphic file (type jpg)
+<use PCA/IMG_3525.jpg>
+Package pdftex.def Info: PCA/IMG_3525.jpg  used on input line 517.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 517
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
+
+ <./PCA/IMG_3525.jpg>]
+<PCA/IMG_3526.jpg, id=1689, 1674.255pt x 942.52126pt>
+File: PCA/IMG_3526.jpg Graphic file (type jpg)
+<use PCA/IMG_3526.jpg>
+Package pdftex.def Info: PCA/IMG_3526.jpg  used on input line 527.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 527
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[46
+
+ <./PCA/IMG_3526.jpg>]
+<PCA/IMG_3527.jpg, id=1725, 1664.2175pt x 942.52126pt>
+File: PCA/IMG_3527.jpg Graphic file (type jpg)
+<use PCA/IMG_3527.jpg>
+Package pdftex.def Info: PCA/IMG_3527.jpg  used on input line 537.
+(pdftex.def)             Requested size: 308.06367pt x 174.46437pt.
+
+Overfull \vbox (7.19041pt too high) detected at line 537
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[47
+
+ <./PCA/IMG_3527.jpg>]
+<PCA/IMG_3528.jpg, id=1765, 1674.255pt x 942.52126pt>
+File: PCA/IMG_3528.jpg Graphic file (type jpg)
+<use PCA/IMG_3528.jpg>
+Package pdftex.def Info: PCA/IMG_3528.jpg  used on input line 547.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 547
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[48
+
+ <./PCA/IMG_3528.jpg>]
+<PCA/IMG_3529.jpg, id=1801, 1674.255pt x 942.52126pt>
+File: PCA/IMG_3529.jpg Graphic file (type jpg)
+<use PCA/IMG_3529.jpg>
+Package pdftex.def Info: PCA/IMG_3529.jpg  used on input line 557.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 557
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[49
+
+ <./PCA/IMG_3529.jpg>]
+<PCA/IMG_3530.jpg, id=1838, 1674.255pt x 927.465pt>
+File: PCA/IMG_3530.jpg Graphic file (type jpg)
+<use PCA/IMG_3530.jpg>
+Package pdftex.def Info: PCA/IMG_3530.jpg  used on input line 567.
+(pdftex.def)             Requested size: 308.06367pt x 170.6443pt.
+
+Overfull \vbox (3.37035pt too high) detected at line 567
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[50
+
+ <./PCA/IMG_3530.jpg>]
+<PCA/IMG_3531.jpg, id=1878, 1674.255pt x 942.52126pt>
+File: PCA/IMG_3531.jpg Graphic file (type jpg)
+<use PCA/IMG_3531.jpg>
+Package pdftex.def Info: PCA/IMG_3531.jpg  used on input line 577.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 577
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[51
+
+ <./PCA/IMG_3531.jpg>]
+File: PCA/IMG_3531.jpg Graphic file (type jpg)
+<use PCA/IMG_3531.jpg>
+Package pdftex.def Info: PCA/IMG_3531.jpg  used on input line 587.
+(pdftex.def)             Requested size: 308.06367pt x 173.4145pt.
+
+Overfull \vbox (6.14055pt too high) detected at line 587
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[52
+
+]
+<PCA/IMG_3532.jpg, id=1949, 1674.255pt x 943.525pt>
+File: PCA/IMG_3532.jpg Graphic file (type jpg)
+<use PCA/IMG_3532.jpg>
+Package pdftex.def Info: PCA/IMG_3532.jpg  used on input line 597.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 597
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[53
+
+ <./PCA/IMG_3532.jpg>]
+<PCA/IMG_3533.jpg, id=1988, 1674.255pt x 943.525pt>
+File: PCA/IMG_3533.jpg Graphic file (type jpg)
+<use PCA/IMG_3533.jpg>
+Package pdftex.def Info: PCA/IMG_3533.jpg  used on input line 607.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 607
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[54
+
+ <./PCA/IMG_3533.jpg>]
+<PCA/IMG_3534.jpg, id=2025, 1674.255pt x 943.525pt>
+File: PCA/IMG_3534.jpg Graphic file (type jpg)
+<use PCA/IMG_3534.jpg>
+Package pdftex.def Info: PCA/IMG_3534.jpg  used on input line 617.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 617
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[55
+
+ <./PCA/IMG_3534.jpg>]
+<PCA/IMG_3535.jpg, id=2062, 1674.255pt x 943.525pt>
+File: PCA/IMG_3535.jpg Graphic file (type jpg)
+<use PCA/IMG_3535.jpg>
+Package pdftex.def Info: PCA/IMG_3535.jpg  used on input line 628.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 628
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[56
+
+ <./PCA/IMG_3535.jpg>]
+<PCA/IMG_3536.jpg, id=2098, 1674.255pt x 943.525pt>
+File: PCA/IMG_3536.jpg Graphic file (type jpg)
+<use PCA/IMG_3536.jpg>
+Package pdftex.def Info: PCA/IMG_3536.jpg  used on input line 638.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 638
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[57
+
+ <./PCA/IMG_3536.jpg>]
+<PCA/IMG_3537.jpg, id=2135, 1674.255pt x 943.525pt>
+File: PCA/IMG_3537.jpg Graphic file (type jpg)
+<use PCA/IMG_3537.jpg>
+Package pdftex.def Info: PCA/IMG_3537.jpg  used on input line 648.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 648
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[58
+
+ <./PCA/IMG_3537.jpg>]
+<PCA/IMG_3538.jpg, id=2171, 1674.255pt x 943.525pt>
+File: PCA/IMG_3538.jpg Graphic file (type jpg)
+<use PCA/IMG_3538.jpg>
+Package pdftex.def Info: PCA/IMG_3538.jpg  used on input line 658.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 658
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[59
+
+ <./PCA/IMG_3538.jpg>]
+<PCA/IMG_3539.jpg, id=2207, 1655.18375pt x 943.525pt>
+File: PCA/IMG_3539.jpg Graphic file (type jpg)
+<use PCA/IMG_3539.jpg>
+Package pdftex.def Info: PCA/IMG_3539.jpg  used on input line 668.
+(pdftex.def)             Requested size: 308.06367pt x 175.60037pt.
+
+Overfull \vbox (8.32642pt too high) detected at line 668
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[60
+
+ <./PCA/IMG_3539.jpg>]
+<PCA/IMG_3540.jpg, id=2246, 1674.255pt x 943.525pt>
+File: PCA/IMG_3540.jpg Graphic file (type jpg)
+<use PCA/IMG_3540.jpg>
+Package pdftex.def Info: PCA/IMG_3540.jpg  used on input line 678.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 678
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[61
+
+ <./PCA/IMG_3540.jpg>]
+<PCA/IMG_3541.jpg, id=2284, 1674.255pt x 943.525pt>
+File: PCA/IMG_3541.jpg Graphic file (type jpg)
+<use PCA/IMG_3541.jpg>
+Package pdftex.def Info: PCA/IMG_3541.jpg  used on input line 689.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 689
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[62
+
+ <./PCA/IMG_3541.jpg>]
+<PCA/IMG_3542.jpg, id=2320, 1674.255pt x 943.525pt>
+File: PCA/IMG_3542.jpg Graphic file (type jpg)
+<use PCA/IMG_3542.jpg>
+Package pdftex.def Info: PCA/IMG_3542.jpg  used on input line 700.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 700
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[63
+
+ <./PCA/IMG_3542.jpg>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[64
+
+]
+<PCA/IMG_3544.jpg, id=2395, 1674.255pt x 943.525pt>
+File: PCA/IMG_3544.jpg Graphic file (type jpg)
+<use PCA/IMG_3544.jpg>
+Package pdftex.def Info: PCA/IMG_3544.jpg  used on input line 718.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 718
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[65
+
+ <./PCA/IMG_3544.jpg>]
+<PCA/IMG_3545.jpg, id=2431, 1674.255pt x 943.525pt>
+File: PCA/IMG_3545.jpg Graphic file (type jpg)
+<use PCA/IMG_3545.jpg>
+Package pdftex.def Info: PCA/IMG_3545.jpg  used on input line 729.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 729
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[66
+
+ <./PCA/IMG_3545.jpg>]
+<PCA/IMG_3546.jpg, id=2467, 1674.255pt x 943.525pt>
+File: PCA/IMG_3546.jpg Graphic file (type jpg)
+<use PCA/IMG_3546.jpg>
+Package pdftex.def Info: PCA/IMG_3546.jpg  used on input line 739.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 739
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[67
+
+ <./PCA/IMG_3546.jpg>]
+<PCA/IMG_3547.jpg, id=2505, 1674.255pt x 943.525pt>
+File: PCA/IMG_3547.jpg Graphic file (type jpg)
+<use PCA/IMG_3547.jpg>
+Package pdftex.def Info: PCA/IMG_3547.jpg  used on input line 750.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 750
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[68
+
+ <./PCA/IMG_3547.jpg>]
+<PCA/IMG_3549.jpg, id=2541, 1674.255pt x 943.525pt>
+File: PCA/IMG_3549.jpg Graphic file (type jpg)
+<use PCA/IMG_3549.jpg>
+Package pdftex.def Info: PCA/IMG_3549.jpg  used on input line 761.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 761
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[69
+
+ <./PCA/IMG_3549.jpg>]
+<PCA/IMG_3550.jpg, id=2577, 1674.255pt x 943.525pt>
+File: PCA/IMG_3550.jpg Graphic file (type jpg)
+<use PCA/IMG_3550.jpg>
+Package pdftex.def Info: PCA/IMG_3550.jpg  used on input line 772.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 772
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[70
+
+ <./PCA/IMG_3550.jpg>]
+<PCA/IMG_3551.jpg, id=2613, 1674.255pt x 943.525pt>
+File: PCA/IMG_3551.jpg Graphic file (type jpg)
+<use PCA/IMG_3551.jpg>
+Package pdftex.def Info: PCA/IMG_3551.jpg  used on input line 782.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 782
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[71
+
+ <./PCA/IMG_3551.jpg>]
+<PCA/IMG_3552.jpg, id=2650, 1674.255pt x 943.525pt>
+File: PCA/IMG_3552.jpg Graphic file (type jpg)
+<use PCA/IMG_3552.jpg>
+Package pdftex.def Info: PCA/IMG_3552.jpg  used on input line 792.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 792
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[72
+
+ <./PCA/IMG_3552.jpg>]
+<PCA/IMG_3553.jpg, id=2686, 1674.255pt x 943.525pt>
+File: PCA/IMG_3553.jpg Graphic file (type jpg)
+<use PCA/IMG_3553.jpg>
+Package pdftex.def Info: PCA/IMG_3553.jpg  used on input line 802.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 802
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[73
+
+ <./PCA/IMG_3553.jpg>]
+<PCA/IMG_3554.jpg, id=2723, 1674.255pt x 927.465pt>
+File: PCA/IMG_3554.jpg Graphic file (type jpg)
+<use PCA/IMG_3554.jpg>
+Package pdftex.def Info: PCA/IMG_3554.jpg  used on input line 812.
+(pdftex.def)             Requested size: 308.06367pt x 170.6443pt.
+
+Overfull \vbox (3.37035pt too high) detected at line 812
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[74
+
+ <./PCA/IMG_3554.jpg>]
+<PCA/IMG_3555.jpg, id=2760, 1665.22125pt x 927.465pt>
+File: PCA/IMG_3555.jpg Graphic file (type jpg)
+<use PCA/IMG_3555.jpg>
+Package pdftex.def Info: PCA/IMG_3555.jpg  used on input line 822.
+(pdftex.def)             Requested size: 308.06367pt x 171.57834pt.
+
+Overfull \vbox (4.30438pt too high) detected at line 822
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[75
+
+ <./PCA/IMG_3555.jpg>]
+<PCA/IMG_3556.jpg, id=2799, 1674.255pt x 943.525pt>
+File: PCA/IMG_3556.jpg Graphic file (type jpg)
+<use PCA/IMG_3556.jpg>
+Package pdftex.def Info: PCA/IMG_3556.jpg  used on input line 833.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 833
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[76
+
+ <./PCA/IMG_3556.jpg>]
+<PCA/IMG_3557.jpg, id=2835, 1674.255pt x 943.525pt>
+File: PCA/IMG_3557.jpg Graphic file (type jpg)
+<use PCA/IMG_3557.jpg>
+Package pdftex.def Info: PCA/IMG_3557.jpg  used on input line 843.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 843
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[77
+
+ <./PCA/IMG_3557.jpg>]
+<PCA/IMG_3558.jpg, id=2871, 1632.0975pt x 927.465pt>
+File: PCA/IMG_3558.jpg Graphic file (type jpg)
+<use PCA/IMG_3558.jpg>
+Package pdftex.def Info: PCA/IMG_3558.jpg  used on input line 853.
+(pdftex.def)             Requested size: 308.06367pt x 175.05972pt.
+
+Overfull \vbox (7.78577pt too high) detected at line 853
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[78
+
+ <./PCA/IMG_3558.jpg>]
+<PCA/IMG_3559.jpg, id=2911, 1650.165pt x 943.525pt>
+File: PCA/IMG_3559.jpg Graphic file (type jpg)
+<use PCA/IMG_3559.jpg>
+Package pdftex.def Info: PCA/IMG_3559.jpg  used on input line 863.
+(pdftex.def)             Requested size: 308.06367pt x 176.13306pt.
+
+Overfull \vbox (8.8591pt too high) detected at line 863
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[79
+
+ <./PCA/IMG_3559.jpg>]
+<PCA/IMG_3560.jpg, id=2951, 1674.255pt x 943.525pt>
+File: PCA/IMG_3560.jpg Graphic file (type jpg)
+<use PCA/IMG_3560.jpg>
+Package pdftex.def Info: PCA/IMG_3560.jpg  used on input line 873.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 873
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[80
+
+ <./PCA/IMG_3560.jpg>]
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[81
+
+]
+<PCA/IMG_3562.jpg, id=3026, 1674.255pt x 943.525pt>
+File: PCA/IMG_3562.jpg Graphic file (type jpg)
+<use PCA/IMG_3562.jpg>
+Package pdftex.def Info: PCA/IMG_3562.jpg  used on input line 891.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 891
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[82
+
+ <./PCA/IMG_3562.jpg>]
+<PCA/IMG_3563.jpg, id=3062, 1674.255pt x 943.525pt>
+File: PCA/IMG_3563.jpg Graphic file (type jpg)
+<use PCA/IMG_3563.jpg>
+Package pdftex.def Info: PCA/IMG_3563.jpg  used on input line 901.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 901
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[83
+
+ <./PCA/IMG_3563.jpg>]
+<PCA/IMG_3564.jpg, id=3098, 1674.255pt x 943.525pt>
+File: PCA/IMG_3564.jpg Graphic file (type jpg)
+<use PCA/IMG_3564.jpg>
+Package pdftex.def Info: PCA/IMG_3564.jpg  used on input line 911.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 911
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[84
+
+ <./PCA/IMG_3564.jpg>]
+<PCA/IMG_3565.jpg, id=3135, 1674.255pt x 928.46875pt>
+File: PCA/IMG_3565.jpg Graphic file (type jpg)
+<use PCA/IMG_3565.jpg>
+Package pdftex.def Info: PCA/IMG_3565.jpg  used on input line 921.
+(pdftex.def)             Requested size: 308.06367pt x 170.82898pt.
+
+Overfull \vbox (3.55502pt too high) detected at line 921
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[85
+
+ <./PCA/IMG_3565.jpg>]
+<PCA/IMG_3566.jpg, id=3175, 1674.255pt x 927.465pt>
+File: PCA/IMG_3566.jpg Graphic file (type jpg)
+<use PCA/IMG_3566.jpg>
+Package pdftex.def Info: PCA/IMG_3566.jpg  used on input line 932.
+(pdftex.def)             Requested size: 308.06367pt x 170.6443pt.
+
+Overfull \vbox (3.37035pt too high) detected at line 932
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[86
+
+ <./PCA/IMG_3566.jpg>]
+<PCA/IMG_3567.jpg, id=3211, 1674.255pt x 943.525pt>
+File: PCA/IMG_3567.jpg Graphic file (type jpg)
+<use PCA/IMG_3567.jpg>
+Package pdftex.def Info: PCA/IMG_3567.jpg  used on input line 942.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 942
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[87
+
+ <./PCA/IMG_3567.jpg>]
+<PCA/IMG_3568.jpg, id=3247, 1674.255pt x 943.525pt>
+File: PCA/IMG_3568.jpg Graphic file (type jpg)
+<use PCA/IMG_3568.jpg>
+Package pdftex.def Info: PCA/IMG_3568.jpg  used on input line 952.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 952
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[88
+
+ <./PCA/IMG_3568.jpg>]
+<PCA/IMG_3569.jpg, id=3284, 1674.255pt x 943.525pt>
+File: PCA/IMG_3569.jpg Graphic file (type jpg)
+<use PCA/IMG_3569.jpg>
+Package pdftex.def Info: PCA/IMG_3569.jpg  used on input line 962.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 962
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[89
+
+ <./PCA/IMG_3569.jpg>]
+<PCA/IMG_3570.jpg, id=3320, 1674.255pt x 943.525pt>
+File: PCA/IMG_3570.jpg Graphic file (type jpg)
+<use PCA/IMG_3570.jpg>
+Package pdftex.def Info: PCA/IMG_3570.jpg  used on input line 972.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 972
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[90
+
+ <./PCA/IMG_3570.jpg>]
+<PCA/IMG_3571.jpg, id=3356, 1674.255pt x 943.525pt>
+File: PCA/IMG_3571.jpg Graphic file (type jpg)
+<use PCA/IMG_3571.jpg>
+Package pdftex.def Info: PCA/IMG_3571.jpg  used on input line 983.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 983
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[91
+
+ <./PCA/IMG_3571.jpg>]
+<PCA/IMG_3572.jpg, id=3394, 1674.255pt x 943.525pt>
+File: PCA/IMG_3572.jpg Graphic file (type jpg)
+<use PCA/IMG_3572.jpg>
+Package pdftex.def Info: PCA/IMG_3572.jpg  used on input line 993.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 993
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[92
+
+ <./PCA/IMG_3572.jpg>]
+<PCA/IMG_3573.jpg, id=3430, 1674.255pt x 943.525pt>
+File: PCA/IMG_3573.jpg Graphic file (type jpg)
+<use PCA/IMG_3573.jpg>
+Package pdftex.def Info: PCA/IMG_3573.jpg  used on input line 1003.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1003
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[93
+
+ <./PCA/IMG_3573.jpg>]
+<PCA/IMG_3574.jpg, id=3466, 1674.255pt x 943.525pt>
+File: PCA/IMG_3574.jpg Graphic file (type jpg)
+<use PCA/IMG_3574.jpg>
+Package pdftex.def Info: PCA/IMG_3574.jpg  used on input line 1013.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1013
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[94
+
+ <./PCA/IMG_3574.jpg>]
+<PCA/IMG_3575.jpg, id=3502, 1674.255pt x 929.4725pt>
+File: PCA/IMG_3575.jpg Graphic file (type jpg)
+<use PCA/IMG_3575.jpg>
+Package pdftex.def Info: PCA/IMG_3575.jpg  used on input line 1023.
+(pdftex.def)             Requested size: 308.06367pt x 171.01367pt.
+
+Overfull \vbox (3.73972pt too high) detected at line 1023
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[95
+
+ <./PCA/IMG_3575.jpg>]
+<PCA/IMG_3576.jpg, id=3542, 1674.255pt x 927.465pt>
+File: PCA/IMG_3576.jpg Graphic file (type jpg)
+<use PCA/IMG_3576.jpg>
+Package pdftex.def Info: PCA/IMG_3576.jpg  used on input line 1034.
+(pdftex.def)             Requested size: 308.06367pt x 170.6443pt.
+
+Overfull \vbox (3.37035pt too high) detected at line 1034
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[96
+
+ <./PCA/IMG_3576.jpg>]
+<PCA/IMG_3578.jpg, id=3578, 1674.255pt x 943.525pt>
+File: PCA/IMG_3578.jpg Graphic file (type jpg)
+<use PCA/IMG_3578.jpg>
+Package pdftex.def Info: PCA/IMG_3578.jpg  used on input line 1046.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1046
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[97
+
+ <./PCA/IMG_3578.jpg>]
+<PCA/IMG_3579.jpg, id=3615, 1674.255pt x 943.525pt>
+File: PCA/IMG_3579.jpg Graphic file (type jpg)
+<use PCA/IMG_3579.jpg>
+Package pdftex.def Info: PCA/IMG_3579.jpg  used on input line 1056.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1056
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[98
+
+ <./PCA/IMG_3579.jpg>]
+<PCA/IMG_3580.jpg, id=3652, 1674.255pt x 943.525pt>
+File: PCA/IMG_3580.jpg Graphic file (type jpg)
+<use PCA/IMG_3580.jpg>
+Package pdftex.def Info: PCA/IMG_3580.jpg  used on input line 1066.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1066
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[99
+
+ <./PCA/IMG_3580.jpg>]
+<PCA/IMG_3581.jpg, id=3688, 1674.255pt x 943.525pt>
+File: PCA/IMG_3581.jpg Graphic file (type jpg)
+<use PCA/IMG_3581.jpg>
+Package pdftex.def Info: PCA/IMG_3581.jpg  used on input line 1076.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1076
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[100
+
+ <./PCA/IMG_3581.jpg>]
+<PCA/IMG_3582.jpg, id=3724, 1674.255pt x 943.525pt>
+File: PCA/IMG_3582.jpg Graphic file (type jpg)
+<use PCA/IMG_3582.jpg>
+Package pdftex.def Info: PCA/IMG_3582.jpg  used on input line 1086.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1086
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[101
+
+ <./PCA/IMG_3582.jpg>]
+<PCA/IMG_3583.jpg, id=3761, 1674.255pt x 943.525pt>
+File: PCA/IMG_3583.jpg Graphic file (type jpg)
+<use PCA/IMG_3583.jpg>
+Package pdftex.def Info: PCA/IMG_3583.jpg  used on input line 1096.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1096
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[102
+
+ <./PCA/IMG_3583.jpg>]
+<PCA/IMG_3584.jpg, id=3797, 1658.195pt x 943.525pt>
+File: PCA/IMG_3584.jpg Graphic file (type jpg)
+<use PCA/IMG_3584.jpg>
+Package pdftex.def Info: PCA/IMG_3584.jpg  used on input line 1106.
+(pdftex.def)             Requested size: 308.06367pt x 175.28363pt.
+
+Overfull \vbox (8.00967pt too high) detected at line 1106
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[103
+
+ <./PCA/IMG_3584.jpg>]
+<PCA/IMG_3585.jpg, id=3837, 1674.255pt x 929.4725pt>
+File: PCA/IMG_3585.jpg Graphic file (type jpg)
+<use PCA/IMG_3585.jpg>
+Package pdftex.def Info: PCA/IMG_3585.jpg  used on input line 1116.
+(pdftex.def)             Requested size: 308.06367pt x 171.01367pt.
+
+Overfull \vbox (3.73972pt too high) detected at line 1116
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[104
+
+ <./PCA/IMG_3585.jpg>]
+<PCA/IMG_3586.jpg, id=3873, 1674.255pt x 928.46875pt>
+File: PCA/IMG_3586.jpg Graphic file (type jpg)
+<use PCA/IMG_3586.jpg>
+Package pdftex.def Info: PCA/IMG_3586.jpg  used on input line 1127.
+(pdftex.def)             Requested size: 308.06367pt x 170.82898pt.
+
+Overfull \vbox (3.55502pt too high) detected at line 1127
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[105
+
+ <./PCA/IMG_3586.jpg>]
+<PCA/IMG_3587.jpg, id=3910, 1674.255pt x 943.525pt>
+File: PCA/IMG_3587.jpg Graphic file (type jpg)
+<use PCA/IMG_3587.jpg>
+Package pdftex.def Info: PCA/IMG_3587.jpg  used on input line 1137.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1137
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[106
+
+ <./PCA/IMG_3587.jpg>]
+<PCA/IMG_3588.jpg, id=3946, 1674.255pt x 943.525pt>
+File: PCA/IMG_3588.jpg Graphic file (type jpg)
+<use PCA/IMG_3588.jpg>
+Package pdftex.def Info: PCA/IMG_3588.jpg  used on input line 1147.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1147
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[107
+
+ <./PCA/IMG_3588.jpg>]
+<PCA/IMG_3589.jpg, id=3982, 1674.255pt x 943.525pt>
+File: PCA/IMG_3589.jpg Graphic file (type jpg)
+<use PCA/IMG_3589.jpg>
+Package pdftex.def Info: PCA/IMG_3589.jpg  used on input line 1157.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1157
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[108
+
+ <./PCA/IMG_3589.jpg>]
+<PCA/IMG_3590.jpg, id=4019, 1674.255pt x 943.525pt>
+File: PCA/IMG_3590.jpg Graphic file (type jpg)
+<use PCA/IMG_3590.jpg>
+Package pdftex.def Info: PCA/IMG_3590.jpg  used on input line 1167.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1167
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[109
+
+ <./PCA/IMG_3590.jpg>]
+<PCA/IMG_3591.jpg, id=4056, 1674.255pt x 943.525pt>
+File: PCA/IMG_3591.jpg Graphic file (type jpg)
+<use PCA/IMG_3591.jpg>
+Package pdftex.def Info: PCA/IMG_3591.jpg  used on input line 1177.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1177
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[110
+
+ <./PCA/IMG_3591.jpg>]
+<PCA/IMG_3592.jpg, id=4092, 1674.255pt x 943.525pt>
+File: PCA/IMG_3592.jpg Graphic file (type jpg)
+<use PCA/IMG_3592.jpg>
+Package pdftex.def Info: PCA/IMG_3592.jpg  used on input line 1187.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1187
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[111
+
+ <./PCA/IMG_3592.jpg>]
+<PCA/IMG_3593.jpg, id=4128, 1674.255pt x 943.525pt>
+File: PCA/IMG_3593.jpg Graphic file (type jpg)
+<use PCA/IMG_3593.jpg>
+Package pdftex.def Info: PCA/IMG_3593.jpg  used on input line 1197.
+(pdftex.def)             Requested size: 308.06367pt x 173.59918pt.
+
+Overfull \vbox (6.32523pt too high) detected at line 1197
+ []
+
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[112
+
+ <./PCA/IMG_3593.jpg>]
+<PCA/IMG_3594.jpg, id=4164, 1674.255pt x 943.525pt>
+File: PCA/IMG_3594.jpg Graphic file (type jpg)
+<use PCA/IMG_3594.jpg>
+Package pdftex.def Info: PCA/IMG_3594.jpg  used on input line 1207.
+(pdftex.def)             Requested size: 171.14764pt x 96.44559pt.
+
+Overfull \hbox (35.95952pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[113
+
+ <./PCA/IMG_3594.jpg>]
+\tf@nav=\write6
+\openout6 = `Legadobx.nav'.
+
+\tf@toc=\write7
+\openout7 = `Legadobx.toc'.
+
+\tf@snm=\write8
+\openout8 = `Legadobx.snm'.
+
+ (./Legadobx.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `Legadobx.out' has not changed.
+(rerunfilecheck)             Checksum: C8D3BBD880F20F78F6CBF88E6B7B2647;558.
+ ) 
+Here is how much of TeX's memory you used:
+ 23216 strings out of 476091
+ 459607 string characters out of 5794081
+ 1897330 words of memory out of 5000000
+ 42854 multiletter control sequences out of 15000+600000
+ 515361 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,15n,122p,444b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on Legadobx.pdf (113 pages, 16600748 bytes).
+PDF statistics:
+ 4281 PDF objects out of 4296 (max. 8388607)
+ 3452 compressed objects within 35 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 3901 words of extra memory for PDF output out of 10000 (max. 10000000)
+
