@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{MODELOS DE REGRESIÓN}{24}{0}{1}
-\beamer@sectionintoc {2}{MODELOS DE REGRESIÓN LOGÍSTICA}{33}{0}{2}
-\beamer@sectionintoc {3}{MODELOS DE K-MEDIAS}{47}{0}{3}
-\beamer@sectionintoc {4}{REDUCCIÓN DE DIMENSIONALIDAD}{66}{0}{4}

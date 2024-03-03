@@ -1,0 +1,118 @@
+
+
+\subsection*{Cálculos}
+\noindent
+En los Ejercicios 1 a 4, encuentra la suma y el producto de los polinomios dados en el anillo polinómico indicado.
+\begin{enumerate}
+	\item $f(x) = 4x - 5$, $g(x) = 2x^2 - 4x + 2$ en $\mathbb{Z}_8[x]$.
+	\\ \textbf{Solución:} \\
+	$f(x) + g(x) = 2x^2 + 5$, \quad $f(x)g(x) = 6x^2 + 4x + 6.$
+	\item $f(x) = x + 1$, $g(x) = x + 1$ en $\mathbb{Z}_2[x]$.
+	\\ \textbf{Solución:} \\
+	¿$f(x) + g(x) = 0,$ \quad $f(x)g(x) = x^2 + 1.$
+	\item $f(x) = 2x^2 + 3x + 4$, $g(x) = 3x^2 + 2x + 3$ en $\mathbb{Z}_6[x]$.
+	\\ \textbf{Solución:} \\
+	$f(x) + g(x) = 5x^2 + 5x + 1,$ \quad $f(x)g(x) = x^3 + 5x.$
+	\item $f(x) = 2x^3 + 4x^2 + 3x + 2$, $g(x) = 3x^4 + 2x + 4$ en $\mathbb{Z}_5[x]$.
+	\\ \textbf{Solución:} \\
+	$f(x) + g(x) = 3x^4 + 2x^3 + 4x^2 + 1,$ \\
+	$f(x)g(x) = x^7 + 2x^6 + 4x^5 + x^3 + 2x^2 + x + 3.$
+	
+	\item ¿Cuántos polinomios hay de grado $\leq 3$ en $\mathbb{Z}_2[x]$? (Incluye 0.)
+	\\ \textbf{Solución:} \\
+	Un polinomio de la forma  $ax^3 + bx^2 + cx + d$ , donde cada $a, b, c, d$  puede ser  $0$  o  $1$. 
+	Por lo tanto, hay  $2 \cdot 2 \cdot 2 \cdot 2 = 16$  polinomios de este tipo en total.
+	\item ¿Cuántos polinomios hay de grado $\leq 2$ en $\mathbb{Z}_5[x]$? (Incluye 0.)
+	\\ \textbf{Solución:} \\
+	Un polinomio de la forma  $ax^2 + bx + c$ , donde cada $a, b, c$  puede ser  $0, 1, 2, 3$  o  $4.$
+	Así que hay $5 \cdot 5 \cdot 5 = 125$  polinomios de este tipo en total.
+\end{enumerate}
+En los Ejercicios 7 y 8, $F = E = \mathbb{C}$ en el Teorema 22.4. Calcula para el homomorfismo de evaluación indicado.
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	\item $\phi_2(x^2 + 3) $.
+	\\ \textbf{Solución:} \\
+	$\phi_2(x^2 + 3) = 2^2 + 3 = 7$
+	\item $\phi_i(2x^3 - x^2 + 3x + 2)$.
+	\\ \textbf{Solución:}
+	$\phi_i(2x^3 - x^2 + 3x + 2) = 2 \cdot 1^3 - 1 \cdot 1^2 + 3 \cdot 1 + 2 = 4$
+\end{enumerate}
+\noindent
+En los Ejercicios 9 al 11, $F = E = \mathbb{Z}_7$ en el Teorema 22.4. Calcula para el homomorfismo de evaluación indicado.
+\begin{enumerate}
+	\setcounter{enumi}{8}
+	\item $\phi_3[(x^4 + 2x)(x^3 - 3x^2 + 3)]$.
+	\\ \textbf{Solución:} 
+	\begin{align*}
+		& \phi_3[(x^4 + 2x)(x^3 - 3x^2 + 3)] \\
+		& = \phi_3(x^4 + 2x) \cdot \phi_3(x^3 - 3x^2 + 3) \\
+		& = (3^4 + 6) \cdot (3^3 - 3 \cdot 3^2 + 3) \\
+		& = (4 + 6) \cdot (3) = 2.
+	\end{align*}
+	\item $\phi_5[(x^3 + 2)(4x^2 + 3)(x^7 + 3x^2 + 1)]$.
+	\\ \textbf{Solución:} 
+	\begin{align*}
+		&  \phi_5[(x^3 + 2)(4x^2 + 3)(x^7 + 3x^2 + 1)] \\
+		&= \phi_5(x^3 + 2) \cdot \phi_5(4x^2 + 3) \cdot \phi_5(x^7 + 3x^2 + 1) \\
+		& = (5^3 + 2) \cdot (4 \cdot 5^2 + 3) \cdot (5^7 + 3 \cdot 5^2 + 1) \\
+		& = (6 + 2) \cdot (2 + 3) \cdot (1 + 5 + 1) = (1) \cdot (5) \cdot (4) = 6.
+	\end{align*}
+	\item $\phi_4(3x^{106} + 5x^k + 2x^{53})$.
+	\\ \textbf{Solución:}
+	\begin{align*}
+		&\phi_4(3x^{106} + 5x^{99} + 2x^{53}) \\
+		&= 3 \cdot 4^{106} + 5 \cdot 4^{99} + 2 \cdot 4^{53} \\
+		&= 3 \cdot (1) + 5 \cdot (1) + 2 \cdot (1) = 5 + 5 + 4 = 0.
+	\end{align*}
+\end{enumerate}
+\noindent
+En los Ejercicios 12 al 15, encuentra todas las raíces en el campo finito indicado del polinomio dado con coeficientes en ese campo.
+\begin{enumerate}
+	\setcounter{enumi}{11}
+	\item $x^2 + 1$ en $\mathbb{Z}_2$ tiene 1 como única raíz.
+	\\ \textbf{Solución:} \\
+	$1^{2}+1=0$, pero  $0^2 + 1 = 0$, así que 1 es la única raíz.
+	
+	\item $x^3 + 2x + 2$ en $\mathbb{Z}_7$ tiene 2 y 3 como únicas raíces.
+	\\ \textbf{Solución:} \\
+	Sea  $f(x) = x^3 + 2x + 2$. Entonces,  $f(0) = 2, f(1) = 5, f(2) = 0, f(3) = 0, f(-3) = 4, f(-2) = 4$ y  $f(-1) = 6$, así que 2 y 3 son las únicas raíces.
+	\item $x^5 + 3x^3 + x^2 + 2x$ en $\mathbb{Z}_5$ tiene 0 y 4 como únicas raíces.
+	\\ \textbf{Solución:} \\
+	Sea $f(x) = x^5 + 3x^3 + x^2 + 2x.$ Entonces, $f(0) = 0, f(1) = 2, f(2) = 4, f(-2) = 4,$  y  $f(-1) = 0,$ así que 0 y 4 son las únicas raíces.
+	\item $f(x)g(x)$, donde $f(x) = x^3 + 2x^2 + 5$ y $g(x) = 3x^2 + 2x$ en $\mathbb{Z}_7$ tiene 0, 2 y 4 como únicas raíces.
+	\\ \textbf{Solución:} \\
+	Dado que  $\mathbb{Z}_7$ es un campo,  $f(a)g(a) = 0$ si y solo si $f(a) = 0$  o  $g(a) = 0.$ Sea  $f(x) = x^3 + 2x^2 + 5 $ y  $g(x) = 3x^2 + 2x$ Entonces,  $f(0) = 5, f(1) = 1, f(2) = 0, f(3) = 1, f(-3) = 3, f(-2) = 5,$ y  $f(-1) = 6,$  mientras que  $g(0) = 0, g(1) = 5, g(2) = 2, g(3) = 5,$ $g(-3) = 0, g(-2) = 1,$  y  $g(-1) = 1.$  Por lo tanto, las raíces de  $f(x)g(x)$ son  $0, 2,$  y  $4.$
+	
+	\item Sea $\phi : \mathbb{Z}_8[x] \to \mathbb{Z}_5$ un homomorfismo de evaluación como en el Teorema 22.4. Usa el teorema de Fermat para evaluar $03x^{231} + 3x^{111} - 2x^{53} + 1 = 1$.
+	\\ \textbf{Solución:}
+	\begin{align*}
+		&\phi_3(x^{231} + 3x^{117} - 2x^{53} + 1) \\
+		&= 3^{231} + 3^{118} - 2 \cdot (3^{53}) + 1 \\
+		&= (3^4)^{57} + (3^4)^{29} - 2 \cdot (3^4)^{13} + 1 \\
+		&= 81^{57} + 81^{29} - 2 \cdot 81^{13} + 1 \\
+		&= (80 + 1)^{57} + (80 + 1)^{29} - 2 \cdot (80 + 1)^{13} + 1 \\
+		&= 2 + 4 - 1 + 1 = 6.
+	\end{align*}
+	\item Usa el teorema de Fermat para encontrar todas las raíces en $\mathbb{Z}_5$ de $2x^{219} + 3x^{18} + 2x^5 + 3x^{44}$.
+	\\ \textbf{Solución:} \\
+	Sea  $f(x) = 2x^{219} + 3x^{74} + 2x^{57} + 3x^{44}.$
+	Entonces, $f(0) = 0, f(1) = 2 + 3 + 2 + 3 = 0,$
+	$f(2) = 1 + 2 + 4 + 3 = 0, f(-2) = 4 + 2 + 1 + 3 = 0,$ 
+	y  $f(-1) = 3 + 3 + 3 + 3 = 2.$ Por lo tanto, las raíces de  $f(x)$ son  $0, 1, 2, $ y  $3$.
+	
+	
+	\subsection*{Ejercicio 24}
+	
+	Sea \(f(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0\) y \(g(x) = b_mx^m + b_{m-1}x^{m-1} + \ldots + b_1x + b_0\) polinomios en \(D[x]\) con \(a_n\) y \(b_m\) ambos distintos de cero. Dado que \(D\) es un dominio integral, sabemos que \(a_n b_m \neq 0\), por lo que \(f(x)g(x)\) es distinto de cero porque su término de mayor grado tiene coeficiente \(a_n b_m\). Según se afirma en el texto, \(D[x]\) es un anillo conmutativo con unidad, y hemos demostrado que no tiene divisores de cero, por lo que es un dominio integral.
+	
+	\subsection*{Ejercicio 25}
+	
+	\begin{enumerate}
+		\item Las unidades en \(D[x]\) son las unidades en \(D\), ya que un polinomio de grado \(n\) multiplicado por un polinomio de grado \(m\) da como resultado un polinomio de grado \(nm\), como se demostró en el ejercicio anterior. Por lo tanto, un polinomio de grado 1 no puede ser multiplicado por nada en \(D[x]\) para dar 1, que es un polinomio de grado 0.
+		\item Son las unidades en \(\mathbb{Z}\), es decir, 1 y -1.
+		\item Son las unidades en \(\mathbb{Z}_7\), es decir, 1, 2, 3, 4, 5 y 6.
+	\end{enumerate}
+	
+
+\end{enumerate}
+

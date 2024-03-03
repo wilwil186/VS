@@ -1,0 +1,95 @@
+\documentclass{book} %libro xd
+\usepackage{cancel}
+\usepackage[reqno]{amsmath} % Paquete para el manejo de expresiones matemáticas [reqno], [leqno] y [fleqn]
+\usepackage{amsthm}
+\usepackage{amssymb,amsmath,latexsym} %Paquete para llamar símbolos matemáticos
+\usepackage{tabularx,booktabs,ragged2e}
+\usepackage{amsfonts}
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx} %paquete para el manejo de transformaciones geométricas de imagénes
+\usepackage{color} %paquete para el manejo de color en textos.
+%\usepackage[utf8]{inputenc} %paquete para el manejo de caracteres acentuados
+\usepackage[french,spanish]{babel} %paquete que genera documentos en diferentes idiomas
+\usepackage{enumerate}
+\usepackage{multicol} % Paquete para modificar el número de columnas
+\usepackage{layout} % Paquete  para revisar los valores de 
+\usepackage{verbatim}
+\usepackage[all]{xy} 
+\usepackage{pgfplots}
+%graficos
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+%graficos
+\pagestyle{myheadings}  % Estilo de página
+%\pagenumbering{arabic} % Estilo de numéración
+\hoffset1cm
+\newcounter{Teorema}
+\newcommand{\Teorema}{\stepcounter{Teorema}{\bf Teorema \theTeorema.} }
+\DeclareMathOperator{\arcsec}{arcsec} % Creación de nuevos comandos en latex
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\Hom}{Hom}
+\setcounter{MaxMatrixCols}{15}
+\allowdisplaybreaks % Control de cambios de página en alineaciones
+\decimalpoint
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+%\renewcommand{\theequation}{\theparentequation\arabic{equation}}
+%% Nuevos teoremas
+\theoremstyle{plain}  % Requiere el paquete amsthm
+\newtheorem{thm}{Teorema}[]
+\newtheorem*{Dem}{Demostración}
+\newtheorem{Corol}[thm]{Colorario}
+\newtheorem{Prop}[thm]{Proposición}
+\newtheorem{axiom[thm]}{Axioma}
+\newtheorem{conj}{Conjetura}
+\newtheorem{Def}{Definición}[section]
+\newtheorem{Ej}{Ejemplo}[section]
+\newtheorem{notacion}[Def]{Notación}
+\newtheorem{nota}[Def]{Nota}
+\renewcommand{\qedsymbol}{$\heartsuit$}
+\providecommand{\abs}[1]{\lvert#1\rvert} %valor absoluto
+\providecommand{\norm}[1]{\lVert#1\rVert} %norma
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\usepackage{pgfplots}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{geometry}
+\spanishdecimal{.}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{bbding}
+\usepackage{stackrel}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{multicol}
+\usepackage{bbding}
+%\usepackage[manejador]{color,graphicx}
+
+%colores 
+\definecolor{dorado}{cmyk}{0,0.10,0.84,0}
+\definecolor{melon}{cmyk}{0,0.29,0.84,0}
+\definecolor{naranja}{cmyk}{0,0.42,1,0}
+\definecolor{durazno}{cmyk}{0,0.46,0.50,0}
+\definecolor{fresa}{cmyk}{0,1,0.50,0}
+\definecolor{ladrillo}{cmyk}{0,0.77,0.87,0}
+\definecolor{violeta}{cmyk}{0.07,0.90,0,0.34}
+\definecolor{purpura}{cmyk}{0.45,0.86,0,0}
+\definecolor{aguamarina}{cmyk}{0.85,0,0.33,0}
+\definecolor{esmeralda}{cmyk}{0.91,0,0.88,0.12}
+\definecolor{pino}{cmyk}{0.92,0,0.59,0.25}
+\definecolor{oliva}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{canela}{cmyk}{0.14,0.42,0.56,0}
+\definecolor{cafe}{cmyk}{0,0.81,1,0.60}
+\definecolor{marron}{cmyk}{0,0.72,1,0.45}
+\definecolor{gris-claro}{cmyk}{0,0,0,0.30}
+\definecolor{gris-oscuro}{cmyk}{0,0,0,0.50}
+
+\usepackage[rightcaption]{sidecap}

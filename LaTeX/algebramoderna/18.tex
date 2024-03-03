@@ -1,0 +1,377 @@
+\section*{Ejercicios 18}
+
+\subsection*{Cálculos}
+\noindent
+En los ejercicios del 1 al 6, calcula el producto en el anillo dado.
+
+\begin{enumerate}
+	\item $(12)(16)$ en $\mathbb{Z}_{24}$ \textbf{Solución:} 0
+	\item $(16)(3)$ en $\mathbb{Z}_{32}$ \textbf{Solución:} 16
+	\item $(11)(-4)$ en $\mathbb{Z}_{15}$ \textbf{Solución:} 1
+	\item $(20)(-8)$ en $\mathbb{Z}_{26}$ \textbf{Solución:} 22
+	\item $(2,3)(3,5)$ en $\mathbb{Z}_5 \times \mathbb{Z}_9$ \textbf{Solución:} $(1,6)$
+	\item $(-3,5)(2,-4)$ en $\mathbb{Z}_4 \times \mathbb{Z}_{11}$ \textbf{Solución:} $(2,2)$
+\end{enumerate}
+En los ejercicios del 7 al 13, decide si las operaciones de suma y multiplicación están definidas (cerradas) en el conjunto, y da una estructura de anillo. Si no se forma un anillo, explica por qué. Si se forma un anillo, indica si es conmutativo, si tiene unidad y si es un campo.
+
+\begin{enumerate}
+	\setcounter{enumi}{6}
+	\item $n\mathbb{Z}$ con la suma y multiplicación usuales \\
+	\textbf{Solución:}
+	Sí, $nZ$ para $n \in Z^+$ es un anillo conmutativo, pero sin elemento de unidad a menos que $n = 1$, y no es un campo.
+	\item $\mathbb{Z}^+$ con la suma y multiplicación usuales \\
+	\textbf{Solución:}
+	No, $Z^+$ no es un anillo; no hay identidad para la adición.
+	\item $\mathbb{Z} \times \mathbb{Z}$ con la suma y multiplicación por componentes \\
+	\textbf{Solución:}
+	Sí, $Z \times Z$ es un anillo conmutativo con unidad $(1, 1)$, pero no es un campo porque $(2, 0)$ no tiene inverso multiplicativo.
+	\item $2\mathbb{Z} \times \mathbb{Z}$ con la suma y multiplicación por componentes \\
+	\textbf{Solución:} Sí, $2Z \times Z$ es un anillo conmutativo, pero sin elemento de unidad, y no es un campo.
+	\item Sea \(R = \{a + b\sqrt{2} \mid a, b \in \mathbb{Z}\}\) con las operaciones de suma y multiplicación usuales. \\
+	\textbf{Solución:}
+	Sí, \(R = \{a + b\sqrt{2} \mid a, b \in \mathbb{Z}\}\) es un anillo conmutativo con unidad, pero no es un campo porque el número 2 no tiene inverso multiplicativo.
+	\item Sea \(R = \{a + b\sqrt{2} \mid a, b \in \mathbb{Q}\}\) con las operaciones de suma y multiplicación usuales. \\
+	\textbf{Solución:}
+	Sí, \(R = \{a + b\sqrt{2} \mid a, b \in \mathbb{Q}\}\) es un anillo conmutativo con unidad y es un campo porque \(\sqrt{2}\) tiene inverso multiplicativo.
+	\item Conjunto de todos los números complejos imaginarios puros \(ri\) para \(r \in \mathbb{R}\) con las operaciones de suma y multiplicación usuales. \\
+	\textbf{Solución:}
+	No, \(R_i\) no está cerrado bajo la multiplicación.
+\end{enumerate}
+\noindent
+En los Ejercicios del 14 al 19, Describa todas las unidades en el anillo dado:
+\begin{enumerate}
+	\setcounter{enumi}{13}
+	\item $\mathbb{Z}$
+	\textbf{Solución:} En \(\mathbb{Z}\): 1 y -1.
+	\item \(\mathbb{Z} \times \mathbb{Z}\)
+	\textbf{Solución:} En \(\mathbb{Z} \times \mathbb{Z}\): \((1, 1)\), \((1, -1)\), \((-1, 1)\), y \((-1, -1)\).
+	\item \(\mathbb{Z}_5\)
+	\textbf{Solución:} En  \(\mathbb{Z}_5\): 1, 2, 3, y 4.
+	\item \(\mathbb{Q}\)
+	\textbf{Solución:} En \(\mathbb{Q}\): Todos los elementos no nulos.
+	\item \(\mathbb{Z} \times \mathbb{Q} \times \mathbb{Z}\)
+	\textbf{Solución:} En \(\mathbb{Z} \times \mathbb{Q} \times \mathbb{Z}\): \((1, q, 1)\), \((-1, q, 1)\), \((1, q, -1)\), y \((-1, q, -1)\) para cualquier \(q \in \mathbb{Q}\) no nulo.
+	\item \(\mathbb{Z}_4\)
+	\textbf{Solución:} En \(\mathbb{Z}_4\): 1 y 3.
+\end{enumerate}
+
+\begin{enumerate}
+	\setcounter{enumi}{19}
+	\item Considere el anillo de matrices \(M_2(\mathbb{Z}_2)\).
+	\begin{enumerate}
+		\item Encuentre el orden del anillo, es decir, el número de elementos en él.
+		\item Liste todas las unidades en el anillo.
+	\end{enumerate}
+	\textbf{Solución:}
+	\begin{enumerate}
+		\item El orden del anillo es \(2^4 = 16\).
+		\item Las unidades son las matrices \(I_2\), \(\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}\), \(\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\), \(\begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}\), \(\begin{bmatrix} 0 & 1 \\ 0 & 1 \end{bmatrix}\), y \(\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}\).
+	\end{enumerate}
+	\item Si es posible, proporcione un ejemplo de un homomorfismo \(\phi: R \rightarrow R'\), donde \(R\) y \(R'\) son anillos con unidad \(1_R \neq 0_R\) y \(1_{R'} \neq 0_{R'}\), y donde \(\phi(1_R) \neq 0_{R'}\) y \(\phi(1_R) \neq 1_{R'}\). \\
+	\textbf{Solución:}
+	(Ver respuesta en el texto).
+	\item (Álgebra lineal) Considere la aplicación \(\text{det}\) de \(M_n(\mathbb{M})\) en \(\mathbb{M}\), donde \(\text{det}(A)\) es el determinante de la matriz \(A\) para \(A \in M_n(\mathbb{M})\). ¿Es \(\text{det}\) un homomorfismo de anillos? ¿Por qué o por qué no? \\
+	\textbf{Solución:}
+	Debido a que \(\text{det}(A + B)\) no tiene por qué ser igual a \(\text{det}(A) + \text{det}(B)\), se concluye que \(\text{det}\) no es un homomorfismo de anillos. Por ejemplo, \(\text{det}(I_n + I_n) = 2^n\), pero \(\text{det}(I_n) + \text{det}(I_n) = 1 + 1 = 2\).
+	\item Describa todos los homomorfismos de anillos de \(\mathbb{Z}\) en \(\mathbb{Z}\).  \\
+	\textbf{Solución:}
+	Sea \(\phi: \mathbb{Z} \rightarrow \mathbb{Z}\) un homomorfismo de anillos. Debido a que \(1^2 = 1\), se deduce que \(\phi(1)\) debe ser un entero cuyo cuadrado es igual a sí mismo, es decir, 0 o 1. Si \(\phi(1) = 1\), entonces \(\phi(n) = \phi(n \cdot 1) = n\), por lo que \(\phi\) es la identidad en \(\mathbb{Z}\). Si \(\phi(1) = 0\), entonces \(\phi(n) = \phi(n \cdot 1) = 0\), lo que también da un homomorfismo. Por lo tanto, hay dos homomorfismos posibles.
+	\item Describa todos los homomorfismos de anillos de \(\mathbb{Z}\) en \(\mathbb{Z} \times \mathbb{Z}\). \\
+	\textbf{Solución:}
+	Como en la solución anterior, se concluye que hay cuatro homomorfismos posibles: \(\phi_1(n) = (0, 0)\), \(\phi_2(n) = (n, 0)\), \(\phi_3(n) = (0, n)\), y \(\phi_4(n) = (n, n)\).
+	\item Describa todos los homomorfismos de anillos de \(\mathbb{Z} \times \mathbb{Z}\) en \(\mathbb{Z}\). \\
+	\textbf{Solución:}
+	Similar a las soluciones anteriores, hay cuatro homomorfismos posibles: \(\phi_1(n, m) = 0\), \(\phi_2(n, m) = n\), \(\phi_3(n, m) = m\), y \(\phi_4(n, m) = n + m\). Sin embargo, \(\phi_4\) no es un homomorfismo porque \(\phi_4(n, m) \neq (n + m) \cdot (1, 1) = (n + m, n + m)\) para algunos \(n, m \in \mathbb{Z}\).
+	\item ¿Cuántos homomorfismos hay de \(\mathbb{Z} \times \mathbb{Z} \times \mathbb{Z}\) en \(\mathbb{Z}\)? \\
+	\textbf{Solución:}
+	Similar a la solución anterior, hay cuatro homomorfismos posibles: \(\phi_1(n, m, p) = 0\), \(\phi_2(n, m, p) = n\), \(\phi_3(n, m, p) = m\), y \(\phi_4(n, m, p) = p\).
+	\item Considere la solución de la ecuación \(X^2 = I_3\) en el anillo \(M_3(\mathbb{R})\). Si \(X^2 = I_3\) implica \(X^2 - I_3 = 0\), la matriz cero, entonces factorizando, obtenemos \((X - I_3)(X + I_3) = 0\), de donde \(X = I_3\) o \(X = -I_3\). ¿Es correcto este razonamiento? Si no lo es, señale el error y, si es posible, proporcione un contraejemplo para la conclusión. \\
+	\textbf{Solución:}
+	(Ver respuesta en el texto).
+	\item Encuentre todas las soluciones de la ecuación \(x^2 + x - 6 = 0\) en el anillo \(\mathbb{Z}_{14}\) mediante la factorización del polinomio cuadrático. Compare con el Ejercicio 27. \\
+	\textbf{Solución:}
+	Las soluciones de \(x^2 + x - 6 = 0\) en \(\mathbb{Z}_{14}\) son \(x = 2\), \(x = 4\), \(x = 9\), y \(x = 11\).
+\end{enumerate}
+
+
+\subsection*{Conceptos}
+\noindent
+En los Ejercicios 29 y 30, corrige la definición del término en cursiva sin hacer referencia al texto, si es necesario, de manera que esté en una forma aceptable para su publicación.
+\begin{enumerate}
+	\setcounter{enumi}{28}
+	\item Un \textit{campo} $F$ es un anillo con unidad no nula tal que el conjunto de elementos no nulos de $F$ es un grupo bajo la multiplicación.
+	\\ \textbf{Solución:}
+	La definición es incorrecta. Inserta la palabra  ``conmutativo'' antes de ``anillo'' o ``grupo''.
+	Un campo $F$ es un anillo conmutativo con unidad no nula tal que el conjunto de elementos no nulos de $F$ es un grupo bajo la multiplicación.
+	\item Una unidad en un anillo es un elemento con inverso multiplicativo.
+	\\ \textbf{Solución:}
+	La definición es incorrecta. No hemos definido ningún concepto de magnitud para elementos de un anillo.
+	Una unidad en un anillo con unidad no nula es un elemento que tiene un inverso multiplicativo.
+	\item 	Da un ejemplo de un anillo que tenga dos elementos $a$ y $b$ tales que $ab = 0$, pero ninguno de los dos es cero.
+	\\ \textbf{Solución:}
+	En el anillo $\mathbb{Z}_6$, tenemos $2 \cdot 3 = 0$, así que tomamos $a = 2$ y $b = 3$.
+	\item Da un ejemplo de un anillo con unidad $1\not=0$ que tenga un subanillo con unidad no nula $1'\not=1$. [Pista: Considera un producto directo o un subanillo de $\mathbb{Z}_{6}$.]
+	\\ \textbf{Solución:}
+	$\mathbb{Z} \times \mathbb{Z}$ tiene unidad $(1, 1)$; sin embargo, el subanillo $\mathbb{Z} \times \{0\}$ tiene unidad $(1, 0)$. Además, $\mathbb{Z}_6$ tiene unidad 1, mientras que el subanillo $\{0, 2, 4\}$ tiene unidad 4 y el subanillo $\{0, 3\}$ tiene unidad 3.
+	\item Marca cada afirmación como verdadera o falsa:
+	\begin{enumerate}
+		\item Todo campo es también un anillo. 
+		\textbf{Verdadero}
+		\item Todo anillo tiene una identidad multiplicativa.
+		\textbf{Falso}
+		\item Todo anillo con unidad tiene al menos dos unidades.
+		\textbf{falso}
+		\item Todo anillo con unidad tiene a lo sumo dos unidades.
+		\textbf{Falso}
+		\item Es posible que un subconjunto de algún campo sea un anillo pero no un subcampo, bajo las operaciones inducidas.
+		\textbf{Verdadero}
+		\item Las leyes distributivas para un anillo no son muy importantes.
+		\textbf{Falso}
+		\item La multiplicación en un campo es conmutativa.
+		\textbf{Verdadero}
+		\item Los elementos no nulos de un campo forman un grupo bajo la multiplicación en el campo.
+		\textbf{Verdadero}
+		\item La suma en todo anillo es conmutativa.
+		\textbf{Falso}
+		\item Todo elemento en un anillo tiene un inverso aditivo.
+		\textbf{Verdadero}
+	\end{enumerate}
+\end{enumerate}
+
+\subsection*{Teoría}
+\begin{enumerate}
+	\setcounter{enumi}{33}
+	\item Demuestra que la multiplicación definida en el conjunto $F$ de funciones en el Ejemplo 18.4 satisface los axiomas M2 y M3 para un anillo. 
+	\\ \textbf{Solución:}
+	Sean $f, g, h \in F$. Ahora, $[(fg)h](x) = [(fg)(x)]h(x) = [f(x)g(x)]h(x)$. Debido a que la multiplicación en $R$ es asociativa, continuamos con $[f(x)g(x)]h(x) = f(x)[g(x)h(x)] = f(x)[(gh)(x)] = [f(gh)](x)$. Así que $(fg)h$ y $f(gh)$ tienen el mismo valor en cada $x \in R$, por lo que son la misma función y el axioma 2 se cumple. Para el axioma 3, usamos las leyes distributivas en $R$ y tenemos $[f(g + h)](x) = f(x)[(g + h)(x)] = f(x)[g(x) + h(x)] = f(x)g(x) + g(x)h(x) = (fg)(x) + (fh)(x) = (fg + fh)(x)$, por lo que $f(g + h)$ y $fg + fh$ son la misma función y se cumple la ley distributiva izquierda. La ley distributiva derecha se demuestra de manera similar.
+	\item Muestra que el mapa de evaluación $\Phi$ del Ejemplo 18.10 satisface el requisito multiplicativo para un homomorfismo.
+	\\ \textbf{Solución:}
+	Para $f, g \in F$, tenemos $\Phi_a(f + g) = (f + g)(a) = f(a) + g(a) = \Phi_a(f) + \Phi_a(g)$. Pasando a la multiplicación, tenemos $\Phi_a(fg) = (fg)(a) = f(a)g(a) = \Phi_a(f)\Phi_a(g)$. Así que $\Phi_a$ es un homomorfismo.
+	\item Completa el argumento esbozado después de las Definiciones 18.12 para demostrar que el isomorfismo proporciona una relación de equivalencia en una colección de anillos.
+	\\ \textbf{Solución:}Solo necesitamos verificar la propiedad multiplicativa.
+	\begin{itemize}
+		\item Reflexiva: El mapa de identidad $\iota$ de un anillo $R$ en sí mismo satisface $\iota(ab) = ab = \iota(a)\iota(b)$, por lo que se cumple la propiedad reflexiva.
+		\item Simétrica: Sea $\phi: R \to R_0$ un isomorfismo. Sabemos de la teoría de grupos que $\phi^{-1}: R_0 \to R$ es un isomorfismo del grupo aditivo de $R_0$ con el grupo aditivo de $R$. Para $\phi(a), \phi(b) \in R_0$, tenemos $\phi^{-1}(\phi(a)\phi(b)) = \phi^{-1}(\phi(ab)) = ab = \phi^{-1}(\phi(a))\phi^{-1}(\phi(b))$.
+		\item Transitiva: Sean $\phi: R \to R_0$ y $\psi: R_0 \to R_{00}$ isomorfismos de anillos. El Ejercicio 27 de la Sección 3 muestra que $\psi\phi$ es un isomorfismo tanto de la estructura binaria aditiva como de la estructura binaria multiplicativa. Así que $\psi\phi$ es nuevamente un isomorfismo de anillos.
+	\end{itemize}
+	\item Muestra que si $U$ es la colección de todas las unidades en un anillo $(R, +, \cdot)$ con unidad, entonces $(U, \cdot)$ es un grupo. [Advertencia: Asegúrate de mostrar que $U$ está cerrado bajo la multiplicación.]
+	\\ \textbf{Solución:}
+	Sean $u, v \in U$. Entonces existen $s, t \in R$ tales que $us = su = 1$ y $vt = tv = 1$. Estas ecuaciones muestran que $s$ y $t$ también son unidades en $U$. Luego, $(ts)(uv) = t(su)v = t1v = tv = 1$ y $(uv)(ts) = u(vt)s = u1s = 1$, por lo que $uv$ es nuevamente una unidad y $U$ está cerrado bajo la multiplicación. Por supuesto, la multiplicación en $U$ es asociativa porque la multiplicación en $R$ es asociativa. La ecuación $1 \cdot 1 = 1$ muestra que $1$ es una unidad. Mostramos anteriormente que una unidad $u$ en $U$ tiene un inverso multiplicativo $s$ en $U$. Así que $U$ es un grupo bajo la multiplicación.
+	
+	\item Muestra que $a^2 - b^2 = (a + b)(a - b)$ para todo $a$ y $b$ en un anillo $R$ si y solo si $R$ es conmutativo.
+	\\ \textbf{Solución:}
+	
+	Ahora $(a + b)(a - b) = a^2 + ba - ab - b^2$ es igual a $a^2 - b^2$ si y solo si $ba - ab = 0$, es decir, si y solo si $ba = ab$. Pero $ba = ab$ para todo $a, b \in R$ si y solo si $R$ es conmutativo.
+	
+	\item  Sea $(R, +)$ un grupo abeliano. Muestra que $(R, +, \cdot)$ es un anillo si definimos $ab = 0$ para todo $a, b \in R$.
+	\\ \textbf{Solución:}
+	
+	Solo necesitamos verificar los axiomas 2 y 3 del anillo. Para el axioma 2, tenemos $(ab)c = 0c = 0 = a0 = a(bc)$. Para el axioma 3, tenemos $a(b + c) = 0 = 0 + 0 = ab + ac$ y $(a + b)c = 0 = 0 + 0 = ac + bd$.
+	
+	\item Muestra que los anillos $2\mathbb{Z}$ y $3\mathbb{Z}$ no son isomorfos. Muestra que los campos $K$ y $C$ no son isomorfos.
+	\\ \textbf{Solución:}
+	
+	Si $\phi: 2\mathbb{Z} \to 3\mathbb{Z}$ es un isomorfismo, entonces, por teoría de grupos para los grupos aditivos, sabemos que $\phi(2) = 3$ o $\phi(2) = -3$, por lo que $\phi(2n) = 3n$ o $\phi(2n) = -3n$. Supongamos que $\phi(2n) = 3n$. Entonces, $\phi(4) = 6$, mientras que $\phi(2)\phi(2) = (3)(3) = 9$. Así que $\phi(2n) = 3n$ no da un isomorfismo, y un cálculo similar muestra que $\phi(2n) = -3n$ tampoco da un isomorfismo. $R$ y $C$ no son isomorfos porque cada elemento en el campo $C$ es un cuadrado, mientras que $-1$ no es un cuadrado en $R$.
+	
+	\item (Exponentiación de primer año) Sea $p$ un número primo. Muestra que en el anillo $\mathbb{Z}_p$ tenemos $(a + b)^p = a^p + b^p$ para todos los $a, b \in \mathbb{Z}_p$. [Pista: Observa que el desarrollo binómico usual para $(a + b)^n$ es válido en un anillo conmutativo.]
+	\\ \textbf{Solución:}
+	
+	En un anillo conmutativo, tenemos $(a + b)^2 = a^2 + ab + ba + b^2 = a^2 + ab + ab + b^2 = a^2 + 2ab + b^2$. Ahora, el teorema binómico simplemente cuenta la cantidad de cada tipo de producto $a^ib^{n-i}$ que aparece en $(a + b)^n$. Mientras nuestro anillo sea conmutativo, cada término de la suma $(a + b)^n$ se puede escribir como un producto de factores $a$ y $b$ con todos los factores $a$ escritos primero, por lo que la expansión binómica usual es válida en un anillo conmutativo.
+	
+	En $\mathbb{Z}_p$, el coeficiente $i$ de $a^ib^{p-i}$ en la expansión de $(a + b)^p$ es un múltiplo de $p$ si $1 \leq i \leq p - 1$. Debido a que $p \cdot a = 0$ para todo $a \in \mathbb{Z}_p$, vemos que los únicos términos no nulos en la expansión corresponden a $i = 0$ e $i = p$, es decir, $b^p$ y $a^p$.
+	
+	\item Muestra que el elemento de unidad en un subcampo de un campo debe ser la unidad del campo completo, a diferencia del Ejercicio 32 para anillos.
+	\\ \textbf{Solución:}
+	
+	Sea $F$ un campo y supongamos que $u^2 = u$ para $u$ no nulo en $F$. Multiplicando por $u^{-1}$, obtenemos $u = 1$. Esto muestra que $0$ y $1$ son las únicas soluciones de la ecuación $x^2 = x$ en un campo. Ahora, sea $K$ un subcampo de $F$. La unidad de $K$ satisface la ecuación $x^2 = x$ en $K$, y por lo tanto también en $F$, y por lo tanto debe ser la unidad $1$ de $F$.
+	
+	\item Muestra que el inverso multiplicativo de una unidad en un anillo con unidad es único.
+	\\ \textbf{Solución:}
+	
+	Sea $u$ una unidad en un anillo $R$. Supongamos que $su = us = 1$ y $tu = ut = 1$. Entonces $s = s1 = s(ut) = (su)t = 1t = t$. Por lo tanto, el inverso de una unidad es único.
+	
+	\item Un elemento $a$ de un anillo $R$ es idempotente si $a^2 = a$.
+	\begin{itemize}
+		\item[a.] Muestra que el conjunto de todos los elementos idempotentes de un anillo conmutativo está cerrado bajo la multiplicación.
+		\item[b.] Encuentra todos los idempotentes en el anillo $\mathbb{Z}_6 \times \mathbb{Z}_{12}$.
+	\end{itemize}
+	\textbf{Solución:}
+	
+	\begin{itemize}
+		\item[a.] 	Si $a^2 = a$ y $b^2 = b$ y el anillo es conmutativo, entonces $(ab)^2 = abab = aabb = a^2b^2 = ab$, lo que muestra que los idempotentes están cerrados bajo la multiplicación.
+		\item[b.] Probando todos los elementos, encontramos que los idempotentes en $Z6$ son $0$, $1$, $3$ y $4$, mientras que los idempotentes en $Z12$ son $0$, $1$, $4$ y $9$. Por lo tanto, los idempotentes en $Z6 \times Z12$ son:
+		\begin{multicols}{2}
+			\begin{itemize}
+				
+				\item $(0, 0)$
+				\item $(1, 0)$
+				\item $(3, 0)$
+				\item $(4, 0)$
+				\item $(0, 1)$
+				\item $(1, 1)$
+				\item $(3, 1)$
+				\item $(4, 1)$
+				\item $(0, 4)$
+				\item $(1, 4)$
+				\item $(3, 4)$
+				\item $(4, 4)$
+				\item $(0, 9)$
+				\item $(1, 9)$
+				\item $(3, 9)$
+				\item $(4, 9)$
+			\end{itemize}
+		\end{multicols}
+		
+	\end{itemize}
+	
+	\item (Álgebra lineal) Recuerda que para una matriz $A$ de $m \times n$, la traspuesta $A^T$ de $A$ es la matriz cuya $j$-ésima columna es la $j$-ésima fila de $A$. Muestra que si $A$ es una matriz de $m \times n$ tal que $A^TA$ es invertible, entonces la matriz de proyección $P = A(A^TA)^{-1}A^T$ es idempotente en el anillo de matrices $n \times n$.
+	\\ \textbf{Solución:}
+	
+	Tenemos 
+	\begin{align*}
+		P^2 &= [A(A^TA)^{-1}A^T][A(A^TA)^{-1}A^T]\\
+		&= A[(A^TA)^{-1}(A^TA)](A^TA)^{-1}A \\
+		&= AIn(A^TA)^{-1}A^T \\ &= A(A^TA)^{-1}A^T = P
+	\end{align*}
+	
+	
+	\item  Un elemento $a$ de un anillo $R$ es nilpotente si $a^n = 0$ para algún $n \in \mathbb{Z}^+$. Muestra que si $a$ y $b$ son elementos nilpotentes de un anillo conmutativo, entonces $a + b$ también es nilpotente.
+	\\ \textbf{Solución:}
+	
+	Como se explica en la respuesta al Ejercicio 41, la expansión binomial es válida en un anillo conmutativo. Supongamos que $a^n = 0$ y $b^m = 0$ en $R$. Ahora, $(a + b)^{m+n}$ es una suma de términos que contienen como factor $a^i b^{m+n-i}$ para $0 \leq i \leq m + n$. Si $i \geq n$, entonces $a^i = 0$, por lo que cada término con un factor $a^i b^{m+n-i}$ es cero. Por otro lado, si $i < n$, entonces $m + n - i > m$, por lo que $b^{m+n-i} = 0$ y cada término con un factor $a^i b^{m+n-i}$ es cero. Por lo tanto, $(a + b)^{m+n} = 0$, por lo que $a + b$ es nilpotente.
+	
+	\item  Muestra que un anillo $R$ no tiene ningún elemento nilpotente distinto de cero si y solo si $0$ es la única solución de $x^2 = 0$ en $R$.
+	\\ \textbf{Solución:}
+	
+	Si $R$ no tiene elementos nilpotentes no nulos, entonces la única solución de $x^2 = 0$ es $0$, ya que cualquier solución no nula sería un elemento nilpotente. Recíprocamente, supongamos que la única solución de $x^2 = 0$ es $0$ y supongamos que $a \neq 0$ es nilpotente. Sea $n$ el menor entero positivo tal que $a^n = 0$. Si $n$ es par, entonces $a^{n/2} \neq 0$, pero $(a^{n/2})^2 = a^n = 0$, por lo que $a^{n/2}$ es una solución no nula de $x^2 = 0$, lo cual es contrario a la suposición. Por lo tanto, R no tiene elementos nilpotentes no nulos.
+	\item  Muestra que un subconjunto $S$ de un anillo $R$ da un subanillo de $R$ si y solo si se cumplen las siguientes condiciones:
+	\begin{itemize}
+		\item[1.] $0 \in S$.
+		\item[2.] Para todo $a, b \in S$, $a - b \in S$.
+		\item[3.] Para todo $a, b \in S$, $ab \in S$.
+	\end{itemize}
+	\textbf{Solución:}
+	
+	Es claro que si $S$ es un subanillo de $R$, entonces las tres condiciones deben cumplirse. Recíprocamente, supongamos que las condiciones se cumplen. Las dos primeras condiciones y el Ejercicio 45 de la Sección 5 muestran que $hS, +i$ es un grupo aditivo. La condición final muestra que la multiplicación está cerrada en $S$. Por supuesto, las leyes asociativas y distributivas se cumplen para los elementos de $S$, porque realmente se cumplen para todos los elementos en $R$. Por lo tanto, $S$ es un subanillo de $R$.
+	
+	\item 	
+	\begin{itemize}
+		\item[a.] Muestra que la intersección de subanillos de un anillo $R$ es nuevamente un subanillo de $R$.
+		\item[b.] Muestra que la intersección de subcampos de un campo $F$ es nuevamente un subcampo de $F$.
+	\end{itemize}
+	\textbf{Solución:}
+	
+	\begin{itemize}
+		\item[a.] Sea $R$ un anillo y sean $H_i \leq R$ para $i \in I$. El Teorema 7.4 muestra que $H = \cap_{i\in I} H_i$ es un grupo aditivo. Sean $a, b \in H$. Entonces $a, b \in H_i$ para $i \in I$, por lo que $ab \in H_i$ para $i \in I$, porque $H_i$ es un subanillo de $R$. Por lo tanto, $ab \in H$, por lo que $H$ está cerrado bajo la multiplicación. Claramente, las leyes asociativas y distributivas se cumplen para los elementos de $H$, porque realmente se cumplen para todos los elementos en $R$. Por lo tanto, $H$ es un subanillo de $R$.
+		\item[b.] 	Sea $F$ un campo y sean $K_i \leq F$ para $i \in I$. La parte (a) muestra que $K = \cap_{i\in I} K_i$ es un anillo. Sea $a \in K$, $a \neq 0$. Entonces $a \in K_i$ para $i \in I$, por lo que $a^{-1} \in K_i$ para $i \in I$, porque los Ejercicios 42 y 43 muestran que la unidad en cada $K_i$ es la misma que en $F$ y que los inversos son únicos. Por lo tanto, $a^{-1} \in K$. Por supuesto, la multiplicación en $K$ es conmutativa porque la multiplicación en $F$ es conmutativa. Por lo tanto, $K$ es un subcampo de $F$.
+	\end{itemize}
+	\item Sea $R$ un anillo y sea $a$ un elemento fijo de $R$. Sea $I_a = \{x \in R \mid ax = 0\}$. Muestra que $I_a$ es un subanillo de $R$.
+	\\ \textbf{Solución:}
+	
+	Mostramos que $Ia$ satisface las condiciones del Ejercicio 48. Debido a que $a*0 = 0$, vemos que $0 \in Ia$. Sea $c, d \in Ia$. Luego, $ac = ad = 0$, por lo que $a(c - d) = ac - ad = 0 - 0 = 0$; por lo tanto, $(c - d) \in Ia$. Además, $a(cd) = (ac)d = 0d = 0$, por lo que $cd \in Ia$. Esto completa la verificación de las propiedades en el Ejercicio 48.
+	
+	
+	% 51
+	\item Sea $R$ un anillo y $a$ un elemento fijo de $R$. Sea $R_a$ el subanillo de $R$ que es la intersección de todos los subanillos de $R$ que contienen a $a$ (ver Ejercicio 49). El anillo $Ra$ es el subanillo de $R$ generado por $a$. Demuestra que el grupo abeliano $\{R_a, +\}$ está generado (en el sentido de la Sección 7) por $\{a^n \mid n \in \mathbb{Z}^+\}$.
+	\\ \textbf{Solución:}
+	
+	Claramente, $a^n$ está en cada subanillo que contiene a $a$, por lo tanto, $Ra$ contiene $a^n$ para cada entero positivo $n$. Así, el grupo aditivo $\langle Ra, + \rangle$ contiene el grupo aditivo $G$ generado por $S = \{a^n \mid n \in \mathbb{Z}^+\}$. Afirmamos que $G = Ra$. Solo necesitamos mostrar que $G$ está cerrado bajo la multiplicación. Ahora bien, $G$ consta de cero y todas las sumas finitas de términos de la forma $a^n$ o $-a^m$. Por las leyes distributivas, el producto de dos elementos que son sumas finitas de potencias positivas e inversos de potencias positivas de $a$ también puede escribirse como tal suma, y por lo tanto, también está en $G$. Por lo tanto, $G$ es un subanillo que contiene a $a$ y está contenido en $Ra$, por lo que debemos tener $G = Ra$.
+	
+	
+	\item
+	
+	(Teorema Chino del Residuo para dos congruencias) Sean $r$ y $s$ enteros positivos tales que $\text{gcd}(r, s) = 1$. Usa el isomorfismo en el Ejemplo 18.15 para mostrar que para $m, n \in \mathbb{Z}$, existe un entero $x$ tal que $x \equiv m \pmod{r}$ y $x \equiv n \pmod{s}$.
+	\\ \textbf{Solución:}
+		El Ejemplo 18.15 muestra que el mapa $\phi : \mathbb{Z}_{rs} \rightarrow \mathbb{Z}_r \times \mathbb{Z}_s$ donde $\phi(a) = a \cdot (1, 1)$ es un isomorfismo. Sea $b = \phi^{-1}(m, n)$. Calculando $b \cdot (1, 1)$ por componentes, vemos que la suma de $1 + 1 + \ldots + 1$ para $b$ términos da $m$ en $\mathbb{Z}_r$ y da $n$ en $\mathbb{Z}_s$. Así, viendo a $b$ como un entero en $\mathbb{Z}$, tenemos que $b \equiv m \pmod{r}$ y $b \equiv n \pmod{s}$.
+		
+	\item
+	
+	a. Enuncia y demuestra la generalización del Ejemplo 18.15 para un producto directo con $n$ factores.
+	
+	b. Demuestra el Teorema Chino del Residuo: Sean $a_i, b_i \in \mathbb{Z}^+$ para $i = 1, 2, \ldots, n$, y $\text{gcd}(b_i, b_j) = 1$ para $i \neq j$. Entonces, existe un $x \in \mathbb{Z}^+$ tal que $x \equiv a_i \pmod{b_i}$ para $i = 1, 2, \ldots, n$.
+	\\ \textbf{Solución:}
+	\begin{enumerate}
+		\item[a.] Enunciado: Sean $b_1, b_2, \ldots, b_n$ enteros tales que $\text{gcd}(b_i, b_j) = 1$ para $i \neq j$. Entonces, $\mathbb{Z}_{b_1 b_2 \ldots b_n}$ es isomorfo a $\mathbb{Z}_{b_1} \times \mathbb{Z}_{b_2} \times \ldots \times \mathbb{Z}_{b_n}$ con un isomorfismo $\phi$ donde $\phi(1) = (1, 1, \ldots, 1)$.
+		\item[b.] Prueba: Por la hipótesis de que $\text{gcd}(b_i, b_j) = 1$ para $i \neq j$, sabemos que el grupo imagen es cíclico y que $(1, 1, \ldots, 1)$ genera el grupo. Dado que el grupo dominio es cíclico generado por $1$, sabemos que $\phi$ es un isomorfismo de grupos aditivos. Queda por demostrar que $\phi(ms) = \phi(m)\phi(s)$ para $m$ y $s$ en el grupo dominio. Esto sigue del hecho de que el componente $i$-ésimo de $\phi(ms)$ en el grupo imagen es $(ms) \cdot 1$, lo cual es igual al producto de $m$ términos de $1$ por $s$ términos de $1$ según las leyes distributivas en un anillo.
+	\end{enumerate}
+	
+	\item
+	
+	Considera $(S, +, \cdot)$, donde $S$ es un conjunto y $+$ y $\cdot$ son operaciones binarias en $S$ tales que
+	\begin{itemize}
+		\item $(S, +)$ es un grupo,
+		\item $(S^*, \cdot)$ es un grupo donde $S^*$ consiste en todos los elementos de $S$ excepto el elemento neutro aditivo,
+		\item $a(b + c) = (ab) + (ac)$ y $(a + b)c = (ac) + (be)$ para todo $a, b, c \in S$.
+	\end{itemize}
+	Demuestra que $\{S, +, \cdot\}$ es un cuerpo. [Sugerencia: Aplica las leyes distributivas a $(1 + 1)(a + b)$ para probar la conmutatividad de la adición.]
+	
+	\textbf{Solución:}
+	
+	Nótese que $a^0 = 0$ para todo $a \in S$ sigue de las leyes distributivas, por lo que la asociatividad de la multiplicación para productos que contienen un factor $0$ se cumple, y la asociatividad en el grupo $\langle S^*, \cdot \rangle$ se encarga de la asociatividad para otros productos. Todos los demás axiomas necesarios para verificar que $S$ es un cuerpo siguen de inmediato de las dos afirmaciones dadas sobre grupos y las leyes distributivas dadas, excepto por la conmutatividad de la adición.
+	
+	Las leyes distributivas de izquierda seguidas de las leyes distributivas de derecha dan $(1 + 1)(a + b) = (1 + 1)a + (1 + 1)b = a + a + b + b$. Las leyes distributivas de derecha seguidas de las leyes distributivas de izquierda dan $(1 + 1)(a + b) = 1(a + b) + 1(a + b) = a + b + a + b$. Así, $a + a + b + b = a + b + a + b$ y por cancelación en el grupo aditivo, obtenemos $a + b = b + a$.
+	
+	\item
+	
+	Un anillo $R$ es un anillo booleano si $a^2 = a$ para todo $a \in R$, es decir, cada elemento es idempotente. Demuestra que todo anillo booleano es conmutativo.
+	
+	\textbf{Solución:}
+	
+	Sea $a, b \in R$ donde $R$ es un anillo booleano. Tenemos $a + b = (a + b)^2 = a^2 + ab + ba + b^2 = a + ab + ba + b$. Así, en un anillo booleano, $ab = -ba$. Tomando $b = a$, vemos que $aa = -aa$, por lo que $a = -a$. Así, cada elemento es su propio inverso aditivo, entonces $-ba = ba$. Combinando nuestras ecuaciones $ab = -ba$ y $-ba = ba$, obtenemos $ab = ba$, mostrando que $R$ es conmutativo.
+	
+	
+	\item
+	
+	(Para estudiantes con conocimientos en leyes de teoría de conjuntos) Para un conjunto $S$, sea $P(S)$ la colección de todos los subconjuntos de $S$. Define las operaciones binarias $+$ y $\cdot$ en $P(S)$ como
+	\begin{align*}
+		A + B &= (A \setminus B) \cup (B \setminus A), \\
+		A \cdot B &= A \cap B,
+	\end{align*}
+	para $A, B \in P(S)$.
+	\begin{enumerate}
+		\item[a.] Da las tablas para $+$ y $\cdot$ en $P(S)$, donde $S = \{a, b\}$. [Sugerencia: $P(S)$ tiene cuatro elementos.]
+		\item[b.] Demuestra que para cualquier conjunto $S$, $\{P(S), +, \cdot\}$ es un anillo booleano (ver Ejercicio 55).
+	\end{enumerate}
+	\textbf{Solución:}
+	
+	\begin{enumerate}
+		\item[a.]
+		\[
+		\begin{array}{c|cccc}
+			+ & \emptyset & \{a\} & \{b\} & S \\
+			\hline
+			\emptyset & \emptyset & \{a\} & \{b\} & S \\
+			\{a\} & \{a\} & \emptyset & S & \emptyset \\
+			\{b\} & \{b\} & S & \emptyset & \emptyset \\
+			S & S & \emptyset & \emptyset & S \\
+		\end{array}
+		\]
+		\[
+		\begin{array}{c|cccc}
+			\cdot & \emptyset & \{a\} & \{b\} & S \\
+			\hline
+			\emptyset & \emptyset & \emptyset & \emptyset & \emptyset \\
+			\{a\} & \emptyset & \{a\} & \emptyset & \emptyset \\
+			\{b\} & \emptyset & \emptyset & \{b\} & \emptyset \\
+			S & \emptyset & \emptyset & \emptyset & S \\
+		\end{array}
+		\]
+		
+		\item[b.] La conmutatividad de la suma se verifica directamente de las tablas.
+		
+		Verificamos la asociatividad de la suma; es más fácil pensar en términos de los elementos en $(A + B) + C$ y los elementos en $A + (B + C)$. Por definición, la suma de dos conjuntos contiene los elementos en precisamente uno de los conjuntos. Por lo tanto, $A + B$ consiste en los elementos que están en cualquiera de los conjuntos $A$ o $B$, pero no en ambos. Por lo tanto, $(A + B) + C$ consiste en los elementos que están precisamente en uno de los tres conjuntos $A, B, C$. Claramente, $A + (B + C)$ produce este mismo conjunto, por lo que la suma es asociativa.
+		
+		El conjunto vacío $\emptyset$ actúa como la identidad aditiva, ya que $A + \emptyset = (A \cup \emptyset) - (A \cap \emptyset) = A - \emptyset = A$ para todo $A \in P(S)$.
+		
+		Para $A \in P(S)$, tenemos $A + A = (A \cup A) - (A \cap A) = A - A = \emptyset$, por lo que cada elemento de $P(S)$ es su propio inverso aditivo. Esto demuestra que $\langle P(S), + \rangle$ es un grupo abeliano.
+		
+		Para la asociatividad de la multiplicación, notamos que $(A \cdot B) \cdot C = (A \cap B) \cap C = A \cap (B \cap C) = A \cdot (B \cdot C)$.
+		
+		Para la ley distributiva izquierda, nuevamente pensamos en términos de los elementos en los conjuntos. El conjunto $A \cdot (B + C) = A \cap (B + C)$ consiste en todos los elementos de $A$ que están en precisamente uno de los dos conjuntos $B, C$. Este conjunto contiene todos los elementos en $A \cap B$ o en $A \cap C$, pero no en ambos. Esto es precisamente el conjunto $(A \cdot B) + (A \cdot C)$. La ley distributiva derecha se puede demostrar con un argumento similar.
+		
+		Hemos demostrado que $\langle P(S), +, \cdot \rangle$ es un anillo. Debido a que $A \cdot A = A \cap A = A$, vemos a partir de la definición en el Ejercicio 55 que también es un anillo booleano.
+	\end{enumerate}
+
+	
+	
+\end{enumerate}

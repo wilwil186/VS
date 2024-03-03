@@ -1,5 +1,5 @@
 \documentclass[final, 20pt, a2paper, portrait]{extarticle}
-\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, paperwidth=70cm, paperheight=100cm]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
@@ -32,7 +32,7 @@
   opacity=0.4,
   angle=0,
   position=current page.south,
-  vshift=25cm, % Ajusta la posición vertical según sea necesario (valor negativo para ir hacia arriba)
+  vshift=50cm, % Ajusta la posición vertical según sea necesario (valor negativo para ir hacia arriba)
    contents={\includegraphics[width=30cm]{imagenes/Iprea.png}}
 }
 
@@ -44,7 +44,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%truco sucio para que no se superponga el encabezado con el texto
 \section*{}
-\vspace{2cm}
+\vspace{4cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Resumen}
 En este artículo, se investiga el comportamiento de los precios de Bitcoin a lo largo del tiempo y se exploran dos enfoques diferentes para la predicción: Random Forest y Redes Neuronales Recurrentes con unidades LSTM. El estudio se centra en la volatilidad de las criptomonedas, que ha generado escepticismo debido a su sistema descentralizado y la falta de control por parte de autoridades reguladoras. A medida que las criptomonedas ganan aceptación en el mercado, su alta volatilidad se ha convertido en un tema de preocupación. El objetivo principal de esta investigación es proporcionar una comprensión más profunda de cómo las técnicas de Random Forest y Redes Neuronales Recurrentes pueden aplicarse al análisis de criptomonedas con el fin de reducir esta volatilidad y predecir los valores de las criptomonedas.
@@ -53,7 +53,38 @@ En este artículo, se investiga el comportamiento de los precios de Bitcoin a lo
 El objetivo principal de este proyecto es analizar y predecir el comportamiento de los precios de Bitcoin a lo largo del tiempo, abordando la volatilidad característica de las criptomonedas. Para lograr este objetivo, se emplearán dos enfoques diferentes: Random Forest y Redes Neuronales Recurrentes (RNN) con unidades LSTM.
 
 \section*{Fundamentos Teóricos}
-En esta sección, se presentarán los conceptos fundamentales relacionados con el análisis de series de tiempo y el uso de algoritmos de aprendizaje automático, incluyendo árboles de decisión, Bagging, Bosques Aleatorios y Deep Learning.
+\subsection*{Series de Tiempo}
+Una serie de tiempo es un conjunto de datos que se recopila o registra en intervalos regulares a lo largo del tiempo.
+\subsection*{Características de una Serie de Tiempo}
+\begin{enumerate}
+    \item \textbf{Movimientos a Largo Plazo o Tendencia.}
+    \item \textbf{Movimientos Cíclicos: Fluctuaciones que ocurren en patrones recurrentes, pero no necesariamente a intervalos fijos.}
+    \item \textbf{Movimientos Estacionales: Intervalos regulares a lo largo del tiempo.}
+    \item \textbf{Movimientos Irregulares o Aleatorios.}
+\end{enumerate}
+\subsection*{Etapas Preliminares del Análisis}
+\begin{itemize}
+\item \textbf{Experticia en el Ámbito de Aplicación.} 
+\item \textbf{Definición de Objetivos.}
+\item \textbf{Recolección de Datos.}
+\item \textbf{Análisis Exploratorio.} 
+\item \textbf{Representación de Componentes.}
+\end{itemize}
+
+\subsection*{Estacionariedad y Función de Autocorrelación}
+\noindent
+La estacionariedad se refiere a que las propiedades estadísticas de la serie se mantienen constantes a lo largo del tiempo, La función de autocorrelación es una herramienta esencial en este contexto, ya que permite comparar la señal con ella misma y revelar información valiosa sobre la estructura temporal de la serie.
+
+\subsection*{Machine Learning}
+
+\subsection*{Árboles de Decisión}
+Los árboles de decisión son algoritmos versátiles utilizados en tareas de clasificación y regresión. Son especialmente útiles para capturar relaciones no lineales en los datos y son una excelente opción para principiantes en el campo del Machine Learning.
+\subsection*{Bootstrap Aggregation (Bagging)}
+El algoritmo Bagging se utiliza para mejorar la estabilidad y precisión de los modelos, incluyendo árboles de decisión. A través de la combinación de múltiples modelos entrenados con muestras de datos seleccionadas con reemplazo, Bagging reduce la varianza y aumenta la precisión.
+
+\subsection*{Random Forest}
+
+Bosques Aleatorios son una extensión de Bagging que combina múltiples árboles de decisión mediante la aleatorización de características. Esto produce un modelo robusto y de alto rendimiento que es eficaz en la clasificación y la regresión de series de tiempo.
 
 \section*{Metodología}
 Las metas específicas son las siguientes:
@@ -65,11 +96,7 @@ Las metas específicas son las siguientes:
 
 \section*{Resultados}
 Los resultados obtenidos por los dos enfoques serán comparados y contrastados, identificando sus fortalezas y debilidades en la predicción de los precios de Bitcoin.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%truco sucio para que no se superponga el encabezado con el texto
-\section*{}
-\vspace{2cm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section*{Conclusiones}
 Se elaborarán conclusiones basadas en los resultados y la literatura relevante, ofreciendo una visión integral de la efectividad de Random Forest y Redes Neuronales Recurrentes en la reducción de la volatilidad y la precisión de las predicciones de las criptomonedas.
 
@@ -102,3 +129,4 @@ Nakamoto, Satoshi. 2008. \textit{Bitcoin: un sistema de efectivo electrónico en
 \end{thebibliography}
 
 \end{document}
+

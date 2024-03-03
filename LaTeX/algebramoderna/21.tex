@@ -1,0 +1,143 @@
+\section*{Ejercicios 21}
+Sección \text{21} 1-2 y 6-17. 
+
+\subsection*{Cálculos}
+\begin{enumerate}
+	\item Describe el campo $F$ de cocientes del subdominio integral $D = \{n + mi \mid n, m \in \mathbb{Z}\}$ de $\mathbb{C}$. ``Describir" significa dar los elementos de $\mathbb{C}$ que forman el campo de cocientes de $D$ en $\mathbb{C}$. (Los elementos de D son los enteros gaussianos).
+	
+	\textbf{Solución:}
+	
+	El campo de cocientes de $D$ es $\{q_{1} + q_{2}i \ | \ q1, q2 \in \mathbb{Q}\}$.
+	
+	\item Describe (en el sentido del Ejercicio 1) el campo $F$ de cocientes del subdominio integral $D = \{n + m\sqrt{2} \mid n, m \in \mathbb{Z}\}$ de $\mathbb{R}$.
+	
+	\textbf{Solución:}
+	
+	Debido a que 
+	\begin{align*}
+		\frac{1}{a+b\sqrt{2}} &= \frac{1}{a+b\sqrt{2}} \cdot \frac{a-b\sqrt{2}}{a-b\sqrt{2}} \\ &= \frac{a}{a^2-2b^2} + \frac{-b}{a^2-2b^2}\sqrt{2}
+	\end{align*}
+	Vemos que $\{q_{1} + q_{2}\sqrt{2} \ | \ q_{1} ,q_{2} \in \mathbb{Q}\}$ es un campo y debe ser el campo de cocientes.
+	
+\end{enumerate}
+
+\subsection*{Teoría}
+\subsection*{La contrucción}
+Sea D un dominio entero que deseamos agrandar a un campo de cocientes F. Un esbozo a grandes rasgos de los pasos a seguir es el siguiente:
+\begin{enumerate}
+	\item Definir cuáles serán los elementos de F
+	\item  Definir en F las operaciones binarias de suma y multiplicación.
+	\item Comprobar que se cumplan todos los axiomas de campo, para mostrar que F es un campo bajo estas operaciones.
+	\begin{enumerate}
+		\item La suma en F es conmutativa.
+		\item La suma es asociativa.
+		\item $[(0, 1)]$ es una identidad para la suma en $F$.
+		\item $[(-a, b)]$ es un inverso aditivo para $[(a, b)]$ en $F$.
+		\item La multiplicación en $F$ es asociativa.
+		\item La multiplicación en $F$ es conmutativa.
+		\item Las leyes distributivas valen en $F$.
+		\item $[(1, 1)]$ es una identidad multiplicativa en $F$.
+		\item Si $[(a, b)]$ e $F$ no es la identidad aditiva, entonces $a \not= 0 $ en D y $[(b, a)]$ es
+		un inverso multiplicativo para $[(a, b)]$.
+	\end{enumerate}
+	\item Mostrar que F puede contener a D como un subdominio entero.
+\end{enumerate}
+\subsection*{Ejercicios}
+\begin{enumerate}
+	\setcounter{enumi}{5}
+	\item Demostrar la Parte 2 (Suma Asociativa) del Paso 3. Puedes asumir cualquier parte previa del Paso 3. 
+	\\ \textbf{Solución:} \\
+	Tenemos
+	\begin{align*}
+		& [(a, b)] + ([(c, d)] + [(e, f)])\\ &= [(a, b)] +[(cf + de, df)] \\
+		&= [(adf + bcf + bde, bdf )] \\
+		&= [(ad + bc, bd)] +[(e, f)] \\
+		&= ([(a, b)] + [(c, d)]) + [(e, f )].
+	\end{align*}
+	
+	Así que la adición es asociativa.
+	
+	\item Demostrar la Parte 3 del Paso 3. Puedes asumir cualquier parte previa del Paso 3.
+	\\ \textbf{Solución:} \\
+	Tenemos \( [(0,1)]+[(a, b)] =[(0b+1a, 1b] =[(a, b)] \). Por la Parte 1 del Paso 3, también tenemos \( [(a, b)]+[(0,1)] = [(a, b)] \).
+	
+	\item Demostrar la Parte 4 del Paso 3. Puedes asumir cualquier parte previa del Paso 3.
+	\\ \textbf{Solución:} \\
+	Tenemos 
+	$[(-a, b)] + [(a, b)] = [(-ab + ba, b^{2})] = [(0, b^{2})]. $
+	
+	Pero \( [(0, b^2)] \sim [(0, 1)] \) porque \( (0)(1) = (b^2)(0) = 0 \).
+	Así que 
+	\( [(-a, b)] + [(a, b)] = [(0, 1)] \).
+	Por la Parte 1 del
+	Paso 3, también tenemos \( [(a, b)] + [(-a, b)] = [(0, 1)] \).
+	
+	\item Demostrar la Parte 5 del Paso 3. Puedes asumir cualquier parte previa del Paso 3.
+	
+	Ahora
+	\begin{align*}
+		[(a, b)]([(c, d)][(e, f )]) &= [(a, b)][(ce, df )] \\
+		&= [(ace, bdf )] \\
+		&= [(ac, bd)][(e, f )]\\
+		& = ([(a, b)][(c, d)])[(e, f )].
+	\end{align*}
+	
+	Así que la multiplicación es asociativa.
+	
+	\item Demostrar la Parte 6 del Paso 3. Puedes asumir cualquier parte previa del Paso 3.
+	\\ \textbf{Solución:} \\
+	Tenemos 
+	\begin{align*}
+		[(a, b)][(c, d)] &=[(ac, bd)]  \\
+		&= [(ca, db)]\\  &= [(c, d)][(a, b)]
+	\end{align*}
+	Así que la multiplicación es conmutativa.
+	\item Demostrar la Parte 7 del Paso 3. Puedes asumir cualquier parte previa del Paso 3.
+	\\ \textbf{Solución:} \\
+	Para la ley distributiva izquierda, tenemos
+	\[
+	\begin{aligned}
+		&[(a, b)][(c, d)] + [(a, b)][(e, f )] \\
+		&= [(ac, bd)] + [(ae, bf )] \\
+		&= [(acbf + bdae, bdbf )] \\
+		&\sim [(acf + ade, bdf )] \quad \text{porque} \quad (acbf + bdae)bdf \\
+		&= acbf bdf + bdaebdf \\
+		&= bdbf (acf + ade),
+	\end{aligned}
+	\]
+	Ya que la multiplicación en \(D\) es conmutativa. La ley distributiva derecha sigue de la Parte 6.
+	
+	\item  Sea \(R\) un anillo conmutativo no nulo, y sea \(T\) un subconjunto no vacío de \(R\) cerrado bajo la multiplicación y que no contiene ni 0 ni divisores de 0. Comenzando con \(R \times T\) y siguiendo exactamente la construcción de esta sección, podemos demostrar que el anillo \(R\) puede ampliarse a un anillo parcial de cocientes \(Q(R, T)\). Piensa en esto durante unos 15 minutos; repasa la construcción y observa por qué las cosas aún funcionan. En particular, muestra lo siguiente:
+	\begin{enumerate}
+		\item[a.] \(Q(R, T)\) tiene unidad aunque \(R\) no la tenga.
+		\item[b.] En \(Q(R, T)\), cada elemento no nulo de \(T\) es una unidad.
+	\end{enumerate}
+	\textbf{Solución:} 
+	\begin{enumerate}
+		\item[a.] Debido a que \(T\) no es vacío, existe un \(a \in T\). Entonces, \( [(a, a)] \) es la unidad en \(Q(R, T)\), ya que $[(a, a)][(b, c)] = [(ab, ac)] \sim [(b, c)] \text{ ya que } abc = acb$
+		en el anillo conmutativo \(R\).
+		\item[b.]  Un elemento no nulo \(a \in T\) se identifica con \( [(aa, a)] \) en \(Q(R, T)\). Debido a que \(T\) no tiene divisores de cero, \( [(a, aa)] \in Q(R, T) \), y vemos que
+		$[(aa, a)][(a, aa)] = [(aaa, aaa)] \sim [(a, a)] \text{ porque } aaaa = aaaa.$
+		Vimos en la parte a que \( [(a, a)] \) es la unidad en \(Q(R, T)\). La conmutatividad de \(Q(R, T)\) muestra que \( [(a, aa)][(aa, a)] \) también es la unidad, así que \(a \in T\) tiene inverso en \(Q(R, T)\) si \(a \neq 0\).
+	\end{enumerate}
+	
+	
+	\item Demostrar a partir del Ejercicio 12 que todo anillo conmutativo no nulo que contiene un elemento \(a\) que no es divisor de 0 puede ampliarse a un anillo conmutativo con unidad. Comparar con el Ejercicio 30 de la Sección 19.
+	\\ \textbf{Solución:} \\
+	Solo necesitamos tomar \(T = \{a^n \mid n \in \mathbb{Z}^+\}\) en el Ejercicio 12. Esta construcción es completamente diferente de la de la Sección 19, Ejercicio 30.
+	
+	\item Con referencia al Ejercicio 12, ¿cuántos elementos hay en el anillo \(Q(\mathbb{Z}_{4}, \{1,3\})\) ?
+	\\ \textbf{Solución:} \\
+	Hay cuatro elementos, ya que 1 y 3 ya son unidades en \(\mathbb{Z}_4\).
+	
+	\item Con referencia al Ejercicio 12, describe el anillo \(Q(\mathbb{Z}, \{2^{n} \mid n \in \mathbb{Z}^+\})\), describiendo un subanillo de \(R\) al que es isomorfo.
+	\\ \textbf{Solución:} \\
+	Es isomorfo al anillo \(D\) de todos los números racionales que se pueden expresar como cociente de enteros con denominador una potencia de 2, como se describe en la respuesta al Ejercicio 5.
+	
+	\item Con referencia al Ejercicio 12, describe el anillo \(Q(2\mathbb{Z}, \{6^n \mid n \in \mathbb{Z}^+\})\) describiendo un subanillo de \(R\) al que es isomorfo.
+	\\ \textbf{Solución:} \\
+	Es isomorfo al anillo de todos los números racionales que se pueden expresar como cociente de enteros con denominador una potencia de 6. El 3 en \(3\mathbb{Z}\) no restringe el numerador, ya que 1 se puede recuperar como \( [(6, 6)] \), 2 como \( [(12, 6)] \), etc.
+	\item Con referencia al Ejercicio 12, supongamos que eliminamos la condición de que \(T\) no tenga divisores de 0 y simplemente requerimos que \(T\) no vacío y que no contenga 0 esté cerrado bajo la multiplicación. El intento de ampliar \(R\) a un anillo conmutativo con unidad en el que cada elemento no nulo de \(T\) sea una unidad debe fallar si \(T\) contiene un elemento \(a\) que es un divisor de 0, ya que un divisor de 0 no puede ser una unidad. Intenta descubrir dónde una construcción paralela a la del texto pero comenzando con \(R \times T\) primero tiene problemas. En particular, para \(R = \mathbb{Z}_6\) y \(T = \{1, 2, 4\}\), ilustra la primera dificultad encontrada. [Sugerencia: Está en el Paso 1.]
+	\\ \textbf{Solución:} \\
+	Se encuentra en problemas cuando intentamos probar la propiedad transitiva en la demostración del Lema 21.2, ya que la cancelación multiplicativa puede no cumplirse. Para \(R = \mathbb{Z}_6\) y \(T = \{1, 2, 4\}\), tenemos que \( (1, 2) \sim (2, 4) \) porque \( (1)(4) = (2)(2) = 4 \) y \( (2, 4) \sim (2, 1) \) porque \( (2)(1) = (4)(2) \) en \(\mathbb{Z}_6\), pero \( (1, 2) \ncong (2, 1) \) porque \( (1)(1) \neq (2)(2) \) en \(\mathbb{Z}_6\). 
+\end{enumerate}
