@@ -1,0 +1,173 @@
+\section*{Ejercicios 19}
+
+
+\subsection*{Cálculos}
+\begin{enumerate}
+	\item Encuentra todas las soluciones de la ecuación $x^3 - 2x^2 - 3x = 0$ en $\mathbb{Z}_{12}$. \textbf{Solución:}
+	 Reescribimos la ecuación como $x(x - 3)(x + 1) = 0$ y simplemente probamos todos los elementos $-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6$ en $\mathbb{Z}_{12}$, obteniendo las soluciones $0, 3, 5, 8, 9$ y $11$.
+	\item Resuelve la ecuación $3x = 2$ en el campo $\mathbb{Z}_7$ y en el campo $\mathbb{Z}_{23}$. \textbf{Solución:}
+	 La solución en $\mathbb{Z}_7$ es $3$ y la solución en $\mathbb{Z}_{23}$ es $16$.
+	\item Encuentra todas las soluciones de la ecuación $x^2 + 2x + 2 = 0$ en $\mathbb{Z}_6$. \textbf{Solución:} Probando todas las posibilidades $-2, -1, 0, 1, 2$ y $3$, no encontramos soluciones.
+	\item Encuentra todas las soluciones de $x^2 + 2x + 4 = 0$ en $\mathbb{Z}_6$.
+	\\ \textbf{Solución:}
+	Probando todas las posibilidades $-2, -1, 0, 1, 2$ y $3$, encontramos $x = 2$ como la única solución.
+	
+\end{enumerate}
+En los ejercicios del 5 al 10,encuentra la característica del siguiente anillo:
+\begin{enumerate}
+	\setcounter{enumi}{4}
+	\item $2\mathbb{Z}$ \textbf{Solución:} 0
+	\item $\mathbb{Z} \times \mathbb{Z}$ \textbf{Solución:} 0
+	\item $\mathbb{Z}_3 \times 3\mathbb{Z}$ \textbf{Solución:} 0
+	\item $\mathbb{Z}_3 \times \mathbb{Z}_3$ \textbf{Solución:} 3
+	\item $\mathbb{Z}_3 \times \mathbb{Z}_4$ \textbf{Solución:} 12
+	\item $\mathbb{Z}_6 \times \mathbb{Z}_{15}$ \textbf{Solución:} 30
+	
+	\item Sea $R$ un anillo conmutativo con unidad de característica 4. Calcula y simplifica $(a + b)^4$ para $a, b \in R$. \textbf{Solución:}  $(a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4=a^{4}+2a^{2}b^{2}+b^{4}$
+	\item Sea $R$ un anillo conmutativo con unidad de característica 3. Calcula y simplifica $(a + b)^9$ para $a, b \in R$. \textbf{Solución:}  \[(a + b)^9 = [(a + b)^3]^3 = [a^3 + 3a^2b + 3ab^2 + b^3]^3 = (a^3 + b^3)^3 = a^9 + 3a^6b^3 + 3a^3b^6 + b^9 = a^9 + b^9.\]
+	\item Sea $R$ un anillo conmutativo con unidad de característica 3. Calcula y simplifica $(a + b)^6$ para $a, b \in R$. \textbf{Solución:}  \[(a + b)^6 = [(a + b)^3]^2 = [a^3 + 3a^2b + 3ab^2 + b^3]^2 = (a^3 + b^3)^2 = a^6 + 2a^3b^3 + b^6.\]
+	\item Demuestra que la matriz
+	\[
+	\begin{bmatrix}
+		1 & 2 \\
+		2 & 4
+	\end{bmatrix}
+	\]
+	es un divisor de cero en $M_2(\mathbb{Z})$. \textbf{Solución:}
+	Tenemos
+	\[
+	\begin{bmatrix}
+		2 & -1 \\
+		2 & -1
+	\end{bmatrix}
+	\begin{bmatrix}
+		1 & 2 \\
+		2 & 4
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+		0 & 0 \\
+		0 & 0
+	\end{bmatrix},
+	\]
+	lo cual muestra que la matriz
+	\[
+	\begin{bmatrix}
+		1 & 2 \\
+		2 & 4
+	\end{bmatrix}
+	\]
+	es un divisor de cero en $M_2(\mathbb{Z})$.
+\end{enumerate}
+	
+\subsection*{Teoría}
+\begin{enumerate}
+	\setcounter{enumi}{22}
+	\item Un elemento $a$ de un anillo $R$ es idempotente si $a^2 = a$. Demuestra que un anillo de división contiene exactamente dos elementos idempotentes.
+	\textbf{Solución:}
+	Si $a^2 = a$, entonces $a^2 - a = a(a - 1) = 0$. Si $a \neq 0$, entonces $a^{-1}$ existe en $R$, y tenemos $a - 1 = (a a^{-1})(a - 1) = a^{-1}[a(a-1)]=a^{-1}0=0$, lo que implica $a - 1 = 0$ y $a = 1$. Por lo tanto, 0 y 1 son los únicos dos elementos idempotentes en un anillo de división.
+	
+	\item Muestra que la intersección de subdominios de un dominio integral $D$ es nuevamente un subdominio de $D$. 
+	\textbf{Solución:}
+	El ejercicio 49(a) de la sección 18 demostró que la intersección de subanillos de un anillo $R$ es nuevamente un subanillo de $R$. Por lo tanto, la intersección de subdominios $D_i$ para $i \in I$ de un dominio integral $D$ es al menos un anillo.
+	
+	El ejercicio anterior muestra que la unidad en un dominio integral se puede caracterizar como el elemento idempotente distinto de cero. Esto muestra que la unidad en cada $D_i$ debe ser la unidad $1$ en $D$, por lo que $1$ está en la intersección de los $D_i$.
+	
+	Por supuesto, la multiplicación es conmutativa en la intersección porque es conmutativa en $D$ y la operación es inducida. Finalmente, si $ab = 0$ en la intersección, entonces $ab = 0$ en $D$, por lo que $a = 0$ o $b = 0$. Es decir, la intersección no tiene divisores de cero y es un subdominio de $D$.
+	
+	
+	\item Muestra que un anillo finito $R$ con unidad $1 \neq 0$ y sin divisores de $0$ es un anillo de división. (En realidad, es un campo, aunque la conmutatividad no es fácil de demostrar. Ver Teorema 24.10.) [Nota: En tu prueba, para demostrar que $a\not = 0$ es una unidad, debes mostrar que un "inverso multiplicativo izquierdo" de $a\not = 0$ en $R$ también es un "inverso multiplicativo derecho."] 
+	\textbf{Solución:}
+	
+	Debido a que \(R\) no tiene divisores de cero, la cancelación multiplicativa de elementos no nulos es válida. La construcción en la demostración del Teorema 18.11 es válida y muestra que cada elemento no nulo \(a \in R\) tiene un inverso por la derecha, digamos \(a_i\). Una construcción similar, donde los elementos de \(R\) se multiplican todos por la derecha por \(a\), muestra que \(a\) tiene un inverso por la izquierda, digamos \(a_j\). Por asociatividad de la multiplicación, tenemos \(a_j = a_j (aa_i) = (a_j a) a_i = a_i\). Así, cada elemento no nulo \(a \in R\) es una unidad, por lo que \(R\) es un anillo de división.
+	
+	\item Sea $R$ un anillo que contiene al menos dos elementos. Supongamos que para cada elemento no nulo $a \in R$, existe un único $b \in R$ tal que $aba = a$.
+	\begin{enumerate}
+		\item Muestra que $R$ no tiene divisores de $0$.
+		\textbf{Solución:}
+		Supongamos que $a \neq 0$ y $ca = 0$ o que $ac=0$ para algún $c \in R$. Luego, $a(b + c)a = aba + aca = a + 0 = a$, donde usamos la propiedad dada. Por la unicidad, $b + c = b$, y por lo tanto, $c = 0$. Esto muestra que $a$ no es un divisor de cero.
+		\item Muestra que $bab = b$.
+		\textbf{Solución:}
+		Dado que \(aba = a\), sabemos que \(b \not = 0\) también. Multiplicando por la izquierda por \(b\), obtenemos \(baba = ba\). Debido a que \(R\) no tiene divisores de cero según la parte a, la cancelación multiplicativa es válida y vemos que \(bab = b\).
+		
+		\item Muestra que $R$ tiene unidad.
+		\textbf{Solución:}
+		Afirmamos que \(ab\) es la unidad para \(a\) y \(b\) no nulos dados en el enunciado del ejercicio. Sea \(c \in R\). De \(aba = a\), observamos que \(ca = caba\). Cancelando \(a\), obtenemos \(c = c(ab)\). De la parte b, tenemos \(bc = babc\), y cancelando \(b\) obtenemos \(c = (ab)c\). Así, \(ab\) satisface \((ab)c = c(ab)\) para todo \(c \in R\), por lo que \(ab\) es la unidad.
+		
+		\item Muestra que $R$ es un anillo de división.
+		\textbf{Solución:}
+		
+		Hemos demostrado que $a$ es una unidad, y como $a$ es arbitrario, cada elemento no nulo de $R$ es una unidad. Por lo tanto, $R$ es un anillo de división.Sea \(a\) un elemento no nulo del anillo. Por la parte a, \(aba = a\). Por la parte c, \(ab = 1\), por lo que \(b\) es un inverso por la derecha de \(a\). Debido a que los elementos \(a\) y \(b\) se comportan de manera simétrica según la parte b, un argumento simétrico al de la parte c, comenzando con la ecuación \(ac = abac\), muestra que \(ba = 1\) también. Así, \(b\) es también un inverso por la izquierda de \(a\), por lo que \(a\) es una unidad. Esto muestra que \(R\) es un anillo de división.
+		
+		
+	\end{enumerate}
+	\item Muestra que la característica de un subdominio de un dominio integral $D$ es igual a la característica de $D$.
+	\textbf{Solución:}
+	
+	Por el Ejercicio 23, vemos que la unidad en un dominio integral puede caracterizarse como el único idempotente distinto de cero. El elemento unidad en \(D\) debe entonces ser también la unidad en cualquier subdominio. Recordemos que la característica de un anillo con unidad es el mínimo \(n \in \mathbb{Z}^+\) tal que \(n \cdot 1 = 0\), si tal \(n\) existe, y es 0 en caso contrario. Debido a que la unidad es la misma en el subdominio, este cálculo conducirá al mismo resultado que en el dominio original.
+
+	\item Muestra que si $D$ es un dominio integral, entonces $\{n \cdot 1 \mid n \in \mathbb{Z}\}$ es un subdominio de $D$ contenido en cada subdominio de $D$.
+	\textbf{Solución:}  
+	Sea \(R = \{n \cdot 1 \mid n \in \mathbb{Z}\}\). Tenemos que \(n \cdot 1 + m \cdot 1 = (n+m) \cdot 1\), por lo que \(R\) está cerrado bajo la adición. Tomando \(n=0\), vemos que \(0 \in R\). Debido a que el inverso de \(n \cdot 1\) es \((-n) \cdot 1\), notamos que \(R\) contiene todos los inversos aditivos de los elementos, por lo que \((R, +)\) es un grupo abeliano. Las leyes distributivas muestran que \( (n \cdot 1)(m \cdot 1) = (nm) \cdot 1 \), así que \(R\) está cerrado bajo la multiplicación. Dado que \(1 \cdot 1 = 1\), vemos que \(1 \in R\). Por lo tanto, \(R\) es un anillo conmutativo con unidad. Dado que un producto \(ab = 0\) en \(R\) también se puede ver como un producto en \(D\), notamos que \(R\) tampoco tiene divisores de cero. Así, \(R\) es un subdominio de \(D\).
+	
+	
+	\item Muestra que la característica de un dominio integral $D$ debe ser 0 o un número primo $p$. [Sugerencia: Si la característica de $D$ es $mn$, considera $((m \cdot 1)(n \cdot 1))$ en $D$.] 
+	\textbf{Solución:}
+	 Supongamos que la característica de $D$ es $mn$, donde $m > 1$ y $n > 1$. Entonces, $((m \cdot 1)(n \cdot 1)) = (mn) \cdot 1 = 0$. Debido a que estamos en un dominio integral, esto implica que $m \cdot 1 = 0$ o $n \cdot 1 = 0$. Pero si $m \cdot 1 = 0$, entonces $D$ tiene una característica de a lo sumo $m$, y si $n \cdot 1 = 0$, entonces $D$ tiene una característica de a lo sumo $n$. Esto contradice la suposición de que $mn$ es la característica de $D$. Por lo tanto, la característica de $D$ debe ser 0 o un número primo $p$.
+	 
+	\item Este ejercicio muestra que cada anillo $R$ se puede ampliar (si es necesario) a un anillo $S$ con unidad, que tiene la misma característica que $R$. Sea $S = R \times \mathbb{Z}$ si $R$ tiene característica 0, y $R \times \mathbb{Z}_n$ si $R$ tiene característica $n$. La adición en $S$ es la adición usual por componentes, y la multiplicación está definida por $((n, n_1)(r_2, n_2) = (r_1r_2 + n_1 \cdot r_2 + n_2 \cdot n, n_1 \cdot n_2))$ donde $n_1 \cdot r$ tiene el significado explicado en la Sección 18.
+	\begin{enumerate}
+		\item Muestra que $S$ es un anillo.
+		\textbf{Solución:}
+		 Según la teoría de grupos, sabemos que \(S\) es un grupo abeliano bajo la adición. Verificamos la asociatividad de la multiplicación, utilizando el hecho de que, para todos los \(m, n \in \mathbb{Z}\) y \(r, s \in R\), tenemos \(n \cdot (m \cdot r) = (nm) \cdot r\), \(n \cdot (r+s) = n \cdot r + n \cdot s\), \(r \cdot (n \cdot s) = n \cdot (rs)\) y \((n \cdot r) \cdot s = n \cdot (rs)\), los cuales siguen de la conmutatividad de la adición y las leyes distributivas en \(R\). Para \(r, s, t \in R\) y \(k, m, n \in \mathbb{Z}\), tenemos:
+		
+		\begin{align*}
+			&(r, k) \cdot [(s, m) \cdot (t, n)] \\
+			&= (r, k)(st + m \cdot t + n \cdot s, mn) \\
+			&= \left(r(st + m \cdot t + n \cdot s) + k(st + m \cdot t + n \cdot s) + mn \cdot r, kmn\right) \\
+			&= \left(rst + k \cdot st + m \cdot rt + n \cdot rs + km \cdot t + kn \cdot s + mn \cdot r, kmn\right)
+		\end{align*}
+		
+		y
+		
+		\begin{align*}
+			&[(r, k) \cdot (s, m)] \cdot (t, n) \\
+			&= (rs + k \cdot s + m \cdot r, km)(t, n) \\
+			&= \left((rs + k \cdot s + m \cdot r)t + km \cdot t + n \cdot (rs + k \cdot s + m \cdot r), kmn\right) \\
+			&= \left(rst + k \cdot st + m \cdot rt + n \cdot rs + km \cdot t + kn \cdot s + mn \cdot r, kmn\right).
+		\end{align*}
+		
+		Así, la multiplicación es asociativa. Para la ley distributiva izquierda, obtenemos
+		
+		\begin{align*}
+			&(r, k) \cdot [(s, m) + (t, n)] \\
+			&= (r, k)(s + t, m + n) \\
+			&= \left(r(s + t) + k \cdot (s + t) + (m + n) \cdot r, k(m + n)\right) \\
+			&= (rs + k \cdot s + m \cdot r, km) + (rt + k \cdot t + n \cdot r, kn) \\
+			&= (r, k) \cdot (s, m) + (r, k) \cdot (t, n).
+		\end{align*}
+		
+		La prueba de la ley distributiva derecha es un cálculo similar. Por lo tanto, \(S\) es un anillo.
+
+		\item Muestra que $S$ tiene unidad.
+		\textbf{Solución:}
+		El elemento neutro multiplicativo de $S$ es $((1, 0))$ ya que 
+		\begin{align*}
+			&((n, n_1)(1, 0) \\
+			&= (n \cdot 1 + n_1 \cdot 0, n \cdot 0 + n_1 \cdot 1) \\
+			&= (n, n_1)
+		\end{align*}
+		para cualquier $(n, n_1) \in \mathbb{Z}$.
+		\item Muestra que $S$ y $R$ tienen la misma característica.
+		\textbf{Solución:}
+		 Si $R$ tiene característica 0, entonces $((n, n_1) = 0)$ solo si $n = 0$ y $n_1 = 0$, y si $R$ tiene característica $n$, entonces $((n, n_1) = 0)$ solo si $n = 0$ y $n_1 = 0$. Por lo tanto, $S$ tiene la misma característica que $R$.
+		
+		\item Muestra que la aplicación $\phi : R \rightarrow S$ dada por $\phi(r) = (r, 0)$ para $r \in R$ mapea $R$ isomórficamente a un subanillo de $S$.
+		\textbf{Solución:}
+		Definimos $\phi : R \rightarrow S$ por $\phi(r) = (r, 0)$. Probemos que $\phi$ es un isomorfismo. Es claro que $\phi$ es un homomorfismo, y si $\phi(r_1) = \phi(r_2)$, entonces $((r_1, 0) = (r_2, 0))$, lo que implica $r_1 = r_2$. Por lo tanto, $\phi$ es uno a uno. Además, para cualquier $((r, n) \in S)$, $\phi(r) = (r, 0) = (r, n - n) = (r, n) \cdot (0, 1)$, lo que muestra que $\phi$ es sobre. Por lo tanto, $\phi$ es un isomorfismo, y $R$ se mapea isomórficamente en un subanillo de $S$.
+	\end{enumerate}
+
+\end{enumerate}
+
+
+
