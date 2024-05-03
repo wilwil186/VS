@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.23)  8 MAR 2024 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.12)  3 MAY 2024 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,9 +233,9 @@ Package: babel 2022/12/26 3.84 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2023/01/02 v3.5p French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
-(babel)             (\language15). Reported on input line 91.
+(babel)             (\language73). Reported on input line 91.
 Package babel Info: Hyphen rules for 'canadien' set to \l@french
-(babel)             (\language15). Reported on input line 92.
+(babel)             (\language73). Reported on input line 92.
 \FB@nonchar=\count279
 Package babel Info: Making : an active character on input line 395.
 Package babel Info: Making ; an active character on input line 396.
@@ -1271,7 +1271,7 @@ Package hyperref Info: Link coloring OFF on input line 4.
 \openout5 = `main.out'.
 
  (./23.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--1
+Underfull \hbox (badness 10000) in paragraph at lines 8--1
 
  []
 
@@ -1286,8 +1286,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39319 strings out of 476091
- 878441 string characters out of 5794081
+ 39318 strings out of 476091
+ 878431 string characters out of 5794081
  1868330 words of memory out of 5000000
  58974 multiletter control sequences out of 15000+600000
  518422 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1305,10 +1305,10 @@ msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on main.pdf (5 pages, 154135 bytes).
+Output written on main.pdf (5 pages, 154058 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
+ 60 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

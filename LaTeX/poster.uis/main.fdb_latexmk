@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1711836488 "/home/wilson/VS/LaTeX/poster.uis/main.tex" "main.pdf" "main" 1711836489 2
+["pdflatex"] 1714757257 "/home/wilson/Documentos/VS/LaTeX/poster.uis/main.tex" "main.pdf" "main" 1714757258 2
   "/etc/texmf/web2c/texmf.cnf" 1710198804 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/wilson/VS/LaTeX/poster.uis/main.tex" 1710242690 7410 d0fbf9c2cbcd4421e2eefd36049352b3 ""
+  "/home/wilson/Documentos/VS/LaTeX/poster.uis/main.tex" 1710242690 7410 d0fbf9c2cbcd4421e2eefd36049352b3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_edcawa.enc" 1490131464 2833 ab571e969b0d4b8e87f8f63627b1db02 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
@@ -186,8 +186,8 @@
   "imagenes/Distrital.png" 1710242690 44977 9edff0bf8046bf922c0ea2421f5dde94 ""
   "imagenes/Iprea.png" 1710242690 86706 0e08f17b2d6d8f5fa4d4a1f10ed3e324 ""
   "imagenes/Uis.png" 1710242690 118246 f7f43b7fdf3cf99d9d8a113de1b22a7b ""
-  "main.aux" 1711836489 1016 e8897677275595bbd7f2efb35e46fd74 "pdflatex"
-  "main.out" 1711836489 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1714757258 1016 e8897677275595bbd7f2efb35e46fd74 "pdflatex"
+  "main.out" 1714757258 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1710242690 7410 d0fbf9c2cbcd4421e2eefd36049352b3 ""
   "nejlt.sty" 1710242690 3121 b253bab91decc0d4994a1ff9d6ddfffc ""
   (generated)
