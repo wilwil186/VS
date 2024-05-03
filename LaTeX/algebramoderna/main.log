@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.12)  3 MAY 2024 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.12)  3 MAY 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,7 +1271,7 @@ Package hyperref Info: Link coloring OFF on input line 4.
 \openout5 = `main.out'.
 
  (./23.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--1
+Underfull \hbox (badness 10000) in paragraph at lines 5--1
 
  []
 
