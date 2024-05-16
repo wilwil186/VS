@@ -1,0 +1,120 @@
+\input{pre}
+
+\begin{document}
+	\noindent Taller final análisis complejo \\
+	Wilson Eduardo Jerez Hernández - 20181167034
+	\begin{enumerate}
+		%%%%1
+		\item $\int_{\abs{z}=1} \frac{\cos{z}}{z(z^{2}+9)}dz$
+		\\ \textbf{Solución:} \\
+		Consideremos la integral $\int_{\abs{z}=1} \frac{\cos{z}}{z(z^{2}+9)}dz$.
+		Definimos la función $f(z)=\frac{\cos{z}}{z^{2}+9}$. Observamos que $f(z)$ es analítica en todo el plano complejo excepto en los puntos $z=3i$ y $z=-3i$. Dado que la curva de integración $\abs{z}=1$ no incluye estos puntos, podemos aplicar el Teorema de los Residuos.
+		
+		Seleccionamos el punto $z=0$, el cual está en el interior de la curva $C$. Aplicando el Teorema de los Residuos, obtenemos:
+		
+		\begin{align*}
+			2\pi i f(0)&=\int_{C}\frac{\frac{\cos{z}}{(z^{2}+9)}}{z-0}\\
+			&= \int_{C}\frac{\cos{z}}{z(z^{2}+9)} \\
+		\end{align*}
+		
+		Así, 
+		
+		$$2\pi i f(0)= 2\pi i \frac{1}{9}. $$
+		
+		Por lo tanto, 
+		
+		$$\int_{C}\frac{\cos{z}}{z(z^{2}+9)} = \frac{2\pi i}{9}. $$
+		%%%%2
+		\item $\int_{C} \frac{ze^{-z}}{z-\frac{i\pi}{2}}dz$, donde $C$ es el triángulo con vértices $-1-i$, $1-i$ y $2i$
+		\\ \textbf{Solución:} \\
+		Observamos que $ze^{-z}$ es analítica en $C$ y en su interior. Por lo tanto, $z_0=\frac{i\pi}{2}$ está dentro de $C$. Entonces,
+		\begin{align*}
+			\int_{C}\frac{ze^{-z}}{z-\frac{i\pi}{2}} &= 2\pi i \left(\frac{i\pi}{2}\right)e^{\frac{-i\pi}{2}}\\
+			&= -\pi^{2}(-i) \\
+			&= i\pi^{2}
+		\end{align*}
+		%%%%3
+		\item $\int_{\abs{z}=1} \frac{z^{2}}{z+3}dz$
+		\\ \textbf{Solución:} \\
+		Observamos que $\frac{z^{2}}{z+3}$ es analítica en cualquier punto excepto $z=-3$, que no pertenece a $\abs{z}=1$ ni a su interior. Además, $\abs{z}=1$ es una curva cerrada simple. Por lo tanto, por el teorema de Cauchy, $\int_{\abs{z}=1}\frac{z^{2}}{z+3}=0$.
+		%%%%4
+		\item $\int_{\abs{z}=2} \frac{\sin{z}}{z^{2}-1}dz$
+		\\ \textbf{Solución:} \\
+		Tenemos 
+		$$\int_{\abs{z}=2} \frac{\sin{z}}{z^{2}-1}dz = \int_{\abs{z}=C} \frac{\sin{z}}{(z+1)(z-1)}dz$$ 
+		para $\{ \frac{z}{\abs{z}}=2\}=C$. Pero $\frac{1}{(z+1)(z-1)}=\frac{A}{z+1}+\frac{B}{z-1}$.
+		De donde $(A+B)z+(B-A)=1$ y entonces $A=\frac{-1}{2}\text{ }, B=\frac{1}{2}$. Por tanto, 
+		$$\int_{C} \frac{\sin{z}}{(z+1)(z-1)}=-\frac{-1}{2}\int_{C}\frac{\sin{z}}{(z+1)}+\frac{1}{2}\frac{\sin{z}}{z-1}$$
+		Sin embargo, notamos que $f=\sin{z}$ es analítica y que tanto $z=1$ como $z=-1$ pertenecen al interior de $C$, entonces:
+		\begin{align*}
+			\frac{1}{2}\left(-\int_{C} \frac{\sin{z}}{z+1}+\int_{C}\frac{\sin{z}}{z-1}\right)&=-2\pi i f(-1)+2\pi i f(1) \\
+			&= \pi i \left(\sin(1)+\sin(1)\right) \\
+			&= 2\pi i \sin(1)
+		\end{align*}
+		%%%%5
+		\item $\int_{\abs{z}=b}\frac{dz}{z^{2}+bz+1}$.
+		\\ \textbf{Solución:} \\
+		Es importante destacar que $b$ debe ser mayor que 0 para que exista la circunferencia. Las raíces de la ecuación $z^{2}+bz+1=0$ son $z_{1,2} = \frac{-b \pm \sqrt{b^{2}-4}}{2}$. Vamos a comparar $z_{1,2}$ para determinar si están dentro de la circunferencia $\abs{z}=b$.
+		
+		\begin{align*}
+			\abs{z_{1,2}}=&\abs{ \frac{-b \pm \sqrt{b^{2}-4}}{2}} \\
+			\leq & \frac{b}{2} + \frac{1}{2} \abs{\sqrt{b^{2}-4}} < \frac{b}{2} + \frac{b}{2} = b
+		\end{align*}
+		
+		Por lo tanto, estas raíces están dentro de la circunferencia.
+		
+		De donde,
+		
+		$$\int_{C} \frac{dz}{z^{2}+bz+1}=\int_{C}\frac{A}{z-z_{1}}dz+\int_{C}\frac{B}{z-z_{2}}$$
+		y por el teorema del número de giros,
+		
+		$$\int_{C} \frac{dz}{z^{2}+bz+1}=2\pi i A + 2 \pi i B.$$
+		
+		%%%%6
+		\item $\int_{C} \frac{e^{-z}}{z^{3}+2z^{2}-3z-10}dz$, donde $C$ es el triángulo con vértices $i$, $-i$ y $3$.
+		\\ \textbf{Solución:} \\
+		Observamos por el algoritmo de la división que $z^{3}+2z^{2}-3z-10=(z-2)(z^{2}+4z+5)$.	
+		Ahora, $f=\frac{e^{-z}}{z^{2}+4z+5}$ es analítica excepto en $z=-2i-i$ y $z=-2+i$, puntos que no están en $C$ ni en su interior.
+		Tomamos $z_{0}=2$, que está dentro de $C$.
+		\begin{align*}
+			\int_{C} \frac{\frac{e^{-z}}{z^{2}+4z+5}}{z-2} =& 2\pi i f(2) \\
+			=& 2 \pi i \frac{e^{-2}}{4+8+5} = \frac{2\pi i e^{-2}}{17}
+		\end{align*}
+		%%%%7
+		\item $\int_{\abs{z-(1+i)}=1} \log{z}dz$.
+		\\ \textbf{Solución:} \\
+		
+		Observamos que $\log{z}$ es analítica en $C$ y su interior. Además, $C$ es una curva cerrada simple. Por tanto,
+		$$\int_{C} \log(z)dz=0.$$
+		
+		%%%%% 8
+		\item $\int_{C}\frac{dz}{z+1+i}$, donde $C$ es el cuadrado con vértices $3i$, $3+3i$, $0$ y $3$.
+		\\ \textbf{Solución:} \\
+		Note que $z+1+i=0$ únicamente en $z=-1-i$, pero este $z$ no está en $C$ ni en su interior. Además, al ser una curva cerrada simple, se tiene: 
+		$$\int_{C} \frac{dz}{z+1+i}=0$$
+		%%%%% 9
+		\item $\int_{\lvert z-3\rvert=2} \frac{\log{z}}{(z+1)(z-3)}dz$
+		\\ \textbf{Solución:} \\
+		Observando que $z_0=3$ está en el interior de la curva y que $f(z)=\frac{\log{z}}{z+1}$ es analítica en $z\neq-1$, pero $-1$ no está sobre la curva ni en su interior, se obtiene:
+		\begin{align*}
+			\int_{C} \frac{\frac{\log{z}}{z+1}}{z-3} &= 2\pi i f(3) \\
+			&= \frac{\pi i \log{3}}{2}
+		\end{align*}
+		%%%% 10
+		\item $\int_{0}^{1+i}z^{2}dz$
+		\begin{align*}
+			\int_{0}^{1+i}z^{2}dz &= \frac{z^{3}}{3}\bigg|_{0}^{1+i}\\
+			&= \frac{(1+3i)^{3}-0^{3}}{3} \\
+			&= \frac{-2+2i}{3} \\
+			&= \frac{2}{3}(-1+i)
+		\end{align*}
+		%%%% 11
+		\item $\int_{0}^{\pi+2i}\cos{\frac{z}{2}}dz$
+		\begin{align*}
+			\int_{0}^{\pi+2i}\cos{\frac{z}{2}}dz &= 2 \sin\left(\frac{z}{2}\right)\bigg|_{0}^{\pi +2i}\\
+			&= 2 \sin\left(\frac{\pi}{2}+i\right)-\sin(0) \\
+			&= 2\left(\frac{e^{\frac{\pi}{2}} e^{i} -  e^{\frac{-\pi}{2}} e^{-i} }{2i}\right) \\
+			&= 2\left(\frac{ie^{i}+ie^{-i}}{2i}\right) = 2 \cosh{1}
+		\end{align*}
+	\end{enumerate}
+\end{document}
