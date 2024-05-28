@@ -1,0 +1,167 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\title{Formas Diferenciables}
+\author{Wilson Jerez}
+\date{Mayo 2024}
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Definición}
+
+Sea \( f: \mathbb{R}^{n} \to \mathbb{R}^{m} \). El pullback de \( f \) en un punto \( p \) es 
+
+\[ f^{*}:\varLambda^{k}(\mathbb{R}^{m}_{f(p)})^{*} \to \varLambda^{k}(\mathbb{R}^{n}_{p})^{*} \]
+
+tal que 
+
+\[ f^{*}(w)(p)(v_{1},\dots,v_{k}) = w(f(p))(df_{p}(v_{1}),\dots,df_{p}(v_{k})) \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo}
+
+Sea \( w = -y \, dx + x \, dy \) y \( f:U \to \mathbb{R}^{2} \) tal que \( (r,\theta) \mapsto (r\cos(\theta),r\sin(\theta)) \), siendo \( U = \{ r > 0, \theta \in (0,2\pi) \} \), entonces 
+
+\[ f^{*}(w) = w(f(r,\theta)) = -r\sin(\theta) \, dx + r\cos(\theta) \, dy \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cálculo de \( dx \) y \( dy \)}
+
+\begin{align*}
+    dx = d(r\cos(\theta)) &= \frac{\partial (r\cos(\theta))}{\partial r} \, dr + \frac{\partial (r\cos(\theta))}{\partial \theta} \, d\theta \\
+        &= \cos(\theta) \, dr - r\sin(\theta) \, d\theta
+\end{align*}
+\begin{align*}
+    dy = d(r\sin(\theta)) &= \frac{\partial (r\sin(\theta))}{\partial r} \, dr + \frac{\partial (r\sin(\theta))}{\partial \theta} \, d\theta \\
+        &= \sin(\theta) \, dr + r\cos(\theta) \, d\theta
+\end{align*}
+\begin{align*}
+    f^{*}(w) &= -r\sin(\theta)(\cos(\theta) \, dr - r\sin(\theta) \, d\theta) \\
+    &\quad + r\cos(\theta)(\sin(\theta) \, dr + r\cos(\theta) \, d\theta) \\
+    &= r^{2} \, d\theta
+\end{align*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ilustración}
+
+Sea \( f:\mathbb{R}^{2} \to \mathbb{R}^{2} \) un mapeo diferenciable dado por 
+
+\[ f(x_{1},x_{2}) = (y_{1},y_{2}), \]
+
+y sea \( w = dy_{1} \wedge dy_{2}. \) Muestre que 
+
+\[ f^{*}w = \det(df_{p}) \, dx_{1} \wedge dx_{2}. \] Entonces \( f^{*}(w)=w(f(x_{1},x_{2})) \) tenemos \( f(x_{1},x_{2})=(f_{1}(x_{1},x_{2}), f_{2}(x_{1},x_{2}))=(y_{1}, y_{2}) \)
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cálculo de \( dy_{1} \) y \( dy_{2} \)}
+
+\begin{align*}
+dy_{1} &= d(f_{1}(x_{1},x_{2})) \\
+&= \frac{\partial f_{1}}{\partial x_{1}} dx_{1} + \frac{\partial f_{1}}{ \partial x_{2}} dx_{2}
+\end{align*}
+\begin{align*}
+dy_{2} &= d(f_{2}(x_{1},x_{2})) \\
+&= \frac{\partial f_{2}}{\partial x_{1}} dx_{1} + \frac{\partial f_{2}}{ \partial x_{2}} dx_{2}
+\end{align*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cálculo del Pullback}
+
+\begin{align*}
+    f^{*}(w) &= w(f(x_{1},x_{2})) \\
+    &= dy_{1} \wedge dy_{2} \\
+    &= \left(\frac{\partial f_{1}}{\partial x_{1}} dx_{1} + \frac{\partial f_{1}}{ \partial x_{2}} dx_{2}\right) \wedge \left(\frac{\partial f_{2}}{\partial x_{1}} dx_{1} + \frac{\partial f_{2}}{ \partial x_{2}} dx_{2}\right)  \\
+    &= \frac{\partial f_{1}}{\partial x_{1}} \frac{\partial f_{2}}{\partial x_{2}} dx_{1} \wedge dx_{2} + \frac{\partial f_{1}}{\partial x_{2}} \frac{\partial f_{2}}{\partial x_{1}} dx_{2} \wedge dx_{1} \\
+    &= \left(\frac{\partial f_{1}}{\partial x_{1}} \frac{\partial f_{2}}{\partial x_{2}} - \frac{\partial f_{1}}{\partial x_{2}} \frac{\partial f_{2}}{\partial x_{1}} \right) dx_{1} \wedge dx_{2} \\
+    &= \begin{vmatrix}
+    \frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} \\
+    \frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} \\
+    \end{vmatrix} dx_{1} \wedge dx_{2} = \det(df_{p}) dx_{1} \wedge dx_{2}
+\end{align*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 8}
+
+Sea \( f:\mathbb{R}^{n} \to \mathbb{R}^{n} \) un mapeo diferenciable dado por 
+
+\[ f(x_{1},\dots,x_{n}) = (y_{1},\dots,y_{n}), \]
+
+y sea \( w = dy_{1} \wedge \dots \wedge dy_{n}. \) Muestre que 
+
+\[ f^{*}w = \det(df_{p}) \, dx_{1} \wedge \dots \wedge dx_{n}. \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cálculo de \( dy_{i} \)}
+Para cada \( i \) de \( 1 \) a \( n \), calculamos \( dy_{i} \) como la diferencial de \( f_{i}(x_{1}, \dots, x_{n}) \):
+
+   \[ dy_{i} = d(f_{i}(x_{1}, x_{2}, \dots, x_{n})) = \sum_{j=1}^{n} \frac{\partial f_{i}}{\partial x_{j}} dx_{j} \]
+   
+\end{frame}
+\begin{frame}
+\frametitle{Expansión del Producto Exterior}
+   El pullback \( f^{*}(w) \) se obtiene expandiendo el producto exterior de las diferenciales \( dy_{i} \):
+   
+ \begin{align*}
+ f^{*}(w) &= \bigwedge_{i=1}^{n} \left( \sum_{j=1}^{n} \frac{\partial f_{i}}{\partial x_{j}} dx_{j} \right) \\
+ &=\left( \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j} \right) \wedge \left( \sum_{j=1}^{n} \frac{\partial f_{2}}{\partial x_{j}} dx_{j} \right) \wedge \dots \wedge \left( \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} \right) \\
+ &= \begin{vmatrix}
+    \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j}(v_1) & \dots & \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j}(v_n) \\
+     \vdots& \ddots& \vdots\\
+    \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} (v_1) & \dots & \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} (v_n)\\
+    \end{vmatrix}
+ \end{align*}
+\end{frame}
+
+\begin{frame}
+\begin{align*}
+f^{*}(w) =& \begin{vmatrix}
+\frac{\partial f_{1}}{\partial x_{1}} & \dots & \frac{\partial f_{1}}{\partial x_{j}} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f_{n}}{\partial x_{1}} & \ddots & \frac{\partial f_{n}}{\partial x_{n}}
+\end{vmatrix} \begin{vmatrix}
+dx_{1} (v_1) & \dots & dx_{1} (v_n) \\
+\vdots & \ddots & \vdots \\
+dx_{n} (v_1) & \dots & dx_{n} (v_n)
+\end{vmatrix} \\
+&=det(df_{p}) dx_{1} \wedge \dots \wedge dx_{n} (v_1,\dots,v_nDo)
+\end{align*}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Resultado Final}
+   El resultado final es que el pullback de \( w \) bajo \( f \) es el determinante del Jacobiano multiplicado por el producto exterior de las diferenciales \( dx_{1} \wedge \dots \wedge dx_{n} \):
+
+   \[ f^{*}(w) = \det(df_{p}) \, dx_{1} \wedge \dots \wedge dx_{n} \]
+\end{frame}
+
+\begin{frame}
+\frametitle{Links de interes}
+\url{https://sites.ualberta.ca/~vbouchar/MATH215/section_pullback_two_form.html}
+\url{https://math.stackexchange.com/questions/576638/how-to-calculate-the-pullback-of-a-k-form-explicitly}
+\url{https://math.stackexchange.com/questions/1302562/proving-that-the-pullback-map-commutes-with-the-exterior-derivative}
+\end{frame}
+
+\end{document}
+
+
+
+
+

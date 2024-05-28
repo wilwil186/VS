@@ -9,8 +9,6 @@ Tabla_1 <- data.frame(
 modelo <- lm(formula = alargamiento ~ peso, data = Tabla_1)
 summary (modelo)
 
-
-
 plot(Tabla_1$peso, Tabla_1$alargamiento, 
      main = "Gráfico de Dispersión de Peso vs Alargamiento",
      xlab = "Peso",
@@ -18,7 +16,7 @@ plot(Tabla_1$peso, Tabla_1$alargamiento,
      pch = 19, # Tipo de punto
      col = "blue") 
 
-ablo
+abline(modelo)
 
 sxx <- sum((peso -mean(peso))^2)
 sxx
