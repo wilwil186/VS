@@ -1,0 +1,57 @@
+\section*{Sección 33}
+%Ejercicios: 1-7, 9-13
+
+\noindent En los Ejercicios 1 a 3, determine si existe un campo finito con el número dado de elementos. (Una calculadora puede ser útil.)
+\begin{enumerate}
+    \item 4096
+    
+    \textbf{Solución:} Debido a que $4096 = 2^{12}$ es una potencia de un primo, existe un campo finito de orden 4096.
+
+    \item 3127
+    
+    \textbf{Solución:} Debido a que $3127 = 53 \cdot 59$ no es una potencia de un primo, no existe un campo finito de orden 3127.
+
+    \item 68,921
+    
+    \textbf{Solución:} Debido a que $68921 = 41^3$ es una potencia de un primo, existe un campo finito de orden 68921.
+
+    \item Encuentre el número de raíces primitivas octavas de la unidad en $\text{GF}(9)$.
+    
+    \textbf{Solución:} $\text{GF}(9)^*$ es un grupo cíclico bajo la multiplicación de orden 8 y tiene $\varphi(8) = 4$ generadores, por lo que hay 4 raíces primitivas octavas de la unidad.
+
+    \item Encuentre el número de raíces primitivas decimoctavas de la unidad en $\text{GF}(19)$.
+    
+    \textbf{Solución:} $\text{GF}(19)^*$ es un grupo cíclico bajo la multiplicación de orden 18 y tiene $\varphi(18) = 6$ generadores, por lo que hay 6 raíces primitivas decimoctavas de la unidad.
+
+    \item Encuentre el número de raíces primitivas decimoquintas de la unidad en $\text{GF}(31)$.
+    
+    \textbf{Solución:} $\text{GF}(31)^*$ es un grupo cíclico bajo la multiplicación de orden 30. Su subgrupo cíclico de orden 15 tiene $\varphi(15) = 8$ generadores, por lo que contiene 8 raíces primitivas decimoquintas de la unidad.
+
+    \item Encuentre el número de raíces primitivas décimas de la unidad en $\text{GF}(23)$.
+    
+    \textbf{Solución:} $\text{GF}(23)^*$ es un grupo cíclico bajo la multiplicación de orden 22. Debido a que 10 no es un divisor de 22, no hay raíces primitivas décimas de la unidad en $\text{GF}(23)$.
+\end{enumerate}
+
+
+\begin{enumerate}
+    \setcounter{enumi}{8}
+    \item Sea $\overline{\mathbb{Z}_2}$ un cierre algebraico de $\mathbb{Z}_2$, y sea $\alpha, \beta \in \overline{\mathbb{Z}_2}$ ceros de $x^3 + x^2 + 1$ y de $x^3 + x + 1$, respectivamente. Usando los resultados de esta sección, demuestra que $\mathbb{Z}_2(\alpha) = \mathbb{Z}_2(\beta)$.
+    
+    \textbf{Solución:} Dado que ambos polinomios son irreducibles sobre $\mathbb{Z}_2$, tanto $\mathbb{Z}_2(\alpha)$ como $\mathbb{Z}_2(\beta)$ son extensiones de $\mathbb{Z}_2$ de grado 3 y, por lo tanto, son subcampos de $\overline{\mathbb{Z}_2}$ que contienen $2^3 = 8$ elementos. Según el  \textbf{Teorema 33.3}, ambos campos deben consistir precisamente en los ceros en $\overline{\mathbb{Z}_2}$ del polinomio $x^8 - x$. Por lo tanto, los campos son iguales.
+
+    \item Demuestra que todo polinomio irreducible en $\mathbb{Z}_p[x]$ es un divisor de $x^{p^n} - x$ para algún $n$.
+    
+    \textbf{Solución:} Sea $p(x)$ irreducible de grado $m$ en $\mathbb{Z}_p[x]$. Sea $K$ la extensión finita de $\mathbb{Z}_p$ obtenida al adjuntar todos los ceros de $p(x)$ en $¸\overline{\mathbb{Z}_p}$. Entonces $K$ es un campo finito de orden $p^n$ para algún entero positivo $n$, y consiste precisamente en todos los ceros de $x^{p^n} - x$ en $ \overline{\mathbb{Z}_p}$. Ahora $p(x)$ se factoriza en factores lineales en $K[x]$, y estos factores lineales están entre los factores lineales de $x^{p^n} - x$ en $K[x]$. Por lo tanto, $p(x)$ es un divisor de $x^{p^n} - x$.
+
+    \item Sea $F$ un campo finito de $p^n$ elementos que contiene el subcampo primo $\mathbb{Z}_p$. Demuestra que si $\alpha \in F$ es un generador del grupo cíclico $\langle F^*, \cdot \rangle$ de elementos no nulos de $F$, entonces $\deg(\alpha, \mathbb{Z}_p) = n$.
+    
+    \textbf{Solución:} Debido a que $\alpha \in F$, tenemos $\mathbb{Z}_p(\alpha) \subseteq F$. Pero debido a que $\alpha$ es un generador del grupo multiplicativo $F^*$, vemos que $\mathbb{Z}_p(\alpha) = F$. Debido a que $|F| = p^n$, el grado de $\alpha$ sobre $\mathbb{Z}_p$ debe ser $n$.
+
+    \item Demuestra que un campo finito de $p^n$ elementos tiene exactamente un subcampo de $p^m$ elementos para cada divisor $m$ de $n$.
+    
+    \textbf{Solución:} Sea $F$ un campo finito de $p^n$ elementos que contiene (hasta isomorfismos) el campo primo $\mathbb{Z}_p$. Sea $m$ un divisor de $n$, de modo que $n = mq$. Sea $\overline{F} = \overline{\mathbb{Z}_p}$ un cierre algebraico de $F$. Si $\alpha \in \overline{\mathbb{Z}_p}$ y $\alpha^{p^m} = \alpha$, entonces $\alpha^{p^n} = \alpha^{p^{mq}} = (\alpha^{p^m})^{p^{m(q-1)}} = \alpha^{p^{m(q-1)}} = (\alpha^{p^{m}})^{p^{m(q-2)}} = \alpha^{p^{m(q-2)}} = \cdots= \alpha$. Según el Teorema 33.3, los ceros de $x^{p^m} - x$ en $\overline{\mathbb{Z}_p}$ forman el único subcampo de $\overline{\mathbb{Z}_p}$ de orden $p^m$. Nuestro cálculo muestra que los elementos en este subcampo también son ceros de $x^{p^n} - x$, y consecuentemente todos están en el campo $F$, que según el Teorema 33.3 consiste en todos los ceros de $x^{p^n} - x$ en $\overline{\mathbb{Z}_p}$.
+
+    \item Demuestra que $x^{p^n} - x$ es el producto de todos los polinomios mónicos irreducibles en $\mathbb{Z}_p[x]$ de grado $d$ que divide a $n$.
+    
+    \textbf{Solución:} Sea $F$ la extensión de $\mathbb{Z}_p$ de grado $n$, consistiendo en todos los ceros de $x^{p^n} - x$ según el Teorema 33.3. Cada $\alpha \in F$ es algebraico sobre $\mathbb{Z}_p$ y tiene un grado que divide a $n$ según el Teorema 31.4. Por lo tanto, cada $\alpha \in F$ es un cero de un polinomio mónico irreducible de un grado que divide a $n$. A la inversa, un cero $\beta$ de un polinomio irreducible mónico de grado $m$ que divide a $n$ se encuentra en un campo $\mathbb{Z}_p(\beta)$ de $p^m$ elementos que está contenido en $F$ según el Ejercicio 12. Por lo tanto, los elementos de $F$ son precisamente los ceros de todos los polinomios mónicos irreducibles en $\mathbb{Z}_p[x]$ de grado que divide a $n$, así como precisamente todos los ceros de $x^{p^n} - x$. Factorizando en factores lineales en $F[x]$, vemos que tanto $x^{p^n} - x$ como el producto $g(x)$ de todos los polinomios mónicos irreducibles en $\mathbb{Z}_p[x]$ de grado $d$ que divide a $n$ tienen la factorización $\prod_{\alpha \in F} (x - \alpha)$, por lo que $x^{p^n} - x = g(x)$.
+\end{enumerate}
