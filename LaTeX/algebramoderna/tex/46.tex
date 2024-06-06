@@ -1,0 +1,103 @@
+En los Ejercicios 1 a 5, indique si la función \( \nu \) dada es una norma euclidiana para el dominio integral dado.
+
+\begin{enumerate}
+    \item La función \( \nu \) para \( \mathbb{Z} \) dada por \( \nu(n) = n^2 \) para \( n \neq 0 \) en \( \mathbb{Z} \).
+    
+    \textbf{Solución:} Sí, es una norma euclidiana. Para ver esto, recordemos que \( |\cdot| \) es una norma euclidiana en \( \mathbb{Z} \). Para la Condición 1, encontramos \( q \) y \( r \) tales que \( a = bq + r \) donde \( r = 0 \) o \( |r| < |b| \). Entonces, seguramente tenemos \( \nu(r) = 0 \) o \( \nu(r) = r^2 < b^2 = \nu(b) \), porque \( r \) y \( b \) son enteros. Para la Condición 2, note que \( \nu(a) = a^2 \leq a^2 b^2 = \nu(ab) \) para \( a \) y \( b \) no nulos, porque \( a \) y \( b \) son enteros.
+    
+    \item La función \( \nu \) para \( \mathbb{Z}[x] \) dada por \( \nu(f(x)) = \) (grado de \( f(x) \)) para \( f(x) \neq 0 \) en \( \mathbb{Z}[x] \).
+    
+    \textbf{Solución:} No, \( \nu \) no es una norma euclidiana. Sea \( a = x \) y \( b = 2x \) en \( \mathbb{Z}[x] \). No existen \( q(x), r(x) \in \mathbb{Z}[x] \) que satisfagan \( x = (2x)q(x) + r(x) \) donde el grado de \( r(x) \) es menor que 1.
+    
+    \item La función \( \nu \) para \( \mathbb{Z}[x] \) dada por \( \nu(f(x)) = \) (el valor absoluto del coeficiente del término de mayor grado no nulo de \( f(x) \)) para \( f(x) \neq 0 \) en \( \mathbb{Z}[x] \).
+    
+    \textbf{Solución:} No, \( \nu \) no es una norma euclidiana. Sea \( a = x \) y \( b = x + 2 \) en \( \mathbb{Z}[x] \). No existen \( q(x), r(x) \in \mathbb{Z}[x] \) que satisfagan \( x = (x + 2)q(x) + r(x) \) donde el valor absoluto del coeficiente del término de mayor grado en \( r(x) \) es menor que 1.
+    
+    \item La función \( \nu \) para \( \mathbb{Q} \) dada por \( \nu(a) = a^2 \) para \( a \neq 0 \) en \( \mathbb{Q} \).
+    
+    \textbf{Solución:} No, no es una norma euclidiana. Sea \( a = 1/2 \) y \( b = 1/3 \). Entonces \( \nu(a) = (1/2)^2 = 1/4 > 1/36 = \nu(1/6) = \nu(ab) \), por lo que se viola la Condición 2.
+    
+    \item La función \( \nu \) para \( \mathbb{Q} \) dada por \( \nu(a) = 50 \) para \( a \neq 0 \) en \( \mathbb{Q} \).
+    
+    \textbf{Solución:} Sí, es una norma euclidiana, pero no es útil. Sea \( a, b \in \mathbb{Q} \). Si \( b \neq 0 \), sea \( q = a/b \). Entonces \( a = bq + 0 \), lo que satisface la Condición 1. Para la Condición 2, si tanto \( a \) como \( b \) son no nulos, entonces \( \nu(a) = 50 \leq 50 = \nu(ab) \).
+    
+    \item Refiriéndose al Ejemplo 46.11, exprese realmente el mcd 23 en la forma \( \lambda(22,471) + \mu(3,266) \) para \( \lambda, \mu \in \mathbb{Z} \).
+    
+    \textbf{Solución:} Tenemos \( 23 = 3(138) - 1(391) \), pero \( 138 = 3,266 - 8(391) \), entonces
+    \[
+    23 = 3[3,266 - 8(391)] - 1(391) = 3(3,266) - 25(391).
+    \]
+    Ahora \( 391 = 7(3,266) - 22,471 \), entonces
+    \[
+    23 = 3(3,266) - 25[7(3,266) - 22,471] = 25(22,471) - 172(3,266).
+    \]
+    
+    \item Encuentre un mcd de 49,349 y 15,555 en \( \mathbb{Z} \).
+    
+    \textbf{Solución:} Realizando el algoritmo de la división, obtenemos
+    \[
+    49,349 = (15,555)3 + 2,684,
+    \]
+    \[
+    15,555 = (2,684)6 - 549,
+    \]
+    \[
+    2,684 = (549)5 - 61,
+    \]
+    \[
+    549 = (61)9 + 0,
+    \]
+    entonces el mcd es 61.
+    
+    \item Siguiendo la idea del Ejercicio 6 y refiriéndose al Ejercicio 7, exprese el mcd positivo de 49,349 y 15,555 en \( \mathbb{Z} \) en la forma \( \lambda(49,349) + \mu(15,555) \) para \( \lambda, \mu \in \mathbb{Z} \).
+    
+    \textbf{Solución:} Tenemos \( 61 = 5(549) - 2,684 \), pero \( 549 = 6(2,684) - 15,555 \), entonces
+    \[
+    61 = 5[6(2,684) - 15,555] - 2,684 = 29(2,684) - 5(15,555).
+    \]
+    Ahora \( 2,684 = 49,349 - 3(15,555) \), entonces
+    \[
+    61 = 29[49,349 - 3(15,555)] - 5(15,555) = 29(49,349) - 92(15,555).
+    \]
+    
+    \item Encuentre un mcd de \( x^{10} - 3x^9 + 3x^8 - 11x^7 + 11x^6 - 11x^5 + 19x^4 - 13x^3 + 8x^2 - 9x + 3 \) y \( x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2 \) en \( \mathbb{Q}[x] \).
+    
+    \textbf{Solución:} Usamos el algoritmo de la división.
+    \[
+    \begin{array}{rl}
+    & x^{10} - 3x^9 + 3x^8 - 11x^7 + 11x^6 - 11x^5 + 19x^4 - 13x^3 + 8x^2 - 9x + 3 \\
+    \div & x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2 \\
+    = & x^4 - 2x \\
+    \\
+    x^{10} - 3x^9 + 3x^8 - 9x^7 + 5x^6 - 5x^5 + 2x^4 & \\
+    - (x^4 - 2x)(x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2) & \\
+    = & -2x^7 + 6x^6 - 6x^5 + 17x^4 - 13x^3 + 8x^2 - 9x + 3 \\
+    \div & x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2 \\
+    = & -2x \\
+    \\
+    -2x^7 + 6x^6 - 6x^5 + 18x^4 - 10x^3 + 10x^2 - 4x & \\
+    - (-2x)(x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2) & \\
+    = & -x^4 - 3x^3 - 2x^2 - 5x + 3 \\
+    \div & x^6 - 3x^5 + 3x^4 - 9x^3 + 5x^2 - 5x + 2 \\
+    = & 1/x \\
+    \\
+    -x^4 - 3x^3 - 2x^2 - 5x + 3 & \\
+    \div & x^4 - 3x^3 + 3x^2 - 5x + 2 & \\
+    = & -x^2 + 6x - 19 \\
+    \div & x^2 - 6x + 19 \\
+    = & x \\
+    \div & x^3 + 2x - 1 \\
+    = & x^3 + 2x - 1 \\
+    \end{array}
+    \]
+    
+    Un mcd es \( x^3 + 2x - 1 \).
+    
+    \item Describa cómo se puede usar el algoritmo euclidiano para encontrar el mcd de \( n \) miembros \( a_1, a_2, \ldots, a_n \) de un dominio euclidiano.
+    
+    \textbf{Solución:} Use el algoritmo euclidiano para encontrar el mcd \( d_2 \) de \( a_2 \) y \( a_1 \). Luego úselo para encontrar el mcd \( d_3 \) de \( a_3 \) y \( d_2 \). Luego úselo nuevamente para encontrar el mcd \( d_4 \) de \( a_4 \) y \( d_3 \). Continúe este proceso hasta encontrar el mcd \( d_n \) de \( a_n \) y \( d_{n-1} \). El mcd de los \( n \) miembros \( a_1, a_2, \ldots, a_n \) es \( d_n \).
+    
+    \item Usando su método ideado en el Ejercicio 10, encuentre el mcd de 2178, 396, 792 y 726.
+    
+    \textbf{Solución:} Usamos la notación de la solución del ejercicio anterior con \( a_1 = 2178 \), \( a_2 = 396 \), \( a_3 = 792 \) y \( a_4 = 726 \). Tenemos \( 2178 = 5(396) + 198 \) y \( 396 = 2(198) + 0 \), por lo que \( d_2 = 198 \). Tenemos \( 792 = 4(198) + 0 \) así que \( d_3 = 198 \). Tenemos \( 726 = 3(198) + 132 \), \( 198 = 1(132) + 66 \), y \( 132 = 2(66) + 0 \). Así, el mcd de 2178, 396, 792 y 726 es \( d_4 = 66 \).
+\end{enumerate}
