@@ -19,77 +19,6 @@ tal que
 
 \[ f^{*}(w)(p)(v_{1},\dots,v_{k}) = w(f(p))(df_{p}(v_{1}),\dots,df_{p}(v_{k})) \]
 
-\end{frame}
-
-\begin{frame}
-\frametitle{Ejemplo}
-
-Sea \( w = -y \, dx + x \, dy \) y \( f:U \to \mathbb{R}^{2} \) tal que \( (r,\theta) \mapsto (r\cos(\theta),r\sin(\theta)) \), siendo \( U = \{ r > 0, \theta \in (0,2\pi) \} \), entonces 
-
-\[ f^{*}(w) = w(f(r,\theta)) = -r\sin(\theta) \, dx + r\cos(\theta) \, dy \]
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Cálculo de \( dx \) y \( dy \)}
-
-\begin{align*}
-    dx = d(r\cos(\theta)) &= \frac{\partial (r\cos(\theta))}{\partial r} \, dr + \frac{\partial (r\cos(\theta))}{\partial \theta} \, d\theta \\
-        &= \cos(\theta) \, dr - r\sin(\theta) \, d\theta
-\end{align*}
-\begin{align*}
-    dy = d(r\sin(\theta)) &= \frac{\partial (r\sin(\theta))}{\partial r} \, dr + \frac{\partial (r\sin(\theta))}{\partial \theta} \, d\theta \\
-        &= \sin(\theta) \, dr + r\cos(\theta) \, d\theta
-\end{align*}
-\begin{align*}
-    f^{*}(w) &= -r\sin(\theta)(\cos(\theta) \, dr - r\sin(\theta) \, d\theta) \\
-    &\quad + r\cos(\theta)(\sin(\theta) \, dr + r\cos(\theta) \, d\theta) \\
-    &= r^{2} \, d\theta
-\end{align*}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Ilustración}
-
-Sea \( f:\mathbb{R}^{2} \to \mathbb{R}^{2} \) un mapeo diferenciable dado por 
-
-\[ f(x_{1},x_{2}) = (y_{1},y_{2}), \]
-
-y sea \( w = dy_{1} \wedge dy_{2}. \) Muestre que 
-
-\[ f^{*}w = \det(df_{p}) \, dx_{1} \wedge dx_{2}. \] Entonces \( f^{*}(w)=w(f(x_{1},x_{2})) \) tenemos \( f(x_{1},x_{2})=(f_{1}(x_{1},x_{2}), f_{2}(x_{1},x_{2}))=(y_{1}, y_{2}) \)
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Cálculo de \( dy_{1} \) y \( dy_{2} \)}
-
-\begin{align*}
-dy_{1} &= d(f_{1}(x_{1},x_{2})) \\
-&= \frac{\partial f_{1}}{\partial x_{1}} dx_{1} + \frac{\partial f_{1}}{ \partial x_{2}} dx_{2}
-\end{align*}
-\begin{align*}
-dy_{2} &= d(f_{2}(x_{1},x_{2})) \\
-&= \frac{\partial f_{2}}{\partial x_{1}} dx_{1} + \frac{\partial f_{2}}{ \partial x_{2}} dx_{2}
-\end{align*}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Cálculo del Pullback}
-
-\begin{align*}
-    f^{*}(w) &= w(f(x_{1},x_{2})) \\
-    &= dy_{1} \wedge dy_{2} \\
-    &= \left(\frac{\partial f_{1}}{\partial x_{1}} dx_{1} + \frac{\partial f_{1}}{ \partial x_{2}} dx_{2}\right) \wedge \left(\frac{\partial f_{2}}{\partial x_{1}} dx_{1} + \frac{\partial f_{2}}{ \partial x_{2}} dx_{2}\right)  \\
-    &= \frac{\partial f_{1}}{\partial x_{1}} \frac{\partial f_{2}}{\partial x_{2}} dx_{1} \wedge dx_{2} + \frac{\partial f_{1}}{\partial x_{2}} \frac{\partial f_{2}}{\partial x_{1}} dx_{2} \wedge dx_{1} \\
-    &= \left(\frac{\partial f_{1}}{\partial x_{1}} \frac{\partial f_{2}}{\partial x_{2}} - \frac{\partial f_{1}}{\partial x_{2}} \frac{\partial f_{2}}{\partial x_{1}} \right) dx_{1} \wedge dx_{2} \\
-    &= \begin{vmatrix}
-    \frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}} \\
-    \frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}} \\
-    \end{vmatrix} dx_{1} \wedge dx_{2} = \det(df_{p}) dx_{1} \wedge dx_{2}
-\end{align*}
 
 \end{frame}
 
@@ -107,12 +36,22 @@ y sea \( w = dy_{1} \wedge \dots \wedge dy_{n}. \) Muestre que
 \end{frame}
 
 \begin{frame}
-\frametitle{Cálculo de \( dy_{i} \)}
-Para cada \( i \) de \( 1 \) a \( n \), calculamos \( dy_{i} \) como la diferencial de \( f_{i}(x_{1}, \dots, x_{n}) \):
+\frametitle{Cálculo de \( dy_i \)}
 
-   \[ dy_{i} = d(f_{i}(x_{1}, x_{2}, \dots, x_{n})) = \sum_{j=1}^{n} \frac{\partial f_{i}}{\partial x_{j}} dx_{j} \]
-   
+Para ver esto primero consideremos una función \( f: \mathbb{R}^n \to \mathbb{R}^n \) tal que \( (x_1,\dots,x_n) \mapsto (y_1,\dots,y_n) \).
+Tenemos que \( f^* dy_i = \sum a_k dx_k \). Por otro lado, tenemos:
+
+\begin{align*}
+    f^* dy_i (e_i) &= dy_i(f_p)(df_p(e_i)) \\
+    &= dy_i (f_p) \left(\sum_{k=1}^{n} \frac{\partial f_k}{\partial x_i} (e_k) \right) \\
+    &= \sum_{j=1}^{n} \frac{\partial f_i}{\partial x_j}(p) dx_j
+\end{align*}
+
+Por tanto, podemos ver que \( f^* dy_i = \sum_{j=1}^{n} \frac{\partial f_i}{\partial x_j} dx_j \).
+
 \end{frame}
+
+
 \begin{frame}
 \frametitle{Expansión del Producto Exterior}
    El pullback \( f^{*}(w) \) se obtiene expandiendo el producto exterior de las diferenciales \( dy_{i} \):
