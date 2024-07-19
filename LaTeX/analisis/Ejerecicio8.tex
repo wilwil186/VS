@@ -1,0 +1,106 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\title{Formas Diferenciables}
+\author{Wilson Jerez}
+\date{Mayo 2024}
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Definición}
+
+Sea \( f: \mathbb{R}^{n} \to \mathbb{R}^{m} \). El pullback de \( f \) en un punto \( p \) es 
+
+\[ f^{*}:\varLambda^{k}(\mathbb{R}^{m}_{f(p)})^{*} \to \varLambda^{k}(\mathbb{R}^{n}_{p})^{*} \]
+
+tal que 
+
+\[ f^{*}(w)(p)(v_{1},\dots,v_{k}) = w(f(p))(df_{p}(v_{1}),\dots,df_{p}(v_{k})) \]
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejercicio 8}
+
+Sea \( f:\mathbb{R}^{n} \to \mathbb{R}^{n} \) un mapeo diferenciable dado por 
+
+\[ f(x_{1},\dots,x_{n}) = (y_{1},\dots,y_{n}), \]
+
+y sea \( w = dy_{1} \wedge \dots \wedge dy_{n}. \) Muestre que 
+
+\[ f^{*}w = \det(df_{p}) \, dx_{1} \wedge \dots \wedge dx_{n}. \]
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Cálculo de \( dy_i \)}
+
+Para ver esto primero consideremos una función \( f: \mathbb{R}^n \to \mathbb{R}^n \) tal que \( (x_1,\dots,x_n) \mapsto (y_1,\dots,y_n) \).
+Tenemos que \( f^* dy_i = \sum a_k dx_k \). Por otro lado, tenemos:
+
+\begin{align*}
+    f^* dy_i (e_i) &= dy_i(f_p)(df_p(e_i)) \\
+    &= dy_i (f_p) \left(\sum_{k=1}^{n} \frac{\partial f_k}{\partial x_i} (e_k) \right) \\
+    &= \sum_{j=1}^{n} \frac{\partial f_i}{\partial x_j}(p) dx_j
+\end{align*}
+
+Por tanto, podemos ver que \( f^* dy_i = \sum_{j=1}^{n} \frac{\partial f_i}{\partial x_j} dx_j \).
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Expansión del Producto Exterior}
+   El pullback \( f^{*}(w) \) se obtiene expandiendo el producto exterior de las diferenciales \( dy_{i} \):
+   
+ \begin{align*}
+ f^{*}(w) &= \bigwedge_{i=1}^{n} \left( \sum_{j=1}^{n} \frac{\partial f_{i}}{\partial x_{j}} dx_{j} \right) \\
+ &=\left( \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j} \right) \wedge \left( \sum_{j=1}^{n} \frac{\partial f_{2}}{\partial x_{j}} dx_{j} \right) \wedge \dots \wedge \left( \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} \right) \\
+ &= \begin{vmatrix}
+    \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j}(v_1) & \dots & \sum_{j=1}^{n} \frac{\partial f_{1}}{\partial x_{j}} dx_{j}(v_n) \\
+     \vdots& \ddots& \vdots\\
+    \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} (v_1) & \dots & \sum_{j=1}^{n} \frac{\partial f_{n}}{\partial x_{j}} dx_{j} (v_n)\\
+    \end{vmatrix}
+ \end{align*}
+\end{frame}
+
+\begin{frame}
+\begin{align*}
+f^{*}(w) =& \begin{vmatrix}
+\frac{\partial f_{1}}{\partial x_{1}} & \dots & \frac{\partial f_{1}}{\partial x_{j}} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f_{n}}{\partial x_{1}} & \dots & \frac{\partial f_{n}}{\partial x_{n}}
+\end{vmatrix} \begin{vmatrix}
+dx_{1} (v_1) & \dots & dx_{1} (v_n) \\
+\vdots & \ddots & \vdots \\
+dx_{n} (v_1) & \dots & dx_{n} (v_n)
+\end{vmatrix} \\
+&=det(df_{p}) dx_{1} \wedge \dots \wedge dx_{n} (v_1,\dots,v_n)
+\end{align*}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Resultado Final}
+   El resultado final es que el pullback de \( w \) bajo \( f \) es el determinante del Jacobiano multiplicado por el producto exterior de las diferenciales \( dx_{1} \wedge \dots \wedge dx_{n} \):
+
+   \[ f^{*}(w) = \det(df_{p}) \, dx_{1} \wedge \dots \wedge dx_{n} \]
+\end{frame}
+
+\begin{frame}
+\frametitle{Links de interes}
+\url{https://sites.ualberta.ca/~vbouchar/MATH215/section_pullback_two_form.html}
+\url{https://math.stackexchange.com/questions/576638/how-to-calculate-the-pullback-of-a-k-form-explicitly}
+\url{https://math.stackexchange.com/questions/1302562/proving-that-the-pullback-map-commutes-with-the-exterior-derivative}
+\end{frame}
+
+\end{document}
+
+
+
+
+

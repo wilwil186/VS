@@ -1,0 +1,132 @@
+\documentclass[final, 20pt, a2paper, portrait]{extarticle}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, paperwidth=70cm, paperheight=100cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\definecolor{nejltblue}{RGB}{63,81,181}
+
+
+\usepackage{nejlt}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[spanish]{babel}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{background}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.8pt}
+\fancyfoot[R]{\thepage}
+
+
+\lhead{\includegraphics[width=4cm]{imagenes/Distrital.png}}
+\rhead{\includegraphics[width=4cm]{imagenes/Uis.png}}
+\chead{Análisis de la Serie de Tiempo de Bitcoin Utilizando Técnicas de  \\ Random Forest y Redes Neuronales Recurrentes LSTM \\ Wilson Eduardo Jerez-Hernández \\\url{wejerezh@udistrital.edu.co} \rule{\textwidth}{1pt}}
+
+% Logo del Semillero IPREA en el fondo del documento
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=0.4,
+  angle=0,
+  position=current page.south,
+  vshift=50cm, % Ajusta la posición vertical según sea necesario (valor negativo para ir hacia arriba)
+   contents={\includegraphics[width=30cm]{imagenes/Iprea.png}}
+}
+
+\title{Análisis de la Serie de Tiempo de Bitcoin Utilizando Técnicas de Random Forest y Redes Neuronales Recurrentes LSTM}
+\author{Wilson Eduardo Jerez Hernández\\wejerezh@udistrital.edu.co}
+\date{}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%truco sucio para que no se superponga el encabezado con el texto
+\section*{}
+\vspace{4cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Resumen}
+En este artículo, se investiga el comportamiento de los precios de Bitcoin a lo largo del tiempo y se exploran dos enfoques diferentes para la predicción: Random Forest y Redes Neuronales Recurrentes con unidades LSTM. El estudio se centra en la volatilidad de las criptomonedas, que ha generado escepticismo debido a su sistema descentralizado y la falta de control por parte de autoridades reguladoras. A medida que las criptomonedas ganan aceptación en el mercado, su alta volatilidad se ha convertido en un tema de preocupación. El objetivo principal de esta investigación es proporcionar una comprensión más profunda de cómo las técnicas de Random Forest y Redes Neuronales Recurrentes pueden aplicarse al análisis de criptomonedas con el fin de reducir esta volatilidad y predecir los valores de las criptomonedas.
+
+\section*{Objetivos}
+El objetivo principal de este proyecto es analizar y predecir el comportamiento de los precios de Bitcoin a lo largo del tiempo, abordando la volatilidad característica de las criptomonedas. Para lograr este objetivo, se emplearán dos enfoques diferentes: Random Forest y Redes Neuronales Recurrentes (RNN) con unidades LSTM.
+
+\section*{Fundamentos Teóricos}
+\subsection*{Series de Tiempo}
+Una serie de tiempo es un conjunto de datos que se recopila o registra en intervalos regulares a lo largo del tiempo.
+\subsection*{Características de una Serie de Tiempo}
+\begin{enumerate}
+    \item \textbf{Movimientos a Largo Plazo o Tendencia.}
+    \item \textbf{Movimientos Cíclicos: Fluctuaciones que ocurren en patrones recurrentes, pero no necesariamente a intervalos fijos.}
+    \item \textbf{Movimientos Estacionales: Intervalos regulares a lo largo del tiempo.}
+    \item \textbf{Movimientos Irregulares o Aleatorios.}
+\end{enumerate}
+\subsection*{Etapas Preliminares del Análisis}
+\begin{itemize}
+\item \textbf{Experticia en el Ámbito de Aplicación.} 
+\item \textbf{Definición de Objetivos.}
+\item \textbf{Recolección de Datos.}
+\item \textbf{Análisis Exploratorio.} 
+\item \textbf{Representación de Componentes.}
+\end{itemize}
+
+\subsection*{Estacionariedad y Función de Autocorrelación}
+\noindent
+La estacionariedad se refiere a que las propiedades estadísticas de la serie se mantienen constantes a lo largo del tiempo, La función de autocorrelación es una herramienta esencial en este contexto, ya que permite comparar la señal con ella misma y revelar información valiosa sobre la estructura temporal de la serie.
+
+\subsection*{Machine Learning}
+
+\subsection*{Árboles de Decisión}
+Los árboles de decisión son algoritmos versátiles utilizados en tareas de clasificación y regresión. Son especialmente útiles para capturar relaciones no lineales en los datos y son una excelente opción para principiantes en el campo del Machine Learning.
+\subsection*{Bootstrap Aggregation (Bagging)}
+El algoritmo Bagging se utiliza para mejorar la estabilidad y precisión de los modelos, incluyendo árboles de decisión. A través de la combinación de múltiples modelos entrenados con muestras de datos seleccionadas con reemplazo, Bagging reduce la varianza y aumenta la precisión.
+
+\subsection*{Random Forest}
+
+Bosques Aleatorios son una extensión de Bagging que combina múltiples árboles de decisión mediante la aleatorización de características. Esto produce un modelo robusto y de alto rendimiento que es eficaz en la clasificación y la regresión de series de tiempo.
+
+\section*{Metodología}
+Las metas específicas son las siguientes:
+    \begin{enumerate}
+        \item Investigar y adquirir conocimientos sobre el algoritmo Random Forest, las Redes Neuronales Recurrentes y su aplicación en el análisis de criptomonedas.
+        \item Recopilar datos históricos del precio de Bitcoin desde el 31 de diciembre de 2022 hasta el 30 de junio de 2023, obtenidos de Yahoo Finance.
+        \item Construir modelos predictivos utilizando el algoritmo Random Forest y Redes Neuronales Recurrentes con unidades LSTM para predecir los precios futuros de Bitcoin.
+    \end{enumerate}
+
+\section*{Resultados}
+Los resultados obtenidos por los dos enfoques serán comparados y contrastados, identificando sus fortalezas y debilidades en la predicción de los precios de Bitcoin.
+
+\section*{Conclusiones}
+Se elaborarán conclusiones basadas en los resultados y la literatura relevante, ofreciendo una visión integral de la efectividad de Random Forest y Redes Neuronales Recurrentes en la reducción de la volatilidad y la precisión de las predicciones de las criptomonedas.
+
+\begin{thebibliography}{9}
+
+\bibitem{carrion}
+Carrión Pérez, Rafael. (2020). \textit{Predicción de Precios de Criptomonedas con Random Forest}, \url{https://oa.upm.es/62842/}, UPM.
+
+\bibitem{mdpi}
+Chen, Junwei. (2023). \textit{Analysis of Bitcoin Price Prediction Using Machine Learning}. \textit{MPDI}, \url{https://www.mdpi.com/1911-8074/16/1/51}
+
+\bibitem{towardsdatascience}
+Abhijit, Roy. (2020). \textit{A Dive Into Decision Trees}. \textit{towardsdatascience}, \url{https://towardsdatascience.com/a-dive-into-decision-trees-a128923c9298}
+
+\bibitem{jrfm}
+Journal of Risk and Financial Management. MDPI. \url{https://www.mdpi.com/journal/jrfm}
+\bibitem{yahoo}
+Yahoo! en español. \url{https://espanol.yahoo.com/}.
+
+\bibitem{nakamoto}
+Nakamoto, Satoshi. 2008. \textit{Bitcoin: un sistema de efectivo electrónico entre pares}. Disponible en línea: \url{https://bitcoin.org/bitcoin.pdf}
+
+%For a book:
+%\bibitem{author_year} Author. (Year). \textit{Title of Book}. Publisher.
+%For a journal article:
+%\bibitem{author_year} Author. (Year). Title of Article. \textit{Name of Journal}, \textit{Volume}(Issue), page numbers.
+%For a website:
+%\bibitem{author_year} Author. (Year). Title of Webpage. \textit{Name of Website}. URL
+
+\end{thebibliography}
+
+\end{document}
+

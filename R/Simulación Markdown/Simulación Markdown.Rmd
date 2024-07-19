@@ -1,0 +1,93 @@
+---
+title: "Exploración de la Relación entre la Variabilidad Ambiental y la Prevalencia de una Enfermedad en Colonias Intergalácticas"
+author: "Wilson Eduardo Jerez-Hernández"
+date: "2024-04-05"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: bibliografia.bib
+---
+**_Resumen:_** En este trabajo, se explorará la relación entre la variabilidad ambiental y la prevalencia de la enfermedad en colonias intergalácticas, centrándose en la edad de vida de los colonos como indicador. Se llevará a cabo una simulación en R para analizar la distribución de la media y la varianza muestral de la edad de vida en diferentes planetas. Los resultados sugieren que la variabilidad en la edad de vida estará relacionada con la incidencia de la enfermedad, lo que indicará la importancia de los factores ambientales en su desarrollo. Este estudio proporcionará una base para futuras investigaciones sobre los factores específicos del entorno planetario que contribuyen al riesgo de contraer la enfermedad.
+
+
+**_Palabras clave:_** 
+Variabilidad ambiental, enfermedad intergaláctica, edad de vida, simulación en R, factores ambientales.
+
+# 1. Introducción
+
+En un futuro distópico, la humanidad ha colonizado múltiples planetas en diferentes sistemas solares. Sin embargo, una misteriosa enfermedad conocida como "La Plaga del Olvido" ha comenzado a afectar a los colonos, causando pérdida de memoria y desorientación severa. La Agencia Intergaláctica para la Salud (AIS) ha estado investigando esta enfermedad durante décadas, pero aún no ha encontrado una cura. Recientes investigaciones sugieren que la exposición a ciertos elementos del entorno planetario podría estar relacionada con el desarrollo de la enfermedad.
+
+# 2. Soporte Teórico
+
+En estadística, la distribución de la media y la varianza muestral son fundamentales para realizar inferencias sobre los parámetros poblacionales a partir de muestras de datos. La distribución de la media muestral tiende a seguir una distribución normal debido al Teorema del Límite Central _(Wackerly, Mendenhall, & Scheaffer, 2014)_, mientras que la distribución de la varianza muestral sigue una distribución chi-cuadrado. Estas distribuciones muestrales proporcionan información crucial sobre la variabilidad de los datos y son útiles en la investigación científica. 
+
+
+# 3. Ejemplo Ilustrativo
+
+La Dra. Liara T'Soni, una renombrada científica de la AIS, propuso un experimento para estudiar la variabilidad en la edad de vida de los colonos en diferentes planetas como una forma de comprender mejor la relación entre las condiciones ambientales y la prevalencia de la Plaga del Olvido. Según su hipótesis, la edad de vida promedio y la variabilidad en las condiciones ambientales podrían estar relacionadas con la prevalencia de la enfermedad.
+
+# 4. Implementación en R mediante simulación
+
+La Dra. T'Soni y su equipo recolectaron datos sobre la edad de vida de los colonos en una muestra de planetas y utilizaron tecnología avanzada para simular la distribución de la media y la varianza muestral de la edad de vida en estos planetas. Los resultados de la simulación revelaron patrones interesantes. En planetas con condiciones ambientales estables y una edad de vida promedio consistente, la varianza muestral era baja, lo que sugería una menor variabilidad en la exposición a factores de riesgo para la enfermedad. Por otro lado, en planetas con condiciones ambientales extremas y una edad de vida promedio variable, la varianza muestral era alta, lo que indicaba una mayor variabilidad en la exposición a factores de riesgo.
+
+Basándose en estos hallazgos, la Dra. T'Soni concluyó que la variabilidad en la edad de vida podría estar relacionada con la prevalencia de la Plaga del Olvido. Sugirió que futuras investigaciones podrían centrarse en identificar los factores ambientales específicos que contribuyen al desarrollo de la enfermedad.
+
+La simulación en R proporcionó a la comunidad científica una herramienta poderosa para explorar esta relación y abrir nuevas vías de investigación en la lucha contra la Plaga del Olvido. Con suerte, estos esfuerzos eventualmente conducirán al descubrimiento de una cura y a la salvación de los colonos afectados.
+
+```{r}
+## Simulación de Distribuciones Muestrales
+
+# Se instalan y cargan los paquetes necesarios
+install.packages("matrixStats")
+library(matrixStats)
+# Generación de datos siguiendo una distribución normal
+x <- rnorm(n = 10, mean = 70, sd = 10)
+mean(x)
+var(x)
+sd(x)
+
+# Simulación de la edad de vida de colonos en diferentes planetas
+# Tomamos una muestra de tamaño n de una población cuya edad de vida promedio
+# es 70 años y cuya desviación estándar es 10 años. Replicamos este experimento
+# m veces.
+n <-10  # Tamaño de muestra
+m <-10000  # Número de réplicas
+datos <- matrix(nrow = m, ncol = n)
+for (i in 1:m) {
+  datos[i,] <- rnorm(n, mean = 70, sd = 10)
+}
+datos <- data.frame(datos)
+
+## Distribución de la Media Muestral
+Media <- rowMeans(datos)
+datos <- cbind(datos,Media)
+
+## Cálculo de estadísticos para una de las variables de la población
+mean(datos$X5)
+var(datos$X5)
+sd(datos$X5)
+
+## Cálculo de estadísticos para la variable aleatoria Media Muestral
+mean(Media)
+var(Media)
+sd(Media)
+
+## Distribución de la Varianza Muestral
+Varianza <- rowVars(as.matrix(datos[,1:n]))
+datos <- cbind(datos,Varianza)
+
+Chi <- (n-1)*Varianza/100
+
+## Cálculo de estadísticos para la variable aleatoria Varianza Muestral
+mean(Chi)
+var(Chi)
+```
+# 5. Conclusiones
+
+El estudio realizado por la Dra. T'Soni y su equipo aporta nuevas perspectivas sobre la relación entre la variabilidad ambiental y la prevalencia de la enfermedad en colonias intergalácticas. Los resultados de la simulación muestran que la variabilidad en la edad de vida de los colonos puede estar estrechamente vinculada con la incidencia de la Plaga del Olvido. Esto sugiere que los factores ambientales juegan un papel crucial en el desarrollo de la enfermedad. Estos hallazgos abren nuevas vías de investigación para identificar los factores específicos del entorno planetario que contribuyen al riesgo de contraer la enfermedad. Con un mayor entendimiento de estos factores, podríamos estar un paso más cerca de encontrar una cura para la Plaga del Olvido y garantizar la salud y bienestar de los colonos en el espacio.
+
+# Referencias
+
+1. Wackerly, D. D., Mendenhall, W., & Scheaffer, R. L. (2014). *Estadística Matemática con Aplicaciones* (7th ed.). México: Cengage Learning Editores.
+
+

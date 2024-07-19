@@ -1,0 +1,37 @@
+---
+title: "Taller de Inferencia Estadística"
+author: "Santiago Montejo, Angel Granados, Wilson Jerez"
+date: "Mayo 2024"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: bibliografia.bib
+---
+
+
+# Datos 
+La Tabla 1 presenta los resultados de un experimento en donde se suspenden varios pesos de un resorte y se mide su alargamiento. El peso se mide en libras (lb) mientras que el alargamiento se mide en pulgadas (in).
+
+peso <- seq(from = 0, to = 3.8, by = 0.2)
+alargamiento <- c(5.1, 5.0, 5.1, 5.1, 5.1, 5.2, 5.3, 5.2, 5.2, 5.5, 5.4, 5.6, 5.5, 5.5, 5.6, 5.6, 5.6, 5.8, 5.7, 5.8)
+
+
+Tabla_1 <- data.frame( 
+peso = peso,
+alargamiento = alargamiento
+)
+
+# Relacion de las variables:
+
+modelo <- lm(formula = alargamiento ~ peso, data = Tabla_1)
+summary (modelo)
+
+# Grafico:
+
+plot(Tabla_1$peso, Tabla_1$alargamiento, 
+     main = "Gráfico de Dispersión de Peso vs Alargamiento",
+     xlab = "Peso",
+     ylab = "Alargamiento",
+     pch = 19, # Tipo de punto
+     col = "blue") 
+
